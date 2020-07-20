@@ -30,3 +30,6 @@ autoplot(timeseries) +
 #### Trend
 A trend exists when there is a long-term increase or decrease in the data. It does not have to be linear. Sometimes trend is
 refered to as "changing direction", when it might go from an increasing trend to a decreasing trend.
+#### Seasonal
+A seasonal pattern occurs when a time series is affected by seasonal factors such as the time of the year or the day of the
+week. Seasonality is always of a fixed and known frequency.
