@@ -10,3 +10,7 @@ There are always at least two kinds of information required. a) statistical data
 people who collect the data and use the forecasts. Often, it will be difficult to obtain enough historical data to be able
 to fit a good statistical model. Good statistical models will handle evolutionary changes in the system; don't throw
 away good data unnecessarily.
+##### 3. Exploratory analysis
+Always start by graphing the data. Are there consistent patterns? Is there a significant trend? Is seasonality important?
+Is there evidence of the presence of business cycles? Are there any outliers in the data that need to be explained by those
+with expert knowledge? How strong are the relationships among the variables available for analysis?
