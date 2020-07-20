@@ -24,3 +24,4 @@ autoplot(timeseries) +
   ylab(" ") +
   xlab(" ")
 ```
+```Autoplot( )``` automatically produces an appropriate plot of whatever you pass to it in the first argument.
