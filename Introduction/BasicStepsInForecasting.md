@@ -14,3 +14,7 @@ away good data unnecessarily.
 Always start by graphing the data. Are there consistent patterns? Is there a significant trend? Is seasonality important?
 Is there evidence of the presence of business cycles? Are there any outliers in the data that need to be explained by those
 with expert knowledge? How strong are the relationships among the variables available for analysis?
+#### 4. Choosing and fitting models
+The best model to use depends on the availability of historical data, the strength of relationships between the forecast
+variable and any explanatory variables, and the way in which the forecasts are to be used. It is common to compare two or
+three potential models.
