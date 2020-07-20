@@ -1,7 +1,7 @@
 The first thing to do in any data analysis task is to plot the data. Graphs enable many features of the data to be visualized,
 including patterns, unusual observations, changes over time, and relationships between variables.
 
-### ```ts``` objects
+## ```ts``` objects
 A time series can be thought of as a list of numbers, along with some information about what times those numbers were
 recorded. This information can be stored as a ```ts``` object in R.
 ```
@@ -15,7 +15,7 @@ y <- ts(z, start=2010, frequency=10)
 The frequency is the number of observations before the seasonal pattern repeats. When using the ```ts( )``` function in R, the
 following choices are annual, quarterly, monthly, and weekly.
 
-### Time plots
+## Time plots
 For time series data, the obvious graph to start with is a time plot. That observations are plotted against the time of observation,
 with consecutive observations joined by straight lines.
 ```
@@ -26,7 +26,7 @@ autoplot(timeseries) +
 ```
 ```Autoplot( )``` automatically produces an appropriate plot of whatever you pass to it in the first argument.
 
-### Time series patterns
+## Time series patterns
 #### Trend
 A trend exists when there is a long-term increase or decrease in the data. It does not have to be linear. Sometimes trend is
 refered to as "changing direction", when it might go from an increasing trend to a decreasing trend.
@@ -41,7 +41,7 @@ to economic conditions, and are often related to the "business cycle." The durat
 *Note the difference between seasonal and cyclic. If the fluctuations are not of a fixed frequency then they are cyclic; if the
 frequency is unchanging and associated with some aspect of the calendar, then the pattern is seasonal.*
 
-### Seasonal plots
+## Seasonal plots
 A seasonal plot is similar to a time plot except that the data are plotted against the individual "seasons" in which the data
 were observed.
 ```
