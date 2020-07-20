@@ -81,3 +81,9 @@ Plots can be arranged in a scatterplot matrix using ```GGally``` package.
 ```
 GGally::ggpairs( )
 ```
+## Lag plots
+The ```window( )``` function is very useful when extracting a portion of a time series.
+```
+x <- window(timeseries, start=2000)
+gglagplot(x)
+```
