@@ -99,3 +99,7 @@ When data have a trend, the autocorrelations for small lags tend to be large and
 time are also nearby in size. So the ACF of trended time series tend to have positive values that slowly decrease as the
 lags increase. When data are seasonal, the autocorrelations will be larger for the seasonals lags (at multiples of the
 seasonal frequency) than for other lags. When data are both trended and seasonal, you see a combination of these effects.
+
+## White noise
+Time series that show no autocorrelations are called white noise. For white noise series, we expect each autocorrelation
+to be close to zero. They will not be exactly equal to zero as there is some random variation.
