@@ -14,3 +14,13 @@ y <- ts(z, start=2010, frequency=10)
 #### Frequency of a time series
 The frequency is the number of observations before the seasonal pattern repeats. When using the ```ts( )``` function in R, the
 following choices are annual, quarterly, monthly, and weekly.
+
+### Time plots
+For time series data, the obvious graph to start with is a time plot. That observations are plotted against the time of observation,
+with consecutive observations joined by straight lines.
+```
+autoplot(timeseries) +
+  ggtitle(" ") +
+  ylab(" ") +
+  xlab(" ")
+```
