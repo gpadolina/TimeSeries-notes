@@ -72,3 +72,6 @@ qplot(var1, var2) +
   ylab(" ") +
   xlab(" ")
 ```
+#### Correlation
+It is common to compute correlation coefficients to measure the strength of the relationship between two variables. The
+correlation coefficient only measures the strength of the linear relationship and can sometimes be misleading.
