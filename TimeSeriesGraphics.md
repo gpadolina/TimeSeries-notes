@@ -33,3 +33,7 @@ refered to as "changing direction", when it might go from an increasing trend to
 #### Seasonal
 A seasonal pattern occurs when a time series is affected by seasonal factors such as the time of the year or the day of the
 week. Seasonality is always of a fixed and known frequency.
+#### Cyclic
+A cycle occurs when the data exhibit rises and falls that are not of a fixed frequency. These fluctuations are usually due
+to economic conditions, and are often related to the "business cycle." The duration of these fluctuations is usually at least
+2 years.
