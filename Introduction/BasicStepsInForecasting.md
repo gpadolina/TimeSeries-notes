@@ -18,3 +18,7 @@ with expert knowledge? How strong are the relationships among the variables avai
 The best model to use depends on the availability of historical data, the strength of relationships between the forecast
 variable and any explanatory variables, and the way in which the forecasts are to be used. It is common to compare two or
 three potential models.
+#### 5. Using and evaluating a forecasting model
+Once a model has been selected and its parameters estimated, the model is used to make forecasts. The performance of the model
+can only be properly evaluated after the data for the forecast period have become available. A number of methods have been
+developed to help in assessing the accuracy of forecasts.
