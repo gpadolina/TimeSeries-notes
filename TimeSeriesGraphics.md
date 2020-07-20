@@ -56,3 +56,11 @@ ggseasonplot(polar=TRUE) +
   ylab(" ") +
   ggtitle(" ")
 ```
+## Seasonal subseries plots
+An alternative plot that emphasises the seasonal patterns is where the data for each season are collected together in separate
+mini time plots.
+```
+ggsubseriesplots( ) +
+  ylab(" ") +
+  ggtitle(" ")
+```
