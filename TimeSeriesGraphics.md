@@ -58,7 +58,8 @@ ggseasonplot(polar=TRUE) +
 ```
 ## Seasonal subseries plots
 An alternative plot that emphasises the seasonal patterns is where the data for each season are collected together in separate
-mini time plots.
+mini time plots. This form of plot enables the underlying seasonal pattern to be seen clearly and also shows the changes in
+seasonality over time.
 ```
 ggsubseriesplots( ) +
   ylab(" ") +
