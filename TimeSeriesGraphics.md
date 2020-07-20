@@ -25,3 +25,8 @@ autoplot(timeseries) +
   xlab(" ")
 ```
 ```Autoplot( )``` automatically produces an appropriate plot of whatever you pass to it in the first argument.
+
+### Time series patterns
+#### Trend
+A trend exists when there is a long-term increase or decrease in the data. It does not have to be linear. Sometimes trend is
+refered to as "changing direction", when it might go from an increasing trend to a decreasing trend.
