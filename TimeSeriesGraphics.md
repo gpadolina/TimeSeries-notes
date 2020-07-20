@@ -40,3 +40,12 @@ to economic conditions, and are often related to the "business cycle." The durat
 
 *Note the difference between seasonal and cyclic. If the fluctuations are not of a fixed frequency then they are cyclic; if the
 frequency is unchanging and associated with some aspect of the calendar, then the pattern is seasonal.*
+
+### Seasonal plots
+A seasonal plot is similar to a time plot except that the data are plotted against the individual "seasons" in which the data
+were observed.
+```
+ggseasonplot( ) +
+  ylab(" ") +
+  ggtitle(" ")
+```
