@@ -5,3 +5,6 @@ Often this is the most difficult part of forecasting. Defining the problem caref
 way the forecasts will be used, who required the forecasts, and how the forecasting function fits within the
 organization requiring the forecasts. A forecaster needs to spend time talking to everytone who will be involved in
 collecting data, maintaining databases, and using the forecasts for future planning.
+#### 2. Gathering information
+There are always at least two kinds of information required. a) statistical data, and b) the accumulated expertise of the
+people who collect the data and use the forecasts.
