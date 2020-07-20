@@ -65,3 +65,10 @@ ggsubseriesplots( ) +
   ylab(" ") +
   ggtitle(" ")
 ```
+## Scatterplots
+We can study the relationship betweeen two variables by plotting one series against the other.
+```
+qplot(var1, var2) +
+  ylab(" ") +
+  xlab(" ")
+```
