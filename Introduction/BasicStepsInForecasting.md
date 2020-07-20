@@ -7,4 +7,6 @@ organization requiring the forecasts. A forecaster needs to spend time talking t
 collecting data, maintaining databases, and using the forecasts for future planning.
 #### 2. Gathering information
 There are always at least two kinds of information required. a) statistical data, and b) the accumulated expertise of the
-people who collect the data and use the forecasts.
+people who collect the data and use the forecasts. Often, it will be difficult to obtain enough historical data to be able
+to fit a good statistical model. Good statistical models will handle evolutionary changes in the system; don't throw
+away good data unnecessarily.
