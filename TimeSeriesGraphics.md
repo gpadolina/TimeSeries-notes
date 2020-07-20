@@ -87,3 +87,6 @@ The ```window( )``` function is very useful when extracting a portion of a time 
 x <- window(timeseries, start=2000)
 gglagplot(x)
 ```
+## Autocorrelation
+Just as correlation measures the extent of a linear relationship between two variables, autocorrelation measures the linear
+relationship between lagged values of a time series.
