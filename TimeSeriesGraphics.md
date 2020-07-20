@@ -89,4 +89,8 @@ gglagplot(x)
 ```
 ## Autocorrelation
 Just as correlation measures the extent of a linear relationship between two variables, autocorrelation measures the linear
-relationship between lagged values of a time series.
+relationship between lagged values of a time series. The autocorrelation coefficients are plotted to show the
+autocorrelation function or ACF. The plot is also known as correlogram.
+```
+ggAcf(timeseries)
+```
