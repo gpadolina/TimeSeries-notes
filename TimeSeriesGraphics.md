@@ -4,3 +4,10 @@ including patterns, unusual observations, changes over time, and relationships b
 ### ```ts``` objects
 A time series can be thought of as a list of numbers, along with some information about what times those numbers were
 recorded. This information can be stored as a ```ts``` object in R.
+```
+y <- ts(c(100, 200, 300, 400, 500), start=2010)
+
+or
+
+y <- ts(z, start=2010, frequency=10)
+```
