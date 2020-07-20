@@ -94,3 +94,8 @@ autocorrelation function or ACF. The plot is also known as correlogram.
 ```
 ggAcf(timeseries)
 ```
+#### Trend and seasonality in ACF plots
+When data have a trend, the autocorrelations for small lags tend to be large and positive because observations nearby in
+time are also nearby in size. So the ACF of trended time series tend to have positive values that slowly decrease as the
+lags increase. When data are seasonal, the autocorrelations will be larger for the seasonals lags (at multiples of the
+seasonal frequency) than for other lags. When data are both trended and seasonal, you see a combination of these effects.
