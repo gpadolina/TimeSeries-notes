@@ -49,3 +49,10 @@ ggseasonplot( ) +
   ylab(" ") +
   ggtitle(" ")
 ```
+A useful variation on the seasonal plot uses polar coordinates. Setting ```polar=TRUE``` makes the time series axis circular
+rather than horizontal.
+```
+ggseasonplot(polar=TRUE) +
+  ylab(" ") +
+  ggtitle(" ")
+```
