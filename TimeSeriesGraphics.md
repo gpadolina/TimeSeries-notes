@@ -75,3 +75,9 @@ qplot(var1, var2) +
 #### Correlation
 It is common to compute correlation coefficients to measure the strength of the relationship between two variables. The
 correlation coefficient only measures the strength of the linear relationship and can sometimes be misleading.
+#### Scatterplot matrices
+When there are several potential predictor variables, it is useful to plot each variable against each other variable.
+Plots can be arranged in a scatterplot matrix using ```GGally``` package.
+```
+GGally::ggpairs( )
+```
