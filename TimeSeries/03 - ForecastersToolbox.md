@@ -72,3 +72,13 @@ used. These are called *power transformations.*
 A useful family of transformations, that includes both logarithms and power transformations, is the family of Box-cox
 transformations, which depend on the parameter lambda. The logarithm in a Box-cox transformation is always a natural
 logarithm or to base e.
+#### Bias adjustments
+One issue with using mathematical transformations such as Box-cox transformations is that the back-transformed point
+forecasts will not be the mean of the forecast distribution. In fact, it will usually be the median of the forecast
+distribution assuming that the distribution on the transformed space is symmetric. For many purposes, this is acceptable,
+but occasionally the mean forecast is required.
+
+The difference between the simple back-transformed forecast and the mean is called the *bias.* When we use the mean, rather
+than the median, we say the point forecasts have been bias-adjusted. Bias adjustment is not done by default in the *forecast*
+package. If you want your forecasts to be means rather than medians, use the argument ```biasadj=TRUE``` when you select
+your Box-cox transformation parameter.
