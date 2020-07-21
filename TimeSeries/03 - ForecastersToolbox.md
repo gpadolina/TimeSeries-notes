@@ -47,3 +47,7 @@ calendar adjustments, population adjustments, inflation adjustments, and mathema
 of these adjustments and transformations is to simplify the patterns in the historical data by removing known
 sources of variation or by making the pattern more consistent across the whole data set. Simpler patterns usually
 lead to more accurate forecasts.
+#### Calendar adjustments
+Some of the variation seen in seasonal data may be due to simple calendar effects. In such cases, it is usually
+much easier to remove the variation before fitting a forecasting model. The ```monthdays( )``` function will
+compute the number of days in each month or quarter.
