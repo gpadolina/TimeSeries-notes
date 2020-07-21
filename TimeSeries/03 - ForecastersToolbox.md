@@ -18,3 +18,6 @@ rwf(y, h) # Equivalent alternative
 #### Seasonal naïve method
 A similar method is useful for highly seasonal data. In this case, set each forecast to be equal to the last observed value
 from the same season of the year (eg., the same month of the previous year).
+```
+snaive(y, h)
+```
