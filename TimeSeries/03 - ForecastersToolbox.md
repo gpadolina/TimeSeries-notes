@@ -42,16 +42,21 @@ Sometimes one of these simple methods will be the best forecasting method availa
 will serve as benchmarks rather than the method of choice.
 
 ## Transformations and adjustments
-Adjusting the historical data can often lead to a simpler forecasting task. There are four kinds of adjustments:
-calendar adjustments, population adjustments, inflation adjustments, and mathematical transformations. The purpose
-of these adjustments and transformations is to simplify the patterns in the historical data by removing known
-sources of variation or by making the pattern more consistent across the whole data set. Simpler patterns usually
-lead to more accurate forecasts.
+Adjusting the historical data can often lead to a simpler forecasting task. There are four kinds of adjustments: calendar 
+adjustments, population adjustments, inflation adjustments, and mathematical transformations. The purpose of these 
+adjustments and transformations is to simplify the patterns in the historical data by removing known sources of variation
+or by making the pattern more consistent across the whole data set. Simpler patterns usually lead to more accurate 
+forecasts.
 #### Calendar adjustments
-Some of the variation seen in seasonal data may be due to simple calendar effects. In such cases, it is usually
-much easier to remove the variation before fitting a forecasting model. The ```monthdays( )``` function will
-compute the number of days in each month or quarter.
+Some of the variation seen in seasonal data may be due to simple calendar effects. In such cases, it is usually much easier 
+to remove the variation before fitting a forecasting model. The ```monthdays( )``` function will compute the number of 
+days in each month or quarter.
 #### Population adjustments
-Any data that are affected by population changes can be adjusted to give per-capita data. That is, consider
-the data per person (or per thousand people, or per million people) rather than the total. For most data that
-are affected by population changes, it is best to use per-capita data rather than the totals.
+Any data that are affected by population changes can be adjusted to give per-capita data. That is, consider the data per
+person (or per thousand people, or per million people) rather than the total. For most data that are affected by 
+population changes, it is best to use per-capita data rather than the totals.
+#### Inflation adjustments
+Data which are affected by the value of money are best adjusted before modelling. For example, the average cost of a new
+house will have increases over the last few decades due to inflation. A $200,000 house this year is not the same as a
+$200,000 house twenty years ago. Price indexes are often constructed by government agencies. For consumer goods, a common
+price index is the Consumer Price Index or CPI.
