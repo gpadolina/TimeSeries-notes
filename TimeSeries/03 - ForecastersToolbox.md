@@ -27,3 +27,14 @@ time (called the drift) is set to be the average change seen in the historical d
 ```
 rwf(y, h, drift=TRUE)
 ```
+#### Examples
+```
+autoplot( ) +
+  autolayer(meanf( ), series="Mean") +
+  autolayer(naive( ), series="Naive") +
+  autolayer(snaive( ), series="Seasonal naive") +
+  ggtitle( ) +
+  xlab( ) +
+  ylab( ) +
+  guides( )
+```
