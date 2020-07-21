@@ -9,7 +9,8 @@ meanf(y, h)
 ```
 #### Naïve method
 For naïve method, simply set all forecasts to be the value of the last observation. This method works remarkably well for many
-economic and financial time series.
+economic and financial time series. Because a naïve forecast is optimal when data follow a random walk, these are also called
+*random walk forecasts.*
 ```
 naive(y, h)
 rwf(y, h) # Equivalent alternative
