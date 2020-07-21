@@ -38,3 +38,5 @@ autoplot( ) +
   ylab( ) +
   guides( )
 ```
+Sometimes one of these simple methods will be the best forecasting method available; but in many cases, these methods
+will serve as benchmarks rather than the method of choice.
