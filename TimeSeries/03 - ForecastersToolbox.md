@@ -21,3 +21,9 @@ from the same season of the year (eg., the same month of the previous year).
 ```
 snaive(y, h)
 ```
+#### Drift method
+A variation on the naïve method is to allow the forecasts to increase or decrease over time, where the amount of change over
+time (called the drift) is set to be the average change seen in the historical data.
+```
+rwf(y, h, drift=TRUE)
+```
