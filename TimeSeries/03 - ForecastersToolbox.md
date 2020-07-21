@@ -60,3 +60,15 @@ Data which are affected by the value of money are best adjusted before modelling
 house will have increases over the last few decades due to inflation. A $200,000 house this year is not the same as a
 $200,000 house twenty years ago. Price indexes are often constructed by government agencies. For consumer goods, a common
 price index is the Consumer Price Index or CPI.
+#### Mathematical transformations
+If the data show variation that increases or decreases with the level of the series, then a transformation can be useful.
+For example, a logarithmic transformation is often useful. Logarithms are useful because they are interpretable: changes
+in a log value are relative (or percentage) changes on the original scale. Another useful feature of log transformations
+is that they constrain the forecasts to stay positive on the original scale.
+
+Sometimes other transformations are also used but not so interpretable. For example, square roots and cube roots can be
+used. These are called *power transformations.*
+
+A useful family of transformations, that includes both logarithms and power transformations, is the family of Box-cox
+transformations, which depend on the parameter lambda. The logarithm in a Box-cox transformation is always a natural
+logarithm or to base e.
