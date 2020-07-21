@@ -51,3 +51,7 @@ lead to more accurate forecasts.
 Some of the variation seen in seasonal data may be due to simple calendar effects. In such cases, it is usually
 much easier to remove the variation before fitting a forecasting model. The ```monthdays( )``` function will
 compute the number of days in each month or quarter.
+#### Population adjustments
+Any data that are affected by population changes can be adjusted to give per-capita data. That is, consider
+the data per person (or per thousand people, or per million people) rather than the total. For most data that
+are affected by population changes, it is best to use per-capita data rather than the totals.
