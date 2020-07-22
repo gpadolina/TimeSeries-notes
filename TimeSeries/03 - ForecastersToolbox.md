@@ -91,4 +91,6 @@ Each observation in a time series can be forecast using all previous observation
 The residuals in a time series model are what is left over after fitting a model. For many time series models, the residuals
 are equal to the difference between the observations and the corresponding fitted values. Residuals are useful in checking
 whether a model has adequately captures the information in the data. A good forecasting method will yielf residuals with the
-following properties: the residuals are uncorrelated; the residuals have zero mean.
+following properties: the residuals are uncorrelated; the residuals have zero mean. Any forecasting method that does not satisfy
+properties can be improved. In addition to these essential properties, it is useful but not necessary for the residuals to also
+have the following properties: the residuals have constant variance; the residuals are normally distributed.
