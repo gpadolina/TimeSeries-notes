@@ -124,3 +124,12 @@ Ljung-Box test with the correct degrees of freedom.
 ## Evaluating forecast accuracy
 
 #### Training and test sets
+It is important to evaluate forecast accuracy using genuine forecasts. Consequently, the size of the residuals is not a reliable
+indication of how large true forecast errors are likely to be. The accuracy of forecasts can only be determined by considering
+how well a model performs on new data that were not used when fitting the model.
+
+When choosing models, it is common practice to separate the available data into two portions, *training* and *test* data, where the
+training data is used to estimate any parameters of a forecasting methods and the test data is used to evaluate its accuracy.
+
+The size of the test set is typically about 20% of the total sample, although this value depends on how long the same is and how
+far ahead you want to forecast.
