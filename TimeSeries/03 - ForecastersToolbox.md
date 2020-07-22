@@ -120,3 +120,7 @@ numer of items. One such test is the *Box-Pierce test*. A related and more accur
 All of these methods for checking residuals are conveniently packaged into one R function ```checkresiduals( )```, which will
 produce a time plot, ACF plot, and histogram of the residuals with an overlaid normal distribution for comparison, and do a
 Ljung-Box test with the correct degrees of freedom.
+
+## Evaluating forecast accuracy
+
+#### Training and test sets
