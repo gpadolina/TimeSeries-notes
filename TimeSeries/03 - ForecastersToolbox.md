@@ -82,3 +82,11 @@ The difference between the simple back-transformed forecast and the mean is call
 than the median, we say the point forecasts have been bias-adjusted. Bias adjustment is not done by default in the *forecast*
 package. If you want your forecasts to be means rather than medians, use the argument ```biasadj=TRUE``` when you select
 your Box-cox transformation parameter.
+
+## Residual diagnostics
+
+### Fitted values
+Each observation in a time series can be forecast using all previous observations. These are called *fitted values*.
+### Residuals
+The residuals in a time series model are what is left over after fitting a model. For many time series models, the residuals
+are equal to the difference between the observations and the corresponding fitted values.
