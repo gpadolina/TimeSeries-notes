@@ -138,3 +138,8 @@ The ```window( )``` function is useful when extracting a portion of a time serie
 ```
 window(timeseries, start=year)
 ```
+Another useful function is ```subset( )``` which allows for more types of subsetting. A great advantage of this function is that it
+allows the use of indices to choose a subset. It also allows extracting all values for a specific season.
+```
+subset(timeseries, start=length(timeseries))
+```
