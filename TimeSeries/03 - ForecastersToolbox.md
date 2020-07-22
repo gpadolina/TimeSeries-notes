@@ -115,3 +115,6 @@ the required limits, we are implicitly carrying out multiple hypothesis tests, e
 positive.
 A test for a group of autocorrelations is called a *portmanteau test*, from a French word describing a suitecase contraining a
 numer of items. One such test is the *Box-Pierce test*. A related and more accurate test is the *Ljung-Box test*.
+All of these methods for checking residuals are conveniently packaged into one R function ```checkresiduals( )```, which will
+produce a time plot, ACF plot, and histogram of the residuals with an overlaid normal distribution for comparison, and do a
+Ljung-Box test with the correct degrees of freedom.
