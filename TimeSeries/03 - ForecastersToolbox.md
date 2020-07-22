@@ -132,4 +132,4 @@ When choosing models, it is common practice to separate the available data into 
 training data is used to estimate any parameters of a forecasting methods and the test data is used to evaluate its accuracy.
 
 The size of the test set is typically about 20% of the total sample, although this value depends on how long the same is and how
-far ahead you want to forecast.
+far ahead you want to forecast. The test set should ideally be at least as large as the maximum forecast horizon required.
