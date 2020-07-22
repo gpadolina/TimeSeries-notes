@@ -143,3 +143,7 @@ allows the use of indices to choose a subset. It also allows extracting all valu
 ```
 subset(timeseries, start=length(timeseries))
 ```
+```head``` and ```tail``` are useful for extracting the first few or last few observations.
+```
+tail(timeseries)
+```
