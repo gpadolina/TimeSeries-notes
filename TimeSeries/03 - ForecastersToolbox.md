@@ -108,3 +108,10 @@ gghistogram(res) + ggtitle( )
 
 ggAcf(res) + ggtitle( )
 ```
+#### Portmanteau tests for autocorrelation
+In addition to looking at the ACF plot, we can also do a more formal test for autocorrelation by considering a whole set of rk
+values as a group, rather than treating each one separately. When we look at the ACF plot to see whether each spike is within
+the required limits, we are implicitly carrying out multiple hypothesis tests, each one with a small probability of giving a false
+positive.
+A test for a group of autocorrelations is called a *portmanteau test*, from a French word describing a suitecase contraining a
+numer of items. One such test is the *Box-Pierce test*. A related and more accurate test is the *Ljung-Box test*.
