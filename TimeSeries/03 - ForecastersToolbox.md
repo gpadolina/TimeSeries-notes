@@ -94,3 +94,17 @@ whether a model has adequately captures the information in the data. A good fore
 following properties: the residuals are uncorrelated; the residuals have zero mean. Any forecasting method that does not satisfy
 properties can be improved. In addition to these essential properties, it is useful but not necessary for the residuals to also
 have the following properties: the residuals have constant variance; the residuals are normally distributed.
+#### Example
+```
+autoplot(timeseries) +
+  xlab( ) + ylab( ) +
+  ggtitle( )
+  
+res <- residuals(naive( ))
+autoplot(res) + xlab( ) + ylab( ) +
+  ggtitle( )
+
+gghistogram(res) + ggtitle( )
+
+ggAcf(res) + ggtitle( )
+```
