@@ -89,4 +89,6 @@ your Box-cox transformation parameter.
 Each observation in a time series can be forecast using all previous observations. These are called *fitted values*.
 ### Residuals
 The residuals in a time series model are what is left over after fitting a model. For many time series models, the residuals
-are equal to the difference between the observations and the corresponding fitted values.
+are equal to the difference between the observations and the corresponding fitted values. Residuals are useful in checking
+whether a model has adequately captures the information in the data. A good forecasting method will yielf residuals with the
+following properties: the residuals are uncorrelated; the residuals have zero mean.
