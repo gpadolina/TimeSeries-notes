@@ -147,3 +147,10 @@ subset(timeseries, start=length(timeseries))
 ```
 tail(timeseries)
 ```
+#### Forecast errors
+A forecast error is the difference between an observed value and its forecast. Here, error does not mean a mistake, it means the
+unpredictable part of an observation.
+
+Note that forecast errors are different from residuals in two ways. First, residuals are calculated on the training set while
+forecast errors are calculated on the test set. Second, residuals are based on one-step forecasts while forecast errors can
+involve multi-step forecasts.
