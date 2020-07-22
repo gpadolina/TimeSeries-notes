@@ -133,3 +133,8 @@ training data is used to estimate any parameters of a forecasting methods and th
 
 The size of the test set is typically about 20% of the total sample, although this value depends on how long the same is and how
 far ahead you want to forecast. The test set should ideally be at least as large as the maximum forecast horizon required.
+#### Functions to subset a time series
+The ```window( )``` function is useful when extracting a portion of a time series, such as when creating training and test sets. 
+```
+window(timeseries, start=year)
+```
