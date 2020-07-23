@@ -154,3 +154,11 @@ unpredictable part of an observation.
 Note that forecast errors are different from residuals in two ways. First, residuals are calculated on the training set while
 forecast errors are calculated on the test set. Second, residuals are based on one-step forecasts while forecast errors can
 involve multi-step forecasts.
+#### Scale-dependent errors
+The forecast errors are on the same scale as the data. Accuracy measures that are based only on *et* are scaled-dependent and cannot be
+used to make comparisons between series that involve different units. The two most commonly used scale-dependent measures are based on
+the absolute erorrs or squared errors: mean absolute error and root mean squared error.
+
+When comparing forecast methods applied to a single time series, or to several time series with the same units, the MAE is popular as it
+is easy to both understand and compute. A forecast method that minimises the MAE will lead to forecasts of the median, while minimising
+the RMSE will lead to forecasts of the mean.
