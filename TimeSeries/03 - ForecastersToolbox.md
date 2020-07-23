@@ -176,3 +176,21 @@ scaled error uses naïve forecasts.
 
 A scaled error is less than one if it arises from a better forecast than the average naïve forecast computed on the training data.
 Conversely, it is greater than one if the forecast is worse than the average naïve forecast computed on the training data.
+#### Example
+```
+timeseries2 <- window(timeseries, start=, end=)
+timeseries2a <- meanf(timeseries2)
+timeseries2b <- rwf(timeseries2)
+timeseries2c <- snaive(timeseries2)
+autoplot(window(timeseries, start=)) + 
+  autolayer(timeseries2a, series="Mean") +
+  autolayer(timeseries2b, series="Naïve) +
+  autolayer(timeseries2c, series="Seasonal naïve) +
+  xlab( ) + ylab( ) +
+  ggtitle( )
+  
+timeseries3 <- window(timeseries, start=)
+accuracy(timeseries2a, timeseries3)
+accuracy(timeseries2b, timeseries3)
+accuracy(timeseries2c, timeseries3)
+```
