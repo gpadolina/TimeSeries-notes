@@ -194,3 +194,7 @@ accuracy(timeseries2a, timeseries3)
 accuracy(timeseries2b, timeseries3)
 accuracy(timeseries2c, timeseries3)
 ```
+#### Time series cross-validation
+A more sophisticated version of training/test sets is time series cross-validation. In this procedure, there are a series of test sets,
+each consisting of a single observation. The corresponding training set consists only of observations that occurred *prior* to the 
+observation that forms the test set. Thus, no future observations can be used in constructing the forecast.
