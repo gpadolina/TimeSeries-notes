@@ -162,3 +162,10 @@ the absolute erorrs or squared errors: mean absolute error and root mean squared
 When comparing forecast methods applied to a single time series, or to several time series with the same units, the MAE is popular as it
 is easy to both understand and compute. A forecast method that minimises the MAE will lead to forecasts of the median, while minimising
 the RMSE will lead to forecasts of the mean.
+#### Percentage errors
+The percentage error is given by pt = 100et/yt. Percentage errors have the advantage of being unit-free and so are frequently used to
+compared forecast performances between data sets. The most commonly used measure is mean absolute percentage error.
+
+Another problem with percentage errors that is often overlooked is that they assume the unit of measurement has a meaningful zero. They
+also have the disadvantage that they put a heavier penalty on negative errors than on positive errors.This observation led to the use of
+the so-called symmetric MAPE (sMAPE). The value of sMAPE can be negative, so it is not really a measure of absolute percentage errors at all.
