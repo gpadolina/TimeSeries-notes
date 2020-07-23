@@ -169,3 +169,10 @@ compared forecast performances between data sets. The most commonly used measure
 Another problem with percentage errors that is often overlooked is that they assume the unit of measurement has a meaningful zero. They
 also have the disadvantage that they put a heavier penalty on negative errors than on positive errors.This observation led to the use of
 the so-called symmetric MAPE (sMAPE). The value of sMAPE can be negative, so it is not really a measure of absolute percentage errors at all.
+#### Scaled errors
+Scaled errors are an alternative to using percentage errors when comparing forecast accuracy across series with different units. It was
+proposed scaling the errors on the training MAE from a simple forecast method. For a non-seasonal time series, a useful way to define a
+scaled error uses naïve forecasts.
+
+A scaled error is less than one if it arises from a better forecast than the average naïve forecast computed on the training data.
+Conversely, it is greater than one if the forecast is worse than the average naïve forecast computed on the training data.
