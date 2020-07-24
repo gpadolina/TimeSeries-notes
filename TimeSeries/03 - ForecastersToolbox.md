@@ -212,3 +212,6 @@ to understand what is being computed. Instead, use the pipe operator ```%>%``` a
 timeseries %>% tsCV(forecastfunction=rwl, drift=TRUE) -> e
 e^2 %>% mean(na.rm=TRUE) %>% sqrt( )
 ```
+The left hand side of each pipe is passed as the first argument to the function on the right hand side. This is consistent with the way we
+read from left to right in English. When using pipes, all other arguments must be named, which also helps readability. When using pipes,
+it is also natural to use the right arrow assignment ```->``` rather than the left arrow.
