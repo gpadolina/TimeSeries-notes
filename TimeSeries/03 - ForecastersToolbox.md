@@ -220,3 +220,8 @@ it is also natural to use the right arrow assignment ```->``` rather than the le
 A prediction interval gives an interval within which we expect yt to lie with a specified probability. The value of prediction intervals is
 that they express the uncertainty in the forecasts. If we only produce point forecasts, there is no way of telling how accurate the
 forecasts are. However, if we also produce prediction intervals, then it is clear how much uncertainty is associated with each forecast.
+#### One-step prediction intervals
+When forecasting one step ahead, the standard deviation of the forecast distribution is almost the same as the standard deviation of the
+residuals. In fact, the two standard deviations are identical if there are no parameters to be estimated, as is the cast with the naïve
+method. For forecasting methods involving paramters to be estimated, the standard deviation of the forecast distribution is slightly
+larger than the residual standard deviation, although this difference is often ignored.
