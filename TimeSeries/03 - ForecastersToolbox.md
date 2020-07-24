@@ -228,3 +228,8 @@ larger than the residual standard deviation, although this difference is often i
 #### Multi-step prediction intervals
 A common feature of prediction intervals is that they increase in length as the forecast horizon increases. The further ahead we forecast,
 the more uncertainty is associated with the forecast, and thus the wider the prediction intervals.
+#### Benchmark methods
+* Mean forecast
+* Naïve forecas
+* Seasonal naïve forecast
+* Drift forecast
