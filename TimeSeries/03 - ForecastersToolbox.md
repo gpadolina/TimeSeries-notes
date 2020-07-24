@@ -225,3 +225,6 @@ When forecasting one step ahead, the standard deviation of the forecast distribu
 residuals. In fact, the two standard deviations are identical if there are no parameters to be estimated, as is the cast with the naïve
 method. For forecasting methods involving paramters to be estimated, the standard deviation of the forecast distribution is slightly
 larger than the residual standard deviation, although this difference is often ignored.
+#### Multi-step prediction intervals
+A common feature of prediction intervals is that they increase in length as the forecast horizon increases. The further ahead we forecast,
+the more uncertainty is associated with the forecast, and thus the wider the prediction intervals.
