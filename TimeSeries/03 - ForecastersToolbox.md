@@ -215,3 +215,8 @@ e^2 %>% mean(na.rm=TRUE) %>% sqrt( )
 The left hand side of each pipe is passed as the first argument to the function on the right hand side. This is consistent with the way we
 read from left to right in English. When using pipes, all other arguments must be named, which also helps readability. When using pipes,
 it is also natural to use the right arrow assignment ```->``` rather than the left arrow.
+
+## Prediction intervals
+A prediction interval gives an interval within which we expect yt to lie with a specified probability. The value of prediction intervals is
+that they express the uncertainty in the forecasts. If we only produce point forecasts, there is no way of telling how accurate the
+forecasts are. However, if we also produce prediction intervals, then it is clear how much uncertainty is associated with each forecast.
