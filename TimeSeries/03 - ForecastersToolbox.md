@@ -205,3 +205,10 @@ origin" because the "origin" at which the forecast is based rolls foreward in ti
 Time series cross-validation is implemented with the ```tsCV( )``` function.
 
 A good way to choose the best forecasting model is to find the model with the smallest RMSE computed using time series cross-validation.
+#### Pipe operator
+Nesting functions within functions within functions can be messy and the code needs to be read from the inside out, which makes it difficult
+to understand what is being computed. Instead, use the pipe operator ```%>%``` as follow.
+```
+timeseries %>% tsCV(forecastfunction=rwl, drift=TRUE) -> e
+e^2 %>% mean(na.rm=TRUE) %>% sqrt( )
+```
