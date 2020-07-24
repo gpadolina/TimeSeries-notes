@@ -198,3 +198,10 @@ accuracy(timeseries2c, timeseries3)
 A more sophisticated version of training/test sets is time series cross-validation. In this procedure, there are a series of test sets,
 each consisting of a single observation. The corresponding training set consists only of observations that occurred *prior* to the 
 observation that forms the test set. Thus, no future observations can be used in constructing the forecast.
+
+The forecast accuracy is computed by averaging over the test sets. This procedure is sometimes known as "evaluation on a rolling forecasting
+origin" because the "origin" at which the forecast is based rolls foreward in time.
+
+Time series cross-validation is implemented with the ```tsCV( )``` function.
+
+A good way to choose the best forecasting model is to find the model with the smallest RMSE computed using time series cross-validation.
