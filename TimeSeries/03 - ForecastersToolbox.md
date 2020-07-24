@@ -233,3 +233,12 @@ the more uncertainty is associated with the forecast, and thus the wider the pre
 * Naïve forecas
 * Seasonal naïve forecast
 * Drift forecast
+#### Prediction intervals from bootstrapped residuals
+When a normal distribution for the forecast errors is an unreasonable assumption, one alternative is to use bootstrapping, which only assumes that
+the forecast errors are uncorrelated.
+...
+Doing this repeatedly, we obtain many possible futures. Then we can compute prediction intervals by calculating percentiles for each forecast
+horizon. The result is called a *bootstrapped* prediction interval. The name "bootstrap" is a reference to pulling ourselves up by our bootstraps,
+because the process allows us to measure future uncertainty by only using the historical data.
+
+To generate such intervals, we can simply add the ```bootstrap``` argument to our forecasting functions.
