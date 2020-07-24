@@ -242,3 +242,9 @@ horizon. The result is called a *bootstrapped* prediction interval. The name "bo
 because the process allows us to measure future uncertainty by only using the historical data.
 
 To generate such intervals, we can simply add the ```bootstrap``` argument to our forecasting functions.
+#### Prediction intervals with transformations
+If a transformation has been used, then the prediction interval should be computed on the transformed scale, and the end points back-transformed
+to give a prediction interval on the original scale.
+
+The back-transformation of prediction intervals is done automatically using the functions in the *forecast* package in R, provided you have used
+the ```lambda``` argument when computing the forecasts.
