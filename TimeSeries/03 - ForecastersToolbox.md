@@ -270,4 +270,8 @@ The following list shows all the functions that produce ```forecast``` objects.
 * ```thetaf( )```
 * ```forecast( )```
 #### ```forecast( )``` function
-The ```forecast( )``` function
+The ```forecast( )``` function works with many different types of inputs. It generally takes a time series or time series model as its main argument,
+and produces forecasts appropriately. It always returns objects of class ```forecast```.
+```
+forecast(timeseries, h=4)
+```
