@@ -248,3 +248,26 @@ to give a prediction interval on the original scale.
 
 The back-transformation of prediction intervals is done automatically using the functions in the *forecast* package in R, provided you have used
 the ```lambda``` argument when computing the forecasts.
+## The forecast package in R
+
+#### Functions that output a forecast object
+Many functions, including ```meanf( )```, ```naive( )```, ```snaive( )```, and ```rwf( )``` produce output in the form of a ```forecast``` object.
+This allows other functions such as ```autoplot( )``` to work consistently across a range of forecasting models.
+
+Objects of a class ```forecast``` contain information about the forecasting method, the data used, the point forecasts obtained, prediction intervals,
+residuals and fitted values. There are several functions designed to work with these objects including ```autoplot( )```, ```summary( )```, and
+```print( )```.
+
+The following list shows all the functions that produce ```forecast``` objects.
+* ```meanf( )```
+* ```naive( )```, ```snaive( )```
+* ```rwf( )```
+* ```croston( )```
+* ```stlf( )```
+* ```ses( )```
+* ```holt( )```, ```hw( )```
+* ```splinef( )```
+* ```thetaf( )```
+* ```forecast( )```
+#### ```forecast( )``` function
+The ```forecast( )``` function
