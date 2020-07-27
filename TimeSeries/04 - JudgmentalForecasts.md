@@ -75,3 +75,7 @@ evidence that a group meeting setting promotes enthusiam and influences individu
 
 A by-product of anonymity is that the experts do not need to meet as a group in a physical location. An important advantage of this is that it increases the
 likelihood of gathering experts with diverse skills and expertise from varying locations.
+#### Setting the forecasting task in a Delphi
+In a Delphi setting, it may be useful to conduct a preliminary round of information gathering from the experts before setting the forecasting tasks.
+Alternatively, as experts submite their initial forecasts and justifications, valuable information which is not shared between all experts can be identified
+by the facilitator when compiling the feedback.
