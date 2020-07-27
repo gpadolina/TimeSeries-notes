@@ -46,3 +46,7 @@ systematic approach.
 #### Document and justify
 Formalising and documenting the decision rules and assumptions implemented in the systematic approach can promote consistency, as the same rules can be
 implemented repeatedly.
+#### Segregate forecasters and users
+Forecast accuracy may be impeded if the forecasting task is carried out by users of the forecasts, such as those responsible for implementing plans of
+action about which the forecast is concerned. Forecasters and users should be clearly segregated. Explaining and clarrifying the process and justifying
+the basic assumptions that led to the forecasts will provide some assurance to users.
