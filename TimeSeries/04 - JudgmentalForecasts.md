@@ -34,3 +34,7 @@ and thereby create a systematic bias.
 ## Key principles
 Using a systematic and well structured approach in judgmental forecasting helps to reduce the adverse effects of the limitations of judgmental forecasting,
 some of which we listed in the previous section.
+#### Set the forecasting task clearly and concisely
+It is important that everyone be clear about what the task is. All definitions should be clear and comprehensive, avoiding ambiguous and vague expressions.
+In the Delphi method that follows, it may sometimes be useful to conduct a preliminary round of information gathering before seeting the forecasting
+task.
