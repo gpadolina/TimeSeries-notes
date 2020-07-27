@@ -9,4 +9,11 @@ banks include judgement when forecasting the current level of economic activity,
 quarterly basis. Research in this area has shown that the accuracy of judgmental forecasting improves when the forecaster has (i) important domain
 knowledge, and (ii) more timely, up-to-date information.
 
-It is important to recorgnize that judgmental forecasting is subjective and comes with limitations.
+It is important to recorgnize that judgmental forecasting is subjective and comes with limitations. However, implementing systematic and well-structured
+approaches can confine these limitations and markedly improve forecast accuracy.
+
+There are general setting in which judgmental forecasting is used: (i) there are no available data, so that statistical methods are not applicable and
+judgmental forecasting is the only feasible approach; (ii) data are available, statistical forecasts are generated, and these are then adjusted using
+judgement; and (iii) data are available and statistical and judgmental forecasts are generated independently and then combined. We should clarify that
+when data are available, applying statistical methods is preferable and should always be used as a starting point. Statistical forecasts are generally
+superior to generating forecasts using only judgement.
