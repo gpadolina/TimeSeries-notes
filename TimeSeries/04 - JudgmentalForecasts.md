@@ -43,3 +43,6 @@ Forecast accuracy and consistency can be improved by using a systematic approach
 information which are relevant to the forecasting task. For example, it is helpful to identify what information is important and how this information
 is to be weighted. It is worthwhile to devote significant effore and resources to put together decision rules that will lead to the best possible
 systematic approach.
+#### Document and justify
+Formalising and documenting the decision rules and assumptions implemented in the systematic approach can promote consistency, as the same rules can be
+implemented repeatedly.
