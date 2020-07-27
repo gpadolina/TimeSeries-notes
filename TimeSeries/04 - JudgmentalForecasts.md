@@ -79,3 +79,8 @@ likelihood of gathering experts with diverse skills and expertise from varying l
 In a Delphi setting, it may be useful to conduct a preliminary round of information gathering from the experts before setting the forecasting tasks.
 Alternatively, as experts submite their initial forecasts and justifications, valuable information which is not shared between all experts can be identified
 by the facilitator when compiling the feedback.
+#### Iteration
+The process of the experts submitting forecasts, receiving feedback, and reviewing their forecasts in light of the feedback, is repeated until a satisfactory
+level of consensus between the experts is reached. Satisfactory consensus does not mean complete convergence in the forecast value; it simply means that the
+variability of the responses has decreases to a satisfactory level. Usually two or three rounds are sufficient. Experts are more likely to drop out as the
+number of iterations increases, so too many rounds should be avoided.
