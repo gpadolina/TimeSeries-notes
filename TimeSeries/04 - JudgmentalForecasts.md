@@ -72,3 +72,6 @@ A key feature of the Delphi method is that the participating experts remain anon
 political and social pressures in their forecasts. Furthermore, all experts are given an equal say and all are held accountable for their forecasts. There
 have been suggestions that even something as simple as the seating arrangements in a group setting can influence the group dynamics. There is also ample
 evidence that a group meeting setting promotes enthusiam and influences individual judgement, leading to optimism and overconfidence.
+
+A by-product of anonymity is that the experts do not need to meet as a group in a physical location. An important advantage of this is that it increases the
+likelihood of gathering experts with diverse skills and expertise from varying locations.
