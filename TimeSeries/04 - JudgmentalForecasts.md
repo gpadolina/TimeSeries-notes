@@ -84,3 +84,6 @@ The process of the experts submitting forecasts, receiving feedback, and reviewi
 level of consensus between the experts is reached. Satisfactory consensus does not mean complete convergence in the forecast value; it simply means that the
 variability of the responses has decreases to a satisfactory level. Usually two or three rounds are sufficient. Experts are more likely to drop out as the
 number of iterations increases, so too many rounds should be avoided.
+#### Limitations and variations
+Applying the Delphi method can be time consuming. In a group meeting, final forecasts can possibly be reached in hours or even minutes - something which is almost
+impossible to do in a Delphi setting. If it is taking a long time to reach a consensus in a Delphi setting, the panel may lose interest and cohesiveness.
