@@ -58,3 +58,9 @@ The Delphi method was invented by Olaf Helmer and Norman Dalkey of the Rand Corp
 problem. The method relies on the key assumption that forecasts from a group are generally more accurate than those from individuals. The aim of the
 Delphi method is to construct consensus forecasts from a group of experts in a structured iterative manner. A facilitator is appointed in order to
 implement and manage the process. The Delphi method generally involves the following stages:
+1. A panel of experts is assembled.
+2. Forecasting tasks/challenges are set and distributed to the experts.
+3. Experts return initial forecasts and justificatons. These are compiled and summarized in order to provide feedback.
+4. Feedback is provided to the experts, who now review their forecasts in light of the feedback. This step may be iterated until a satisfactory level of
+consensus is reached.
+5. The final forecasts are constructed by aggregating the experts' forecasts.
