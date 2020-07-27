@@ -50,3 +50,6 @@ implemented repeatedly.
 Forecast accuracy may be impeded if the forecasting task is carried out by users of the forecasts, such as those responsible for implementing plans of
 action about which the forecast is concerned. Forecasters and users should be clearly segregated. Explaining and clarrifying the process and justifying
 the basic assumptions that led to the forecasts will provide some assurance to users.
+
+In contrast, if forecasts are used as targets, they may be set low so that they can be exceeded more easily. Again, setting targets is different from
+producing forecasts, and the two should not be confused.
