@@ -30,3 +30,7 @@ later, this optimism can be accentuated in a group meeting setting. "Beware of t
 Another undesirable property which is commonly seen in judgmental forecasting is the effect of anchoring. In this case, the subsequent forecasts tend
 to converge or be close to an initial familiar reference point. Anchoring may lead to conservatism and undervaluing new and more current information,
 and thereby create a systematic bias.
+
+## Key principles
+Using a systematic and well structured approach in judgmental forecasting helps to reduce the adverse effects of the limitations of judgmental forecasting,
+some of which we listed in the previous section.
