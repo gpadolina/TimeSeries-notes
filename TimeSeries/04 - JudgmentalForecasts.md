@@ -87,3 +87,8 @@ number of iterations increases, so too many rounds should be avoided.
 #### Limitations and variations
 Applying the Delphi method can be time consuming. In a group meeting, final forecasts can possibly be reached in hours or even minutes - something which is almost
 impossible to do in a Delphi setting. If it is taking a long time to reach a consensus in a Delphi setting, the panel may lose interest and cohesiveness.
+#### The facilitator
+The role of the facilitator is of the utmost importance. The facilitator is largely responsible for the design and administration of the Delphi process. The
+facilitator is also responsible for providing feedback to the experts and generating the final forecasts. In this role, the facilitator needs to be experienced
+enough to recognize areas that may need more attention, and to direct the experts' attention to these. The efficiency and effectiveness of the facilitator can
+dramatically increases the probability of a successful Delphi method in a judgmental forecasting setting.
