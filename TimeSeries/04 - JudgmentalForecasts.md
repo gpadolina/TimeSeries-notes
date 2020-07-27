@@ -26,3 +26,7 @@ forecasts depend heavily on human cognition, and are vulnerable to its limitatio
 targets and forecasts are not segregated. Even in cases where targets and forecasts are well segregated, judgement may be plagued by optimism or wishful
 thinking. For example, it would be highly unlikely that a team working towards launching a new product would forecast its failure. As we will discuss
 later, this optimism can be accentuated in a group meeting setting. "Beware of the enthusiasm of your marketing and sales colleagues."
+
+Another undesirable property which is commonly seen in judgmental forecasting is the effect of anchoring. In this case, the subsequent forecasts tend
+to converge or be close to an initial familiar reference point. Anchoring may lead to conservatism and undervaluing new and more current information,
+and thereby create a systematic bias.
