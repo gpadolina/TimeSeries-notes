@@ -64,3 +64,11 @@ implement and manage the process. The Delphi method generally involves the follo
 4. Feedback is provided to the experts, who now review their forecasts in light of the feedback. This step may be iterated until a satisfactory level of
 consensus is reached.
 5. The final forecasts are constructed by aggregating the experts' forecasts.
+#### Experts and anonymity
+The first challenge of the facilitator is to identify a gorup of experts who can contribute to the forecasting task. The usual suggestion is somewhere
+between 5 and 20 experts with diverse expertise. Experts submit forecast and also provide detailed qualitative justifications for these.
+
+A key feature of the Delphi method is that the participating experts remain anonymous at all times. This means that the experts cannot be influenced by
+political and social pressures in their forecasts. Furthermore, all experts are given an equal say and all are held accountable for their forecasts. There
+have been suggestions that even something as simple as the seating arrangements in a group setting can influence the group dynamics. There is also ample
+evidence that a group meeting setting promotes enthusiam and influences individual judgement, leading to optimism and overconfidence.
