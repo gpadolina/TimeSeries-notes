@@ -53,3 +53,8 @@ the basic assumptions that led to the forecasts will provide some assurance to u
 
 In contrast, if forecasts are used as targets, they may be set low so that they can be exceeded more easily. Again, setting targets is different from
 producing forecasts, and the two should not be confused.
+#### The Delphi method
+The Delphi method was invented by Olaf Helmer and Norman Dalkey of the Rand Corporation in the 1950s for the purpose of addressing a specific military
+problem. The method relies on the key assumption that forecasts from a group are generally more accurate than those from individuals. The aim of the
+Delphi method is to construct consensus forecasts from a group of experts in a structured iterative manner. A facilitator is appointed in order to
+implement and manage the process. The Delphi method generally involves the following stages:
