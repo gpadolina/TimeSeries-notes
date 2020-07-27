@@ -38,3 +38,8 @@ some of which we listed in the previous section.
 It is important that everyone be clear about what the task is. All definitions should be clear and comprehensive, avoiding ambiguous and vague expressions.
 In the Delphi method that follows, it may sometimes be useful to conduct a preliminary round of information gathering before seeting the forecasting
 task.
+#### Implement a systematic approach
+Forecast accuracy and consistency can be improved by using a systematic approach to judgmental forecasting involving checklists of categories of
+information which are relevant to the forecasting task. For example, it is helpful to identify what information is important and how this information
+is to be weighted. It is worthwhile to devote significant effore and resources to put together decision rules that will lead to the best possible
+systematic approach.
