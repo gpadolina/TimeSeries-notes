@@ -150,3 +150,8 @@ varies substantially. The factors driving this variation include the timings of 
 the type of industry.
 
 Also, the correlation between intention and behavior is found to be stronger for variations on existing and familiar products than for completely new products.
+
+## Judgmental adjustments
+We consider the situation where historical data are available and are used to generate statistical forecasts. It is common for practitioners to then apply
+judgmental adjustments to these forecasts. These adjustments can potentially provide all of the advantages of judgmental forecasting which have been discussed
+earlier. Judgmental adjustments, like judgmental forecasts, come with biases and limitations, and we must implement methodical strategies in order to minimise them.
