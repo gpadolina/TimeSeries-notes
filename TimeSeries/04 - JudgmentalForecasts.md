@@ -144,4 +144,7 @@ process. That is, executives need to be held accountable in order to reduce the 
 Customer intentions can be used to forecast the demand for a new product or for a variation on an existing product. Survey design challenges, such as collecting
 a representative sample, applying a time and cost-effective method, and dealing with non-responses, need to be addressed.
 
-Furthermore, in this survey setting we must keep in mind the relationship between purchase intention and purchase behavior.
+Furthermore, in this survey setting we must keep in mind the relationship between purchase intention and purchase behavior. Customers do not always do what they
+say they will. Many studies have found a positive correlation between purchase intentions and purchase behavior; however, the strength of these correlations
+varies substantially. The factors driving this variation include the timings of data collection and product launch, the definition of "new" for the product, and
+the type of industry.
