@@ -131,3 +131,6 @@ intuition about customer purchasing intentions. They bring this valuable experie
 
 However, having salespeople generate forecasts violates the key principle of segregating forecasters and users, which can create biases in many directions. It is
 common for the performance of a salesperson to be evaluated against the sales forecasts or expectations set beforehand.
+
+Moreover, a successful salesperson is not necessarily a successful nor well-informed forecaster. A large proportion of salespeople will have no or limited formal
+training in forecaster.
