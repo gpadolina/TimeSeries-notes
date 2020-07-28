@@ -134,3 +134,6 @@ common for the performance of a salesperson to be evaluated against the sales fo
 
 Moreover, a successful salesperson is not necessarily a successful nor well-informed forecaster. A large proportion of salespeople will have no or limited formal
 training in forecaster.
+#### Executive opinion
+In contrasts to the sales force composite, this approach involves staff at the top of the managerial strucuture generating aggregate forecasts. Having executives from
+different functional areas of the company promotes great skill and knowledge diversity in the group.
