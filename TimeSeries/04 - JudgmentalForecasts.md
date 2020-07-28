@@ -116,3 +116,12 @@ scenario-based forecast may have a low probability of occurence.
 
 With scenario forecasting, decision makers often participate in the generation of scenarios. While this may lead to some biases, it can ease the communication of
 the scenario-based forecasts, and lead to a better understanding of the results.
+#### New product forecasting
+The definition of a new product can vary. It may be an entirely new product which has been launched, a variation of an existing product, new and improved, a
+changed in the pricing scheme of an existing product, or even an existing product entering a new market.
+
+Judgmental forecasting is usually the only available method for new product forecasting, as historical data are unavailable. 
+
+Other methods which are more specific to the situation are also available. We briefly describe three such methods which are commonly applied in practice. These
+methods are less structured than those already discussed, and are likely to lead to more biased forecasts as a result.
+#### Sales force composite
