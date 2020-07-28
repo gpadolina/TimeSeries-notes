@@ -92,3 +92,16 @@ The role of the facilitator is of the utmost importance. The facilitator is larg
 facilitator is also responsible for providing feedback to the experts and generating the final forecasts. In this role, the facilitator needs to be experienced
 enough to recognize areas that may need more attention, and to direct the experts' attention to these. The efficiency and effectiveness of the facilitator can
 dramatically increases the probability of a successful Delphi method in a judgmental forecasting setting.
+
+## Forecasting by analogy
+A useful judgmental approach which is often implemented in practice is forecasting by analogy. Obviously, forecasting by analogy comes with challenges. We should
+aspire to base forecasts on multiple analogies rather than a single analogy, which may create biases. However, these may be challenging to identify.
+#### A structured analogy
+Alternatively, a structured approach comprising a panel of experts can be implemented. The concept is similar to that of a Delphi; however, the forecasting task
+is completed by considering analogies.
+1. A panel of experts who are likely to have experience with analogous situations is assembled.
+2. Tasks/challenges are set and distributed to the experts.
+3. Experts identify and describe as many analogies as they can, and generate forecasts based on each analogy.
+4. Experts list similarities and differences of each analogy to the target situation, then rate the similarity of each analogy to the target situation on a scale.
+5. Forecasts are derived by the facilitator using a set rule. This can be a weighted average, where the weights can be guided by the ranking scores of each
+analogy by the experts.
