@@ -165,3 +165,6 @@ Statistical models are much better at taking account of data patterns, and judgm
 Judgmental adjustments are most effective when there is significant additional information at hand or strong evidence of the need for an adjustment. Hence,
 adjustments seem to be most accurate when they are large in size. Small adjustments, especially in the positive direction promoting the illusion of optimism,
 have been found to hinder accuracy and should be avoided.
+#### Apply a structured approach
+Using a structured and systematic approach will improve the accuracy of judgmental adjustments. Following the key principles is vital. In particular, having to
+document and justify adjustments will make it more challenging to override the statistical forecasts and will guard against the unnecessary adjusments.
