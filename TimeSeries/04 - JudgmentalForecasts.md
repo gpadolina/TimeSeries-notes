@@ -148,3 +148,5 @@ Furthermore, in this survey setting we must keep in mind the relationship betwee
 say they will. Many studies have found a positive correlation between purchase intentions and purchase behavior; however, the strength of these correlations
 varies substantially. The factors driving this variation include the timings of data collection and product launch, the definition of "new" for the product, and
 the type of industry.
+
+Also, the correlation between intention and behavior is found to be stronger for variations on existing and familiar products than for completely new products.
