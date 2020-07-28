@@ -105,3 +105,7 @@ is completed by considering analogies.
 4. Experts list similarities and differences of each analogy to the target situation, then rate the similarity of each analogy to the target situation on a scale.
 5. Forecasts are derived by the facilitator using a set rule. This can be a weighted average, where the weights can be guided by the ranking scores of each
 analogy by the experts.
+
+As with the Delphi approach, anonymity of the experts may be an advantage in not suppressing creativity, but could hinder collaboration. Green and Armstrong found
+no gain in collaboration between the experts in their results. A key finding was that experts with multiple analogies and who had direct experience with the
+analogies, generated the most accurate forecasts.
