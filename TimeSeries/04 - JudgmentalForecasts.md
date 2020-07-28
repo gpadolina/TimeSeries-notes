@@ -159,3 +159,9 @@ earlier. Judgmental adjustments, like judgmental forecasts, come with biases and
 Practitioners adjust much more often than they should, and many times for the wrong reasons. By adjusting statistical forecasts, users of forecast create a
 feeling of ownership and credibility. Users often do not understand or appreciate the mechanisms that generate the statistical forecasts as they will usually have
 no training in this area.
+
+Statistical models are much better at taking account of data patterns, and judgmental adjustments only hinder accuracy.
+
+Judgmental adjustments are most effective when there is significant additional information at hand or strong evidence of the need for an adjustment. Hence,
+adjustments seem to be most accurate when they are large in size. Small adjustments, especially in the positive direction promoting the illusion of optimism,
+have been found to hinder accuracy and should be avoided.
