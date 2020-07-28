@@ -109,3 +109,10 @@ analogy by the experts.
 As with the Delphi approach, anonymity of the experts may be an advantage in not suppressing creativity, but could hinder collaboration. Green and Armstrong found
 no gain in collaboration between the experts in their results. A key finding was that experts with multiple analogies and who had direct experience with the
 analogies, generated the most accurate forecasts.
+#### Scenario forecasting
+A fundamentally different approach to judgmental forecasting is scenario-based forecasting. The aim of this approach is to generate forecasts based on plausible
+scenarios. In contrast to the two previous approaches (Delphi and forecasting by analogy) where the resulting forecast is intended to be a likely outcome, each
+scenario-based forecast may have a low probability of occurence.
+
+With scenario forecasting, decision makers often participate in the generation of scenarios. While this may lead to some biases, it can ease the communication of
+the scenario-based forecasts, and lead to a better understanding of the results.
