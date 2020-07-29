@@ -36,3 +36,12 @@ It is also useful to have the errors being normally distributed with a constant 
 
 Another important assumption in the linear regression model is that each predictor x is not a random variable. With observational data including most data in
 business and economics, it is not possible to control the value of x, we simply observe it. Hence we make this assumption.
+## Least squares estimation
+The least squares principle provides a way of choosing the coefficients effectively by minimising the sum of the squared errors. That is, we choose the values
+of b0,b1,...,bk that minimise the equation.
+
+This is called *least squares* estimation because it gives the least value for the sum of squared errors. Finding the best estimates of the coefficients is
+often called "fitting" the model to the data, or sometimes "learning" or "training" the model.
+
+The ```tslm( )``` function fits a linear regression model to time series data. It is similar to the ```lm( )``` function which is widely used for linear models,
+but ```tslm( )``` provides additional facilities for handling time series.
