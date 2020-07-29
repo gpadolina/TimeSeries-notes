@@ -61,4 +61,5 @@ The R^2 value is used frequently, though often incorrectly, in forecasting. The 
 this can lead to overfitting. There are no set rules for what is a good R^2 value, and typical values of R^2 depend on the type of data used. Validating a model's
 forecasting performance on the test data is much better than measuring the R^2 value on the training data.
 #### Standard error of the regression
-Another measure of how well the model has fitted the data is the standard deviation of the residuals, which is often known as the residual standard error.
+Another measure of how well the model has fitted the data is the standard deviation of the residuals, which is often known as the residual standard error. The
+standard error will be used when generating prediction invervals.
