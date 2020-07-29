@@ -63,3 +63,6 @@ forecasting performance on the test data is much better than measuring the R^2 v
 #### Standard error of the regression
 Another measure of how well the model has fitted the data is the standard deviation of the residuals, which is often known as the residual standard error. The
 standard error will be used when generating prediction invervals.
+## Evaluating the regression model
+After selecting the regression variables and fitting a regression model, it is necessary to plot the residuals to check that the assumptions of the model have
+been satisfied. There are a series of plots that should be produced in order to check different aspects of the fitted model and the underlying assumptions.
