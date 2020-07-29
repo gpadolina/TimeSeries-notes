@@ -11,3 +11,8 @@ the average predicted change in y resulting from a one unit increase in x.
 
 We can think of each observation yt as consisting of the systematic or explained part of the model and the random error, et. The error term does not imply a
 mistake, but a deviation from the underlying straight line model. It captures naything that may affect yt other than xt.
+
+The equation is estimated in R using the ```tslm( )``` function:
+```
+tslm(Consumption ~ Income, data=uschange)
+```
