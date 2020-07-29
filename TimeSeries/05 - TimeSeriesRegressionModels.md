@@ -83,3 +83,6 @@ Using the ```checkresiduals( )``` function, we can obtain the useful residual di
 ```
 checkresiduals(fit.consMR)
 ````
+#### Residual plots against predictions
+We would expect the residuals to be randomly scattered without showing any systematic patterns. If these scatterplots show a pattern, then the relationship may
+be nonlinear and the model will need to be modified accordingly.
