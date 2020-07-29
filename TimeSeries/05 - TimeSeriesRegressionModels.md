@@ -75,3 +75,11 @@ Another useful test of autocorrelation in the residuals designed to take account
 specified order. A small p-value indicates there is significant autocorrelation remaining in the residuals.
 
 The Breusch-Godfrey test is similat to the Ljung-Box test, but it is specifically designed for use with regression models.
+#### Histogram of residuals
+It is always a good idea to check whether the residuals are normally distributed. This is not essential for forecasting, but it does make the calculation of
+prediction intervals much easier.
+
+Using the ```checkresiduals( )``` function, we can obtain the useful residual diagnostics.
+```
+checkresiduals(fit.consMR)
+````
