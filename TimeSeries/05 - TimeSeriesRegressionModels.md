@@ -45,3 +45,7 @@ often called "fitting" the model to the data, or sometimes "learning" or "traini
 
 The ```tslm( )``` function fits a linear regression model to time series data. It is similar to the ```lm( )``` function which is widely used for linear models,
 but ```tslm( )``` provides additional facilities for handling time series.
+#### Fitted values
+Predictions of y can be obtained by using the estimated coefficients in the regression equation and setting the error term to zero.
+
+Plugging  in the values of x1t,...,xkt for t=1,...,T returns predictions of yt within the training-sample, referred to as *fitted values*.
