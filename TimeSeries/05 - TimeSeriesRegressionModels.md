@@ -53,3 +53,10 @@ Plugging  in the values of x1t,...,xkt for t=1,...,T returns predictions of yt w
 A common way to summarize how well a linear regression model fits the data is via the cofficient of determination or R^2. This can be calculated as the square
 of the correlation between the observed y values and the prediction y values. It reflects the proportion of variation in the forecast variables that is
 accounted for or explained by the regression model.
+
+If the predictions are close to the actual values, we would expect R^2 to be close to 1. On the other hand, if the predictions are unrelated to the actual values,
+then R^2=0 assuming there is an intercept. In all cases, R^2 lies between 0 and 1.
+
+The R^2 value is used frequently, though often incorrectly, in forecasting. The value of R^2 will never decrease when adding an extra predictor to the model and
+this can lead to overfitting. There are no set rules for what is a good R^2 value, and typical values of R^2 depend on the type of data used. Validating a model's
+forecasting performance on the test data is much better than measuring the R^2 value on the training data.
