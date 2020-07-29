@@ -49,3 +49,7 @@ but ```tslm( )``` provides additional facilities for handling time series.
 Predictions of y can be obtained by using the estimated coefficients in the regression equation and setting the error term to zero.
 
 Plugging  in the values of x1t,...,xkt for t=1,...,T returns predictions of yt within the training-sample, referred to as *fitted values*.
+#### Goodness-of-fit
+A common way to summarize how well a linear regression model fits the data is via the cofficient of determination or R^2. This can be calculated as the square
+of the correlation between the observed y values and the prediction y values. It reflects the proportion of variation in the forecast variables that is
+accounted for or explained by the regression model.
