@@ -66,3 +66,12 @@ standard error will be used when generating prediction invervals.
 ## Evaluating the regression model
 After selecting the regression variables and fitting a regression model, it is necessary to plot the residuals to check that the assumptions of the model have
 been satisfied. There are a series of plots that should be produced in order to check different aspects of the fitted model and the underlying assumptions.
+#### ACF plot of residuals
+With time series data, it is highly likely that the value of a variable observed in the current time period will be similar to its value in the previous period,
+or even the period before that, and so on. Therefore when fitting a regression model to time series data, it is common to find autocorrelation in the residuals.
+
+Another useful test of autocorrelation in the residuals designed to take account for the regression model is the *Breusch-Godfrey* test, also referred to as the LM
+(Lagrange Multiplier) test for serial correlation. It is used to test the joint hypothesis that there is no autocorrelation in the residuals up to a certain
+specified order. A small p-value indicates there is significant autocorrelation remaining in the residuals.
+
+The Breusch-Godfrey test is similat to the Ljung-Box test, but it is specifically designed for use with regression models.
