@@ -31,3 +31,8 @@ Second, we make the following assumptions about the errors(e1,...,et)
 * They have mean zero; otherwise the forecasts will be systematically biased.
 * They are not autocorrelated; otherwise the forecasts will be inefficient, as there is more information in the data that can be exploited.
 * They are unrelated to the predictor variables; otherwise there would be more information that should be included in the systematic part of the model.
+
+It is also useful to have the errors being normally distributed with a constant variance in order to easily produce prediction intervals.
+
+Another important assumption in the linear regression model is that each predictor x is not a random variable. With observational data including most data in
+business and economics, it is not possible to control the value of x, we simply observe it. Hence we make this assumption.
