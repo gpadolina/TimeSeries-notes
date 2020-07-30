@@ -105,3 +105,11 @@ identified as a likely outlier, it is important to study it and analyse the poss
 More often that not, time series data are "non-stationary"; that is, the value of time series do not fluctuate around a constant mean or with a constant variance.
 
 Regression non-stationary time series can lead to spurious regressions. High R^2 and high residual correlation can be signs of spurious regression.
+
+## Some useful predictors
+There are several predictors that occur frequently when using regression for time series data.
+#### Trend
+It is common for time series data to be trending. A trend variable can be specified in the ```tslm( )``` function using the ```trend``` predictor.
+#### Dummy variables
+What about when a predictor is a categorical variable taking only two values such as yes and no? Such variable might arise when forecasting daily sales and you want
+to take account of whether the day is a *public holiday* or not. So the predictor takes value "yes" on a public holiday and "no" otherwise.
