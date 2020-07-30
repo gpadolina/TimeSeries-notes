@@ -134,3 +134,14 @@ for quarterly data, use three dummy variables; for monthly data, use 11 dummy va
 
 The interpretation of each of the coefficients associated with the dummy variables is that it is a measure of the effect of that category relative to the omitted
 category. The ```tslm( )``` function will automatically handle this situation if you specify the predictor ```season```.
+#### Intervention variables
+It if often necessary to model interventions that may have affected the variable to be forecast.
+
+When the effect lasts only for one period, we use a "spike" variable. This is a dummy variable that takes value one in the period of the intervention and zero
+elsewhere. A spike variable is equivalent to a dummy variable for handling an outlier.
+
+Other interventions have an immediate and permanent effect. If an intervention causes a level shift (the value of the series changes suddenly and permanently from
+the time of intervention), then we use a "step" variable. A step variable takes value zero before the intervention and one from the time of intervention onward.
+
+Another form of permanent effect is a change of slope. Here the intervention is handled using a piecewise linear trend; a trend that bends at the time of
+intervention and hence is nonliear.
