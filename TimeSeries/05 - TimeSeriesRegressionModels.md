@@ -93,3 +93,8 @@ required.
 #### Outliers and influential observations
 Observations that take extreme values compared to the majority of the data are called *outliers*. Observations that have a large influence on the estimated
 coefficients of a regression model are called *influential observations.* Usually, influential observations are also outliers that are extreme in the x direction.
+
+A scatter plot of y against each x is always a useful starting point in regression analysis, and often helps to identify unusual observations.
+
+One source of outliers is incorrect data entry. Simple descriptive statistics of your data can identify minima and maxima that are not sensible. If such observation
+is identified, and it has been recorded incorrectly, it should be corrected or removed from the sample immediately.
