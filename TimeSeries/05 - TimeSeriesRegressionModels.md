@@ -145,3 +145,8 @@ the time of intervention), then we use a "step" variable. A step variable takes 
 
 Another form of permanent effect is a change of slope. Here the intervention is handled using a piecewise linear trend; a trend that bends at the time of
 intervention and hence is nonliear.
+#### Trading days
+The number of tradings in a month can vary considerably and can have a substantial effect on sales data. To allow for this, the number of trading days in each month
+can be included as a predictor.
+
+For monthly or quarterly data, the ```bizdays( )``` function will compute the number of trading days in each period.
