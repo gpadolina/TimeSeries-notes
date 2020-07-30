@@ -150,3 +150,6 @@ The number of tradings in a month can vary considerably and can have a substanti
 can be included as a predictor.
 
 For monthly or quarterly data, the ```bizdays( )``` function will compute the number of trading days in each period.
+#### Distributed lags
+It is often useful to included advertising expenditure as a predictor. However, since the effect of advertising can last beyond the actual campaign, we need to
+include lagged values of advertising expenditure.
