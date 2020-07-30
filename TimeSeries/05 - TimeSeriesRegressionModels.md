@@ -167,3 +167,10 @@ With Fourier terms, we often need fewer predictors than with dummy variables, es
 m=52. For short seasonal periods, there is little advantage using Fourier terms over seasonal dummy variables.
 
 These Fourier terms are produced using the ```fourier( )``` function.
+
+THe first argument to ```fourier( )``` allows it to identify the seasonal period m and the length of the predictors to return. The second argument ```K``` specifies
+how many pairs of sin and cos terms to include. The maximum allowed is K=m/2 where m is the seasonal period. Because we have used the maximum here, the results are
+identical to those obtained when using seasonal dummy variables.
+
+If only the first two Fourier terms are used(x1t, x2t), the seasonal pattern will follow a simple sine wave. A regression model containing Fourier terms is often
+called a *harmonic regression* because the successive Fourier terms represent harmonics of the first two Fourier terms.
