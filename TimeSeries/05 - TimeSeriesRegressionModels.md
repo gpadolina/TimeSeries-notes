@@ -101,3 +101,7 @@ is identified, and it has been recorded incorrectly, it should be corrected or r
 
 Outliers also occur when some observations are simply different. In this case it may not be wise for these observations to be removed. If an observation has been
 identified as a likely outlier, it is important to study it and analyse the possible reasons behind it.
+#### Spurious regression
+More often that not, time series data are "non-stationary"; that is, the value of time series do not fluctuate around a constant mean or with a constant variance.
+
+Regression non-stationary time series can lead to spurious regressions. High R^2 and high residual correlation can be signs of spurious regression.
