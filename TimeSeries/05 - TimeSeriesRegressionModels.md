@@ -158,3 +158,12 @@ Easter differs from most holidays because it is not held on the same day each ye
 used with value one where the holiday falls in the particular time period and zero otherwise.
 
 The ```easter( )``` function will compute the dummy variable for you.
+#### Fourier series
+An alternative to using seasonal dummy variables, especially for long seasonal periods, is to use Fourier terms. Jean-Baptiste Fourier was a French mathematician,
+born in the 1700s, who showed that a series of sine and cosine terms of the right frequencies can approximate any periodic function. We can use them for seasonal
+pattern.
+
+With Fourier terms, we often need fewer predictors than with dummy variables, especially when m is large. This makes them useful for weekly data, for example, where
+m=52. For short seasonal periods, there is little advantage using Fourier terms over seasonal dummy variables.
+
+These Fourier terms are produced using the ```fourier( )``` function.
