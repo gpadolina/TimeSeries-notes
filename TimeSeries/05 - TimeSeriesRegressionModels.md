@@ -113,3 +113,12 @@ It is common for time series data to be trending. A trend variable can be specif
 #### Dummy variables
 What about when a predictor is a categorical variable taking only two values such as yes and no? Such variable might arise when forecasting daily sales and you want
 to take account of whether the day is a *public holiday* or not. So the predictor takes value "yes" on a public holiday and "no" otherwise.
+
+This situation can still be handled within the framework of multiple regression models by creating a "dummy variable" which takes value of 1 corresponding to "yes"
+and 0 corresponding to "no". A dummy variables is also known as an "indicator variable".
+
+A dummy variable can also be used to account for an *outlier* in the data. Rather than omit the outlier, a dummy variable removes its effect. In this case, the dummy
+variable takes value 1 for that observation and 0 everywhere else.
+
+If there are more than two categories, then the variable can be coded using several dummy variables. ```tslm( )``` will automatically handle this case if you specify
+a factor variable as predictor.
