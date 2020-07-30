@@ -90,3 +90,6 @@ be nonlinear and the model will need to be modified accordingly.
 A plot of the residuals against the fitted values should also show no pattern. If a pattern is observed, there may be "heteroscedasticity" in the errors which means
 that the variance of the residuals may not be constant. If this problem occurs, a trasnformation of the forecast variable such as a logarithm or square root may be
 required.
+#### Outliers and influential observations
+Observations that take extreme values compared to the majority of the data are called *outliers*. Observations that have a large influence on the estimated
+coefficients of a regression model are called *influential observations.* Usually, influential observations are also outliers that are extreme in the x direction.
