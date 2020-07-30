@@ -122,3 +122,15 @@ variable takes value 1 for that observation and 0 everywhere else.
 
 If there are more than two categories, then the variable can be coded using several dummy variables. ```tslm( )``` will automatically handle this case if you specify
 a factor variable as predictor.
+#### Seasonal dummy variables
+Suppose that we are forecasting daily data and we want to account for the day of the week as a predictor.
+
+Notice that only six dummy variables are needed to code seven categories. That is because the seventh category is captured by the intercept and is specified when
+the dummy variables are all set to zero.
+
+Many beginners will try to add a seventh dummy variable for the seventh category. this is known as the "dummy variable trap", because it will cause the regression to
+fail. There will be one too many parameters to estimate when an intercept is also included. The general rule is to use one fewer dummy variables than categories. So
+for quarterly data, use three dummy variables; for monthly data, use 11 dummy variable; and for daily data, use six dummy variables and so on.
+
+The interpretation of each of the coefficients associated with the dummy variables is that it is a measure of the effect of that category relative to the omitted
+category. The ```tslm( )``` function will automatically handle this situation if you specify the predictor ```season```.
