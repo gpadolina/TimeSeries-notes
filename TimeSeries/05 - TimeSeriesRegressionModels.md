@@ -86,3 +86,7 @@ checkresiduals(fit.consMR)
 #### Residual plots against predictions
 We would expect the residuals to be randomly scattered without showing any systematic patterns. If these scatterplots show a pattern, then the relationship may
 be nonlinear and the model will need to be modified accordingly.
+#### Residual plots against fitted values
+A plot of the residuals against the fitted values should also show no pattern. If a pattern is observed, there may be "heteroscedasticity" in the errors which means
+that the variance of the residuals may not be constant. If this problem occurs, a trasnformation of the forecast variable such as a logarithm or square root may be
+required.
