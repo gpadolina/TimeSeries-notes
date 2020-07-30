@@ -98,3 +98,6 @@ A scatter plot of y against each x is always a useful starting point in regressi
 
 One source of outliers is incorrect data entry. Simple descriptive statistics of your data can identify minima and maxima that are not sensible. If such observation
 is identified, and it has been recorded incorrectly, it should be corrected or removed from the sample immediately.
+
+Outliers also occur when some observations are simply different. In this case it may not be wise for these observations to be removed. If an observation has been
+identified as a likely outlier, it is important to study it and analyse the possible reasons behind it.
