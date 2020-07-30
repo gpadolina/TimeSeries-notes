@@ -153,3 +153,8 @@ For monthly or quarterly data, the ```bizdays( )``` function will compute the nu
 #### Distributed lags
 It is often useful to included advertising expenditure as a predictor. However, since the effect of advertising can last beyond the actual campaign, we need to
 include lagged values of advertising expenditure.
+#### Easter
+Easter differs from most holidays because it is not held on the same day each year and its effect can last for several days. In this case, a dummy variable can be
+used with value one where the holiday falls in the particular time period and zero otherwise.
+
+The ```easter( )``` function will compute the dummy variable for you.
