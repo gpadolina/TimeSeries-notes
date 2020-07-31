@@ -216,3 +216,10 @@ be minimized.
 A related measure is Schwarz's Bayesian Information Criterion, usually abbreviated as BIC. As with the AIC, minimizing the BIC is intended to give the best model.
 The model chosen by the BIC is either the same as that chosen by the AIC or one with fewer terms. This is because the BIC penalizes the number of parameters more
 heavily than the AIC.
+#### Which measure should you use?
+While R-bar-squared (R^2) is widely used and has been around longer than the other measures, its tendency to select too many predictor variables  makes it less
+suitable for forecasting. Many statisticians like to use the BIC because it has the feature that if there is a true underlying model, the BIC will select that
+model given enough data. However, in reality, a true underlying model and even if there was a true underlying model, selecting that model will not necessarily
+give the best forecasts.
+
+Consequently, it's recommended that one of the AICc, AIC, or CV statistics be used, each of which has forecasting as their objective.
