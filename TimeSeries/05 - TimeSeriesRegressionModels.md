@@ -212,3 +212,7 @@ minimizing the CV value.
 #### Corrected Akaike's Information Criterion
 For small values of T, the AIC tends to select too many predictors and so a bias-corrected version of the AIC has been developed. As iwth the AIC, the AICc should
 be minimized.
+#### schwarz's Bayesian Information Criterion
+A related measure is Schwarz's Bayesian Information Criterion, usually abbreviated as BIC. As with the AIC, minimizing the BIC is intended to give the best model.
+The model chosen by the BIC is either the same as that chosen by the AIC or one with fewer terms. This is because the BIC penalizes the number of parameters more
+heavily than the AIC.
