@@ -240,3 +240,6 @@ For the backwards procedure we should also consider adding a predictor with each
 step. These are referred to as *hybrid* procedures.
 
 It is important to realize that any stepwise approach is not guaranteed to lead to the best possible model, but it almost always leads to a good model.
+#### Beware of inference after selecting predictors
+The procedures recommended for selecting predictors are helpful when the model is used for forecasting; they are not helpful if you wish to study the effect of any
+predictor on the forecast variable.
