@@ -174,3 +174,9 @@ identical to those obtained when using seasonal dummy variables.
 
 If only the first two Fourier terms are used(x1t, x2t), the seasonal pattern will follow a simple sine wave. A regression model containing Fourier terms is often
 called a *harmonic regression* because the successive Fourier terms represent harmonics of the first two Fourier terms.
+## Selecting predictors
+When there are many possible predictors, we need some strategy for selecting the best predictors to use in a regression model.
+
+A common approach that is not recommended is to plot the forecast variable against a particular predictor and if there is no noticeable relationship, drop that
+predictor from the model. This is invalid because it is not always possible to see the relationship from a scatterplot, especially when the effects of other predictors
+have not been accounted.
