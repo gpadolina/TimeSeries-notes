@@ -209,3 +209,6 @@ the one with the smallest value of CV.
 A closely-related method is Akaike's Information Criterion. The idea here is to penalize the fit of the model (SSE) with the number of parameters that need to be
 estimated. The model with the minimum value of the AIC is often the best model for forecasting. The large values of T, minimizing the AIC is equivalent to
 minimizing the CV value.
+#### Corrected Akaike's Information Criterion
+For small values of T, the AIC tends to select too many predictors and so a bias-corrected version of the AIC has been developed. As iwth the AIC, the AICc should
+be minimized.
