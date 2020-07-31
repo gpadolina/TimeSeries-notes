@@ -205,3 +205,7 @@ value of R-bar-squared. Maximizing the R-bar-squared is equivalent to minimizing
 Time series cross-validation was introduced as a general tool for determining the predictive ability of a model. For regression models, it is also possible to use
 classical leave-one-out cross-validation to selection predictors. This is faster and makes more efficient use of the data. Under this criterion, the best model is
 the one with the smallest value of CV.
+#### Akaike's Information Criterion
+A closely-related method is Akaike's Information Criterion. The idea here is to penalize the fit of the model (SSE) with the number of parameters that need to be
+estimated. The model with the minimum value of the AIC is often the best model for forecasting. The large values of T, minimizing the AIC is equivalent to
+minimizing the CV value.
