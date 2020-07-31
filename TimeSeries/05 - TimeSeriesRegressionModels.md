@@ -226,3 +226,17 @@ Consequently, it's recommended that one of the AICc, AIC, or CV statistics be us
 #### Best subset regression
 Where possible, all potential regression models should be fitted and the best model should be selected based on one of the measures discussed. This is known as
 *best subsets* regression or *all possible subsets* regression.
+#### Stepwise regression
+If there a large number of predictors, it is not possible to fit all possible models. An approach that works quite well is *backwards stepwise regression*:
+* Start with the model containing all potential predictors.
+* Remove one predictor at a time. Keep the model if it improves the measure of predictive accuracy.
+* Iterate until no further improvement.
+
+If the number of potential predictors is too large, then the backwards stepwise regression will not work and *forward stepwise regression* can be used instead. This
+procedure starts with a model that includes only the intercept. Predictors are added one at a time and the one that most improves the measure of predictive accuracy
+is retained in the model. The procedure is repeated until no further improvement can be achieved.
+
+For the backwards procedure we should also consider adding a predictor with each step and for the forward procesure we should also consider dropping a predictor each
+step. These are referred to as *hybrid* procedures.
+
+It is important to realize that any stepwise approach is not guaranteed to lead to the best possible model, but it almost always leads to a good model.
