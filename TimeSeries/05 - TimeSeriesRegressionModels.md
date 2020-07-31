@@ -180,3 +180,7 @@ When there are many possible predictors, we need some strategy for selecting the
 A common approach that is not recommended is to plot the forecast variable against a particular predictor and if there is no noticeable relationship, drop that
 predictor from the model. This is invalid because it is not always possible to see the relationship from a scatterplot, especially when the effects of other predictors
 have not been accounted.
+
+Another common approach which is also invalid is to do a multiple linear regression on all of the predictor and disregard all variables whose p-values are greater
+than 0.05. To start with, statistical significance does not always indicate predictive value. Even if forecasting is not the goal, this is not a good strategy because
+p-values can be misleading when two or more predictors are correlated with each other.
