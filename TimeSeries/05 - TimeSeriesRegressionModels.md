@@ -223,3 +223,6 @@ model given enough data. However, in reality, a true underlying model and even i
 give the best forecasts.
 
 Consequently, it's recommended that one of the AICc, AIC, or CV statistics be used, each of which has forecasting as their objective.
+#### Best subset regression
+Where possible, all potential regression models should be fitted and the best model should be selected based on one of the measures discussed. This is known as
+*best subsets* regression or *all possible subsets* regression.
