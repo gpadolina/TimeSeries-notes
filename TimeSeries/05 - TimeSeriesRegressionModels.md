@@ -201,3 +201,7 @@ choose the model with the most variables and so is not a valid way of selecting 
 
 An altervative which is designed to overcome these problems is the adjusted R^2 or R-bar-squared. Using this measure, the best model will be the one with the largest
 value of R-bar-squared. Maximizing the R-bar-squared is equivalent to minimizing the standard error.
+#### Cross-validation
+Time series cross-validation was introduced as a general tool for determining the predictive ability of a model. For regression models, it is also possible to use
+classical leave-one-out cross-validation to selection predictors. This is faster and makes more efficient use of the data. Under this criterion, the best model is
+the one with the smallest value of CV.
