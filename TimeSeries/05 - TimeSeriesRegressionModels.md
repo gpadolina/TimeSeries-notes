@@ -189,3 +189,15 @@ Instead, we will use a measure of predictive accuracy. They can be calculated us
 
 We compare these values against the corresponding values from other models. For CV, AIC, AICc, and BIC measures, we want to find the model with the lowest value; for
 Adjusted R^2, we seek the model with the highest value.
+#### Adjusted R^2
+Computer output for a regression will always give the R^2 value. However, it is not a good measure of the predictive ability of a model. It measures how well the model
+fits the historical data, but not how well the model will forecast future data.
+
+In addition, R^2 does not allow for "degrees of freedom". Adding any variable tends to increase the value of R^2, even if that variable is irrelevant. For these reasons,
+forecasters should not use R^2 to determine whether a model will give good predictors, as it will lead to overfitting.
+
+An equivalent idea is to select the model which gives the minimum sum of squared errors (SSE). Minimizing the SSE is equivalent to maximizing R^2 and will always
+choose the model with the most variables and so is not a valid way of selecting predictors.
+
+An altervative which is designed to overcome these problems is the adjusted R^2 or R-bar-squared. Using this measure, the best model will be the one with the largest
+value of R-bar-squared. Maximizing the R-bar-squared is equivalent to minimizing the standard error.
