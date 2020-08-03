@@ -291,3 +291,6 @@ nonlinear trend constructed of linear pieces.
 It is important not to confuse correlation with causation, or causation with forecasting. A variable x may be useful for forecasting a variable y, but that does not
 mean x is causing y. It is possible that x is causing y, but it may be that y is causing x, or that the relationship between them is more complicated than simple
 causality.
+
+It is important to understand that correlations are useful for forecasting, even where thse is no causal relationship between the two variables, or when the
+causality runs in the opposite direction to the model, or when there is confounding.
