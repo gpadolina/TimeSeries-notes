@@ -307,3 +307,10 @@ A closely related issue is multicollinearity, which occurs when similar informat
 
 It can occur when two predictors are highly correlated with each other. Multicollinearity can also occur when a linear combination of predictors is highly correlated
 with another linear combination of predictors.
+
+In the case of perfect correlation, it is not possible to estimate the regressionmodel. When multicollinearity is present, the uncertainty associated with individual
+regression coefficients will be large. This is because they are difficult to estimate.
+
+Note that if you are using good statistical software, if you are not interested in the specific contributions of each predictor, and if the future values of your 
+predictor variables are within their historical ranges, there is nothing to worry about — multicollinearity is not a problem except when there is 
+perfect correlation.
