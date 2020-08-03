@@ -293,4 +293,8 @@ mean x is causing y. It is possible that x is causing y, but it may be that y is
 causality.
 
 It is important to understand that correlations are useful for forecasting, even where thse is no causal relationship between the two variables, or when the
-causality runs in the opposite direction to the model, or when there is confounding.
+causality runs in the opposite direction to the model, or when there is confounding. However, often a better model is possible if a causal mechanism can be determined.
+#### Confounded predictors
+It will not be possible to separate the effects of these two predictors because they are correlated. We say that two variables are confounded when their effects on 
+the forecast variable cannot be separated. Any pair of correlated predictors will have some level of confounding, but we would not normally describe them as confounded 
+unless there was a relatively high level of correlation between them.
