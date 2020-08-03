@@ -275,4 +275,7 @@ A log-log functional form is specified as ```log y = b0 + b1 log x + e```
 In this model, the slope b1 can be interpreted as an elasticity: b1 is the average percentage change in y resulting from a 1% increases in x. Other useful forms can
 also be verified. The *log-linear* form is specified by only transforming the forecast variable and the *linear-log* form is obtained by transforming the predictor.
 
-Recall that in order to perform a logarithmic transformation to a variable, all of its observed values must be greater than zero.
+Recall that in order to perform a logarithmic transformation to a variable, all of its observed values must be greater than zero. In the case that variable x contains
+zeros, we use the transformation log(x + 1); i.e., we add one to the value of the variable and then take logarithms.
+
+One of the simplest specifications is to make f *piecewise linear*. That is, we introduce points where the slope of f can change. These points are called *knots*.
