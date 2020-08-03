@@ -279,3 +279,4 @@ Recall that in order to perform a logarithmic transformation to a variable, all 
 zeros, we use the transformation log(x + 1); i.e., we add one to the value of the variable and then take logarithms.
 
 One of the simplest specifications is to make f *piecewise linear*. That is, we introduce points where the slope of f can change. These points are called *knots*.
+Piecewise linear relationships constructed in this way are a special case of *regression splines*.
