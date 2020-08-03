@@ -302,3 +302,8 @@ unless there was a relatively high level of correlation between them.
 Confounding is not really a problem for forecasting, as we can still compute forecasts without needing to separate out the effects of the predictors. However, it 
 becomes a problem with scenario forecasting as the scenarios should take account of the relationships between predictors. It is also a problem if some historical 
 analysis of the contributions of various predictors is required.
+#### Multicollinearity and forecasting
+A closely related issue is multicollinearity, which occurs when similar information is provided by two or more of the predictor variables in a multiple regression.
+
+It can occur when two predictors are highly correlated with each other. Multicollinearity can also occur when a linear combination of predictors is highly correlated
+with another linear combination of predictors.
