@@ -258,3 +258,7 @@ of the predictors, once these have been observed. These are not genuine forecast
 In this setting, the forecaster assumes possible scenarios for the predictor variables that are of interest. We should note that prediction intervals for scenario
 based forecasts do no include the uncertainy associated with the future values of the predictor variables. They assume that the values of the predictors are known
 in advance.
+#### Building a predictive regression model
+The great advantage of regression models is that they can be used to capture important relationships between the forecast variable of interest and the predictor
+variables. A major challenge however, is that in order to generate ex-ante forecasts, the model requires future values of each predictor. If scenario based
+forecasting is of interest then these models are extremely useful.
