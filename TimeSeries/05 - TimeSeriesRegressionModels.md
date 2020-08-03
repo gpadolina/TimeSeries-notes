@@ -286,3 +286,8 @@ in forecasting. When they are extrapolated, the resulting forecasts are often un
 
 A better approach is to use piecewise specification introduced above and fit a piecewise linear trend which bends at some point in time. We can think of this as a
 nonlinear trend constructed of linear pieces.
+## Correlation, causation, and forecasting
+#### Correlation is not causation
+It is important not to confuse correlation with causation, or causation with forecasting. A variable x may be useful for forecasting a variable y, but that does not
+mean x is causing y. It is possible that x is causing y, but it may be that y is causing x, or that the relationship between them is more complicated than simple
+causality.
