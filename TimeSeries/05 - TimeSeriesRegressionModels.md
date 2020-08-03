@@ -262,3 +262,7 @@ in advance.
 The great advantage of regression models is that they can be used to capture important relationships between the forecast variable of interest and the predictor
 variables. A major challenge however, is that in order to generate ex-ante forecasts, the model requires future values of each predictor. If scenario based
 forecasting is of interest then these models are extremely useful.
+## Matrix formulation
+#### Least squares estimation
+#### Fitted value and cross-validation
+#### Forecasts and prediction intervals
