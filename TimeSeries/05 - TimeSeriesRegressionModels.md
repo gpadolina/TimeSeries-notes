@@ -254,3 +254,7 @@ made in advance using whatever information is available at the time.
 
 *Ex-post forecasts* are those that are made using later information on the predictors. For example, ex-post forecasts of consumption may use the actual observations
 of the predictors, once these have been observed. These are not genuine forecasts, but are useful for studying the behavior of forecasting models.
+#### Scenario based forecasting
+In this setting, the forecaster assumes possible scenarios for the predictor variables that are of interest. We should note that prediction intervals for scenario
+based forecasts do no include the uncertainy associated with the future values of the predictor variables. They assume that the values of the predictors are known
+in advance.
