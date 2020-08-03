@@ -298,3 +298,7 @@ causality runs in the opposite direction to the model, or when there is confound
 It will not be possible to separate the effects of these two predictors because they are correlated. We say that two variables are confounded when their effects on 
 the forecast variable cannot be separated. Any pair of correlated predictors will have some level of confounding, but we would not normally describe them as confounded 
 unless there was a relatively high level of correlation between them.
+
+Confounding is not really a problem for forecasting, as we can still compute forecasts without needing to separate out the effects of the predictors. However, it 
+becomes a problem with scenario forecasting as the scenarios should take account of the relationships between predictors. It is also a problem if some historical 
+analysis of the contributions of various predictors is required.
