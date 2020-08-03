@@ -243,3 +243,14 @@ It is important to realize that any stepwise approach is not guaranteed to lead 
 #### Beware of inference after selecting predictors
 The procedures recommended for selecting predictors are helpful when the model is used for forecasting; they are not helpful if you wish to study the effect of any
 predictor on the forecast variable.
+## Forecasting with regression
+#### Ex-ante versus ex-post forecasts
+When using regression model for time series data, we need to distinguish between the diffrent types of forecasts that can be produced, depending on what is assumed
+to be known when the forecasts are computed.
+
+*Ex-ante forecasts* are those that are made using only the information that is available in advance. For example, ex-ante forecasts for the percentage change in
+US consumption for quarters following the end of the sample, should only use information that was available up to and including 2016 Q3. These are genuine forecasts,
+made in advance using whatever information is available at the time.
+
+*Ex-post forecasts* are those that are made using later information on the predictors. For example, ex-post forecasts of consumption may use the actual observations
+of the predictors, once these have been observed. These are not genuine forecasts, but are useful for studying the behavior of forecasting models.
