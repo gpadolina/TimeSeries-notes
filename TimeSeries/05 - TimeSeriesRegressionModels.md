@@ -266,3 +266,13 @@ forecasting is of interest then these models are extremely useful.
 #### Least squares estimation
 #### Fitted value and cross-validation
 #### Forecasts and prediction intervals
+## Nonlinear regression
+The simplest way of modelling a nonlinear relationship is to transform the forecast variable y and/or the predictor variable x before estimating a regression model.
+While this provides a non-linear functional form, the model is still linear in the parameters. The most commonly used transformation is the natural logarithm.
+
+A log-log functional form is specified as ```log y = b0 + b1 log x + e```
+
+In this model, the slope b1 can be interpreted as an elasticity: b1 is the average percentage change in y resulting from a 1% increases in x. Other useful forms can
+also be verified. The *log-linear* form is specified by only transforming the forecast variable and the *linear-log* form is obtained by transforming the predictor.
+
+Recall that in order to perform a logarithmic transformation to a variable, all of its observed values must be greater than zero.
