@@ -280,3 +280,9 @@ zeros, we use the transformation log(x + 1); i.e., we add one to the value of th
 
 One of the simplest specifications is to make f *piecewise linear*. That is, we introduce points where the slope of f can change. These points are called *knots*.
 Piecewise linear relationships constructed in this way are a special case of *regression splines*.
+#### Forecasting with a nonlinear trend
+The simplest way of fitting a nonlinear trend is using quadratic or higher order trends. However, it is not recommended that quadratic or higher order trends be used
+in forecasting. When they are extrapolated, the resulting forecasts are often unrealistic.
+
+A better approach is to use piecewise specification introduced above and fit a piecewise linear trend which bends at some point in time. We can think of this as a
+nonlinear trend constructed of linear pieces.
