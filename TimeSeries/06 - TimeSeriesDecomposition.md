@@ -21,3 +21,5 @@ adjusted data are given by ```y - S```, and for multiplicative data, the seasona
 The classical method of time series decomposition originated in the 1920s and was widely used until the 1950s. It still forms the basis of many time series
 decomposition methods, so it is important to understand how it works. The first step in a classical decomposition is to use a moving average method to estimate the
 trend-cycle, so we begin by discussing moving averages.
+#### Moving average smoothing
+A moving average of order m can be written as ![equation](https://www.codecogs.com/latex/eqneditor.php)
