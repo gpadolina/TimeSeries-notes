@@ -13,4 +13,7 @@ level of the time series. When the variation in the seasonal pattern, or the var
 series, then a multiplicative decomposition is more appropriate. Multiplicative decompositions are common with economic time series.
 
 When a log transformation has been used, this is equivalenet to using a multiplicative decomposition because ```y = S x T x R``` is equivalent to 
-```log y = log S + log T + log R```
+```log y = log S + log T + log R```.
+#### Seasonally adjusted data
+If the seasonal component is removed from the original data, the resulting values are the "seasonally adjusted" data. For an additive decomposition, the seasonally
+adjusted data are given by ```y - S```, and for multiplicative data, the seasonally adjusted values are obtained by using ```y/S```.
