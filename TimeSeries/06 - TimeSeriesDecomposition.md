@@ -12,5 +12,5 @@ The additive decomposition is the most appropriate if the magnitude of the seaso
 level of the time series. When the variation in the seasonal pattern, or the variation around the trend-cycle, appears to be proportional to the level of the time
 series, then a multiplicative decomposition is more appropriate. Multiplicative decompositions are common with economic time series.
 
-When a log transformation has been used, this is equivalenet to using a multiplicative decomposition because ```y = S x T x R``` is equivalent to ```log y = log S
-+ log T + log R```
+When a log transformation has been used, this is equivalenet to using a multiplicative decomposition because ```y = S x T x R``` is equivalent to 
+```log y = log S + log T + log R```
