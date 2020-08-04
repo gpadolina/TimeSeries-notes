@@ -22,4 +22,18 @@ The classical method of time series decomposition originated in the 1920s and wa
 decomposition methods, so it is important to understand how it works. The first step in a classical decomposition is to use a moving average method to estimate the
 trend-cycle, so we begin by discussing moving averages.
 #### Moving average smoothing
-A moving average of order m can be written as ![equation](https://www.codecogs.com/latex/eqneditor.php)
+A moving average of order m can be written as ``` \hat{T}_{t} = \frac{1}{m} \sum_{j=-k}^k y_{t+j}``` where m = 2k + 1. That is, the estimate of the trend-cycle at
+time t is obtained by averaging values of the time series within k periods of t. The average eliminates some of the randomness in the data, leaving a smooth
+trend-cycle component. We call this an m-*MA*, meaning a moving average of order m.
+
+Moving averages can be computed using ```ma(timeseries, m)```
+
+Example:
+```
+autoplot(elecsales, series="Data") + 
+  autolayer(ma(elecsales,5), series="5-MA") + 
+  xlab("Year") + ylab("GWh") +
+  ggtitle("Annual electricity sales: South Australia") +
+  scale_colour_manual(values=c("Data"="grey50","5-MA"="red"), 
+                      breaks=c("Data","5-MA"))
+```
