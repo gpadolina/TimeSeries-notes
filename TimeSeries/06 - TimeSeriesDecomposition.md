@@ -37,3 +37,4 @@ autoplot(elecsales, series="Data") +
   scale_colour_manual(values=c("Data"="grey50","5-MA"="red"), 
                       breaks=c("Data","5-MA"))
 ```
+The order of moving average determines the smoothness of the trend-cycle estimate. In general, a larger order means a smoother curve.
