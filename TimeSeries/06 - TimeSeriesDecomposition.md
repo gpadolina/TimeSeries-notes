@@ -45,3 +45,12 @@ moving average of an even order (such as 4), it is called a "centred moving aver
 By default, the ```ma( )``` function in R will return a centered moving average for even orders unless ```center=FALSE``` is specified.
 
 In general, an even order MA should be followed by an even order MA to make it symmetric. Similarly, an odd order MA should be followed by an odd order MA.
+#### Estimating the trend-cycle with seasonal data
+The most common use of centered moving averages is for estimating the trend-cycle from seasonal data.
+
+When applied to quarterly data, each quarter of the year is given equal weight as the first and last terms apply to the same quarter in consecutive years.
+Consequently, the seasonal variation will be averaged out and the resulting values of T will have little or no seasonal variation remaining.
+
+In general, a 2 x m-MA is equivalent to a weighted moving average of order m + 1 where all observations to take the weight 1/m, except for the first and last terms
+which take weights 1/(2m). So, if the seasonal period is even and of order m, we use a 2 x m-MA to estimate the trend-cycle. If the seasonal period is odd and of
+order m, we use a m-MA to estimate the trend-cycle.
