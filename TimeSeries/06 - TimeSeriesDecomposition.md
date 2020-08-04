@@ -41,3 +41,7 @@ The order of moving average determines the smoothness of the trend-cycle estimat
 #### Moving averages of moving averages
 It is possible to apply a moving average to a moving average. One reason for doing this is to make an even-order moving average symmetric. When a 2-MA follows a
 moving average of an even order (such as 4), it is called a "centred moving average of order 4). This is because the results are now symmetric.
+
+By default, the ```ma( )``` function in R will return a centered moving average for even orders unless ```center=FALSE``` is specified.
+
+In general, an even order MA should be followed by an even order MA to make it symmetric. Similarly, an odd order MA should be followed by an odd order MA.
