@@ -75,3 +75,10 @@ component are sometimes called the *seasonal indices*.
 * Step 3 - To estimate the seasonal component for each season, simply average the detrended values for that season. The seasonal component is obtained by stringing
 together these monthly values, and then replicating the sequence for each year of data. This gives S.
 * Steo 4 - The remainder component is calculated by subtracting the estimated seasonal and trend-cycle components: R = y - T - S.
+#### Multiplicative decomposition
+A classical multiplicative decomposition is similar, except that the subtractions are replaced by divisions.
+* Step 1 - If m is an even number, compute the trend-cycle component T using a 2 x m-MA. If m is an odd number, compute the trend-cycle component T using m-MA.
+* Step 2 - Calculcate the detrended series: y / T.
+* Step 3 - To estimate the seasonal component for each season, simply average the detrended values for that season. The seasonal component is obtained by stringing
+together these monthly indexes, and then replicating the sequence for each year of data. This gives S.
+* Step 4 - The remainder component is calculated by dividing out the estimated seasonal and trend-cycle components: R = y / (TS)
