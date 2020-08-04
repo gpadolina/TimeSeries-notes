@@ -54,3 +54,12 @@ Consequently, the seasonal variation will be averaged out and the resulting valu
 In general, a 2 x m-MA is equivalent to a weighted moving average of order m + 1 where all observations to take the weight 1/m, except for the first and last terms
 which take weights 1/(2m). So, if the seasonal period is even and of order m, we use a 2 x m-MA to estimate the trend-cycle. If the seasonal period is odd and of
 order m, we use a m-MA to estimate the trend-cycle.
+#### Weighted moving averages
+Combinations of moving averages result in weighted moving averages. In general, a weighted m-MA can be written as
+```
+\hat{T}_t = \sum_{j=-k}^k a_j y_{t+j},
+```
+where k = (m - 1) / 2, and the weights are given by(a-k,...ak). It is important that the weights all sum to one and that they are symmetric so that a sub(j)=a sub(-j).
+
+A major advantage of weighted moving averages is that they yield a smoother estimate of the trend-cycle. Instead of observations entering and leaving the calculation
+at full weight, their weight slowly increase and then slowly decrease, resulting in a smoother curve.
