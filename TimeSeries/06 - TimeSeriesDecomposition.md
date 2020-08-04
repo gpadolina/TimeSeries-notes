@@ -82,3 +82,6 @@ A classical multiplicative decomposition is similar, except that the subtraction
 * Step 3 - To estimate the seasonal component for each season, simply average the detrended values for that season. The seasonal component is obtained by stringing
 together these monthly indexes, and then replicating the sequence for each year of data. This gives S.
 * Step 4 - The remainder component is calculated by dividing out the estimated seasonal and trend-cycle components: R = y / (TS)
+#### Components on classical decomposition
+While classical decomposition is still widely used, it is not recommended, as there are now several much better methods. Some of the problems with classical
+decomposition are summarised as follows:
