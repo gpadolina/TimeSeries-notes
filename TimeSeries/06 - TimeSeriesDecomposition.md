@@ -69,3 +69,9 @@ decomposition. There are two forms of classical decomposition: an additive and a
 
 In classical decomposition, we assume that the seasonal component is constant from year to year. For multiplicative seasonality, the m values that form the seasonal
 component are sometimes called the *seasonal indices*.
+#### Additive decomposition
+* Step 1 - If m is an even order, compute the trend-cycle component T using a 2 x m-MA. IF m is an odd order, compute the trend-cycle component T using m-MA.
+* Step 2 - Calculate the detrended series: y - T.
+* Step 3 - To estimate the seasonal component for each season, simply average the detrended values for that season. The seasonal component is obtained by stringing
+together these monthly values, and then replicating the sequence for each year of data. This gives S.
+* Steo 4 - The remainder component is calculated by subtracting the estimated seasonal and trend-cycle components: R = y - T - S.
