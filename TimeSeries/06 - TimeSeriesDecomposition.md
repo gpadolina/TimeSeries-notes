@@ -26,7 +26,7 @@ A moving average of order m can be written as ``` \hat{T}_{t} = \frac{1}{m} \sum
 time t is obtained by averaging values of the time series within k periods of t. The average eliminates some of the randomness in the data, leaving a smooth
 trend-cycle component. We call this an m-*MA*, meaning a moving average of order m.
 
-Moving averages can be computed using ```ma(timeseries, m)```
+Moving averages can be computed using ```ma(timeseries, order=m)```
 
 Example:
 ```
@@ -38,3 +38,6 @@ autoplot(elecsales, series="Data") +
                       breaks=c("Data","5-MA"))
 ```
 The order of moving average determines the smoothness of the trend-cycle estimate. In general, a larger order means a smoother curve.
+#### Moving averages of moving averages
+It is possible to apply a moving average to a moving average. One reason for doing this is to make an even-order moving average symmetric. When a 2-MA follows a
+moving average of an even order (such as 4), it is called a "centred moving average of order 4). This is because the results are now symmetric.
