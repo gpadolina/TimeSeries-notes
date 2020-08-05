@@ -171,3 +171,5 @@ While decomposition is primary useful for studying time series data and explorin
 
 Assuming an additive decomposition, the decomposed time series can be written as ```y = S + A``` where ```A = T + R``` is the seasonally adjusted component. Or, if a
 multiplicative decomposition has been used, we can write ```y = SA``` where ```A = TR```.
+
+The ```stlf( )``` function uses ```mstl( )``` to carry out the decomposition, so there are default values for ```s.window``` and ```t.window```.
