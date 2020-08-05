@@ -152,3 +152,12 @@ elecequip %>%
   stl(t.window=13, s.window="periodic", robust=TRUE) %>%
   autoplot( )
 ```
+The two main parameters to be chosen when using STL are the trend-cycle window (```t.window```) and the seasonal window (```s.window```). These control how rapidly
+the trend-cycle and seasonal components can change. Smaller values allow for more rapid changes. Both ```t.window``` and ```s.window``` should be odd numbers;
+```t.window``` is the number of consecutive observations to be used when estimating the trend-cycle; ```s.window``` is the number of consecutive years to be used in
+estimating each value in the seasonal component. The user must specify ```s.window``` as there is no default. Setting it to be infinite is equivalent to forcing the
+seasonal component to be periodict or identical across years. Specifying ```t.window``` is optional and a default value will be used if it is omitted.
+
+The ```mstl( )``` function provides a convenient automated STL decomposition using ```s.window=13``` and ```t.window``` also chosen automatically. This usually gives
+a good balance between overfitting the seasonality and allowing it to slowly change over time. But, as with any automated procedure, the default settings will need
+adjusting for some time series.
