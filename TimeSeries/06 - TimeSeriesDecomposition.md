@@ -166,3 +166,8 @@ A time series decomposition can be used to measure the strength of trend and sea
 where T is the smoothed trend component, S is the seasonal component, and R is a remainder component. For strongly trended data, the seasonally adjusted data should
 have much more variation than the remainder component. Therefore, Var(R) / VAR(T + R) should be relatively small. But for data with little or no trend, the two
 variances should be approximately the same.
+## Forecasting with decomposition
+While decomposition is primary useful for studying time series data and exploring historical changes over time, it can also be used in forecasting.
+
+Assuming an additive decomposition, the decomposed time series can be written as ```y = S + A``` where ```A = T + R``` is the seasonally adjusted component. Or, if a
+multiplicative decomposition has been used, we can write ```y = SA``` where ```A = TR```.
