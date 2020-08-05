@@ -161,3 +161,6 @@ seasonal component to be periodict or identical across years. Specifying ```t.wi
 The ```mstl( )``` function provides a convenient automated STL decomposition using ```s.window=13``` and ```t.window``` also chosen automatically. This usually gives
 a good balance between overfitting the seasonality and allowing it to slowly change over time. But, as with any automated procedure, the default settings will need
 adjusting for some time series.
+## Measuing strength of trend and seasonality
+A time series decomposition can be used to measure the strength of trend and seasonality in a time series. Recall that the decomposition is written as ```y = T + S + R```
+where T is the smoothed trend component, S is the seasonal component, and R is a remainder component.
