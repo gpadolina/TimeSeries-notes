@@ -163,4 +163,6 @@ a good balance between overfitting the seasonality and allowing it to slowly cha
 adjusting for some time series.
 ## Measuing strength of trend and seasonality
 A time series decomposition can be used to measure the strength of trend and seasonality in a time series. Recall that the decomposition is written as ```y = T + S + R```
-where T is the smoothed trend component, S is the seasonal component, and R is a remainder component.
+where T is the smoothed trend component, S is the seasonal component, and R is a remainder component. For strongly trended data, the seasonally adjusted data should
+have much more variation than the remainder component. Therefore, Var(R) / VAR(T + R) should be relatively small. But for data with little or no trend, the two
+variances should be approximately the same.
