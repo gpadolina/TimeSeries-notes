@@ -106,3 +106,14 @@ elecequip %>% seas(x11=" ") -> fit
 autoplot(fit) +
   ggtitle("X11 decomposition of electrical equipment index")
 ```
+Given the output from ```seas( )``` function, ```seasonal( )``` will extract the seasonal component, ```trendcycle( )``` will extract the trend-cycle component,
+```remainder( )``` will extract the remainder component, and ```seasadj( )``` will compute the seasonally adjusted time series.
+```
+autoplot(elecequip, series="Data") + 
+  autolayer(trendcycle(fit), series="Trend") + 
+  autolayer(seasadj(fit), series="Seasonally Adjusted") + 
+  xlab("Year") + ylab("New orders index") + 
+  ggtitle("Electrical equipment manufacturing (Euro area)") + 
+  scale_colour_manual(values=c("gray","blue","red"),
+                    breaks=c("Data","Seasonally Adjusted","Trend"))
+```
