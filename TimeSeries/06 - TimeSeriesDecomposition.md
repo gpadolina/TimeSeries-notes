@@ -91,3 +91,18 @@ decomposition are summarised as follows:
 longer series it is not. The classical decomposition methods are unable to capture these seasonal changes over time.
 * Occasionally, the values of the time series in a small number of periods may be particularly unusual. The classical method is not robust to these kinds of unusual
 values.
+## X11 decomposition
+Another popular method for decomposing quarterly and monthy data is the X11 method which originated in the US Census Bureau and Statistics Canada.
+
+This method is based on classical decomposition, but includes many extra steps and features in order to overcome the drawbacks of classical decomposition that were
+discussed previously. In particular, trend-cycle estimates are available for all observations including the end points and the seasonal component is allowed to vary
+slowly over time. X11 also has some sophisticated methods for handling trading day variation, holiday effects and the effects of known predictors. It handles both
+additive and multiplicative decomposition. The process is entirely automatic and tends to be highly robust to outliers and level shifts in the time series.
+
+The X11 method is available using the ```seas( )``` function from the *seasonal* package for R.
+```
+library(seasonal)
+elecequip %>% seas(x11=" ") -> fit
+autoplot(fit) +
+  ggtitle("X11 decomposition of electrical equipment index")
+```
