@@ -117,3 +117,12 @@ autoplot(elecequip, series="Data") +
   scale_colour_manual(values=c("gray","blue","red"),
                     breaks=c("Data","Seasonally Adjusted","Trend"))
 ```
+## SEATS decomposition
+"SEATS" stands for Seasonal Extraction in ARIMA Time Series. This procedure was developed at the Bank of Spain and is now widely used by government agencies around
+the world. The procedure works only with quarterly and monthly data. So seasonality of other kinds, such as daily data, hourly data, or weekly data require an
+alternative approach.
+```library(seasonal)
+elecequip %>% seas( ) %>%
+autoplot( ) +
+  ggtitle("SEATS decomposition of electrical equipment index")
+```
