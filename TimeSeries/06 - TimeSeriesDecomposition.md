@@ -126,3 +126,9 @@ elecequip %>% seas( ) %>%
 autoplot( ) +
   ggtitle("SEATS decomposition of electrical equipment index")
 ```
+The result is quite similar to the X11 decomposition.
+
+As with the X11 method, we can use the ```seasonal( )```, ```trendcycle( )```, and ```remainder( )``` functions to extract the individual components and ```seasadj( )```
+to compute the seasonally adjusted time series.
+
+The *seasonal* package has many options for handling variations of X11 and SEATS.
