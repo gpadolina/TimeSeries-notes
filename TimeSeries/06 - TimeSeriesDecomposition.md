@@ -142,3 +142,13 @@ STL has several advantages over the classical, SEATS, and X11 decomposition meth
 * The smoothness of the trend-cycle can also be controlled by the user.
 * It can be robust to outliers (the user can specify a robust decomposition), so that occasional unusual observations will not affect the estimates of the trend-cycle
 and seasonal components. They will, however, affect the remainder component.
+
+On the other hand, STL has some disadvantages. In particular, it does not handle trading day or calendar variation automatically and it provides facilities for
+additive decompositions.
+
+The best way to begin learning how to use STL is to see some examples and experiment with the parameters.
+```
+elecequip %>%
+  stl(t.window=13, s.window="periodic", robust=TRUE) %>%
+  autoplot( )
+```
