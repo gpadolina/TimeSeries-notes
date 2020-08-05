@@ -132,3 +132,13 @@ As with the X11 method, we can use the ```seasonal( )```, ```trendcycle( )```, a
 to compute the seasonally adjusted time series.
 
 The *seasonal* package has many options for handling variations of X11 and SEATS.
+## STL decomposition
+STL is a versatile and robust method for decomposing time series. STL stands for Seasonal and Trend decomposition using Loess, while Loess is a method for estimating
+nonlinear relationships. The STL method was developed by Cleveland, Cleveland, McRae, & Terpenning.
+
+STL has several advantages over the classical, SEATS, and X11 decomposition methods:
+* Unlike SEATS and X11, STL will handle any type of seasonality, not only monthly and quarterly data.
+* The seasonal component is allowed to change over time and the rate of change can be controlled by the user.
+* The smoothness of the trend-cycle can also be controlled by the user.
+* It can be robust to outliers (the user can specify a robust decomposition), so that occasional unusual observations will not affect the estimates of the trend-cycle
+and seasonal components. They will, however, affect the remainder component.
