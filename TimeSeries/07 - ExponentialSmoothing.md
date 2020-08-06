@@ -6,3 +6,13 @@ observation the higher the associated weight.
 
 In the first part, we present the mechanics of the most important exponential smoothing methods and their application in forecasting time series with various
 characteristics. In the second part, we present the statistical models that underlie exponential smoothing methods.
+
+## Simple exponential smoothing
+The simplest of the exponentially smoothing methods is naturally called *simple exponential smoothing (SES)*. This method is suitable for forecasting data with no
+clear trend or seasonal pattern.
+
+Using the naïve method, all forecasts for the future are equal to the last observed value of the series. Hence, the naïve method assumes that the most recent observation
+is the only important one and all previous observations provide no information for the future.
+
+Using the average method, all future forecasts are equal to a simple average of the observed data. Hence, the average method assumes that all observations are of equal
+importance and gives them equal weights when generating forecasts.
