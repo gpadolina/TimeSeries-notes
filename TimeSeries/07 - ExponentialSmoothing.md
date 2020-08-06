@@ -37,3 +37,9 @@ smoothing, we need to select the values of alpha and l0. All forecasts can be co
 
 In some cases, the smoothing parameters may be chosen in a subjective manner. However, a more reliable and objective way to obtain values for the unknown parameters is
 to estimate them from the observed data.
+
+Regression model coefficients can be estimated by minimizing the sum of the squared residuals. Similarly, the unknown parameters and the initial values for any
+exponential smoothing method can be estimated by minimizing the SSE.
+
+Unlike regression where we have formulas which return the values of the regression coefficients that minimizes the SSE, this involves a non-linear minimization problem
+and we need to use an optimization tool to solve it.
