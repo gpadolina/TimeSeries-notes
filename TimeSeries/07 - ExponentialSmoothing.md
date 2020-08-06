@@ -16,3 +16,7 @@ is the only important one and all previous observations provide no information f
 
 Using the average method, all future forecasts are equal to a simple average of the observed data. Hence, the average method assumes that all observations are of equal
 importance and gives them equal weights when generating forecasts.
+
+We often want something between these two extremes. For example, it may be sensible to attach larger weights to more recent observations than to observations from
+the distant past. This is exacctly the concept behind simple exponential smoothing. Forecasts are calculated using weighted averages, where the weights decrease
+exponentially as observations come from further in the past - the smallest weights are associated with the oldest observations.
