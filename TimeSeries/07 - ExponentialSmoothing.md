@@ -52,7 +52,10 @@ and we need to use an optimization tool to solve it.
 ## Trend methods
 #### Holt's linear trend method
 Holt extended simple exponential smoothing to allow the forecasting of data with a trend. This method involves a forecast equation and two smoothing equations, one for
-the level and one for the trend: forecast equation, level equation, and trend equation.
+the level and one for the trend:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt's%20linear%20trend%20method.png)
+
 ```
 air <- window(ausair, start=1990) 
 fc <- holt(air, h=5)
