@@ -83,4 +83,5 @@ There are two variations to this method that differs in the nature of the season
 roughly constant through the series, while the multiplicative method is preferred when the seasonal variations are changing proportional to the level of the series.
 #### Holt-Winters' additive method
 The components form for the additive method is:
+
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt-Winters'%20additive%20method.png)
