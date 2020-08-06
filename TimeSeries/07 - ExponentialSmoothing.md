@@ -43,3 +43,12 @@ exponential smoothing method can be estimated by minimizing the SSE.
 
 Unlike regression where we have formulas which return the values of the regression coefficients that minimizes the SSE, this involves a non-linear minimization problem
 and we need to use an optimization tool to solve it.
+## Trend methods
+#### Holt's linear trend method
+Holt extended simple exponential smoothing to allow the forecasting of data with a trend. This method involves a forecast equation and two smoothing equations, one for
+the level and one for the trend: forecast equation, level equation, and trend equation.
+```
+holt(timeseries, h=)
+```
+The forecast function is no longer flat but trending. The h-step-ahead forecast is equal to the last estimated level plus h times the last estimated trend value. Hence,
+the forecasts are a linear function of h.
