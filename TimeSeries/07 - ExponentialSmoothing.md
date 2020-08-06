@@ -74,3 +74,7 @@ fc <- holt(livestock, damped=TRUE)
 # Estimated parameters: 
 fc[["model"]]
 ```
+## Holt-Winter's seasonal method
+Holt and Winters extended Holt's method to capture seasonality. The Holt-Winters seasonal method comprises the forecast equation and three smoothing equations - one
+for the level lt, one for the trend bt, and one for the seaonsal component st, with corresponding smoothing parameters alpha, beta, and phi. We use m to denote the
+frequency of the seasonality, the number of seasons in a year.
