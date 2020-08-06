@@ -25,7 +25,9 @@ The forecast at time T + 1 is equal to a weighted average between the most recen
 #### Component form
 An alternative representation is the component form. For simple exponential smoothing, the only component included is the level, lt. Other methods may also included a
 trend bt and a seasonal component st. Component form representations of exponential smoothing methods comprise a forecast equation and a smoothing equation for each
-of the components included in the method.
+of the components included in the method. The component form of simple exponential smoothing is given by:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Component%20form.png)
 
 The component form of simple exponential smoothing is not particularly useful, but it will be the easiest form to use when we start adding other components.
 #### Flat forecasts
