@@ -31,7 +31,11 @@ of the components included in the method. The component form of simple exponenti
 
 The component form of simple exponential smoothing is not particularly useful, but it will be the easiest form to use when we start adding other components.
 #### Flat forecasts
-Simple exponental smoothing has a "flat" forecast function. That is, all forecasts take the same value, equal to the last level component. Remember that these forecasts
+Simple exponental smoothing has a "flat" forecast function:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Flat%20forecasts.png)
+
+That is, all forecasts take the same value, equal to the last level component. Remember that these forecasts
 will only be suitable if the time series has no trend or seasonal component.
 #### Optimization
 The application of every exponential smoothing method requires the smoothing parameters and the inital values to be chosen. In particular, for simple exponential
