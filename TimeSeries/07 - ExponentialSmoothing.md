@@ -74,10 +74,13 @@ fc <- holt(livestock, damped=TRUE)
 # Estimated parameters: 
 fc[["model"]]
 ```
-## Holt-Winter's seasonal method
+## Holt-Winters' seasonal method
 Holt and Winters extended Holt's method to capture seasonality. The Holt-Winters seasonal method comprises the forecast equation and three smoothing equations - one
 for the level lt, one for the trend bt, and one for the seaonsal component st, with corresponding smoothing parameters alpha, beta, and phi. We use m to denote the
 frequency of the seasonality, the number of seasons in a year.
 
 There are two variations to this method that differs in the nature of the seasonal component. The additive method is preferred when the seasonal variations are
 roughly constant through the series, while the multiplicative method is preferred when the seasonal variations are changing proportional to the level of the series.
+#### Holt-Winters' additive method
+The components form for the additive method is:
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt-Winters'%20additive%20method.png)
