@@ -68,3 +68,9 @@ autoplot(air) +
   ylab("Air passengers in Australia (millions)") + 
   guides(colour=guide_legend(title="Forecast"))
 ```
+Damped Holt's method is best whether you compare MAE or MSE values.
+```
+fc <- holt(livestock, damped=TRUE) 
+# Estimated parameters: 
+fc[["model"]]
+```
