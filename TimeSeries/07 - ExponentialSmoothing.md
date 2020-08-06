@@ -28,3 +28,12 @@ trend bt and a seasonal component st. Component form representations of exponent
 of the components included in the method.
 
 The component form of simple exponential smoothing is not particularly useful, but it will be the easiest form to use when we start adding other components.
+#### Flat forecasts
+Simple exponental smoothing has a "flat" forecast function. That is, all forecasts take the same value, equal to the last level component. Remember that these forecasts
+will only be suitable if the time series has no trend or seasonal component.
+#### Optimization
+The application of every exponential smoothing method requires the smoothing parameters and the inital values to be chosen. In particular, for simple exponential
+smoothing, we need to select the values of alpha and l0. All forecasts can be computed from the data once we know those values.
+
+In some cases, the smoothing parameters may be chosen in a subjective manner. However, a more reliable and objective way to obtain values for the unknown parameters is
+to estimate them from the observed data.
