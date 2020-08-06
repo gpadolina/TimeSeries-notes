@@ -82,6 +82,10 @@ frequency of the seasonality, the number of seasons in a year.
 There are two variations to this method that differs in the nature of the seasonal component. The additive method is preferred when the seasonal variations are
 roughly constant through the series, while the multiplicative method is preferred when the seasonal variations are changing proportional to the level of the series.
 #### Holt-Winters' additive method
-The components form for the additive method is:
+The component form for the additive method is:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt-Winters'%20additive%20method.png)
+#### Holt-Winters' multiplicative method
+The component form for the multiplicative method is:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt-Winters'%20multiplicative%20method.png)
