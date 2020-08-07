@@ -166,3 +166,8 @@ Recall the component form of simple exponential smoothing:
 If we re-arrange the smoothing equation for the level, we get the "error correction" form:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Error%20correction%20form.png)
+
+#### ETS(M,N,N): simple exponential smoothing with multiplicative errors
+We can specifiy models with multiplicative errors by writing the one-step-ahead training errors as relative errors:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Relative%20errors.png)
