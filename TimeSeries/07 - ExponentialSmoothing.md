@@ -189,3 +189,7 @@ Substituting this into the error correction equations for Holt's linear method w
 Specifying one-step-ahead training errors as relative errors such that
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/One-step-ahead%20training%20errors%20multiplicative.png)
+
+and following an approach similar to the used above, the innovations state space model underlying Holt's linear method with multiplicative errors is specified as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt's%20linear%20method%20with%20multiplicative%20errors.png)
