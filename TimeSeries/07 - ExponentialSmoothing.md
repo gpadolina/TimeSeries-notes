@@ -103,3 +103,17 @@ The component form for the additive method is:
 The component form for the multiplicative method is:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt-Winters'%20multiplicative%20method.png)
+
+#### Example:
+```
+aust <- window(austourists,start=2005) 
+fit1 <- hw(aust,seasonal="additive")
+fit2 <- hw(aust,seasonal="multiplicative") 
+autoplot(aust) +
+  autolayer(fit1, series="HW additive forecasts", PI=FALSE) + 
+  autolayer(fit2, series="HW multiplicative forecasts", PI=FALSE) +
+  xlab("Year") +
+  ylab("Visitor nights (millions)") + 
+  ggtitle("International visitors nights in Australia") + 
+  guides(colour=guide_legend(title="Forecast"))
+```
