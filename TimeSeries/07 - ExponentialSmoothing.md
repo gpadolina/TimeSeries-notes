@@ -138,3 +138,5 @@ Exponential smoothing methods are not restricted to those presented so far. By c
 exponential methods are possible.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-way%20classical%20of%20exponential%20smoothing.png)
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-way%20classification%20of%20exponential%20smoothing%20-%202.png)
