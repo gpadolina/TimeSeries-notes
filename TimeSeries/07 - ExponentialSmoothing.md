@@ -158,3 +158,7 @@ they use the same smoothing parameter values. They will, however, generate diffe
 
 To distinguish between a model with additive errors and one with multiplicative errors, we add a third letter to the classification table. We label each state space
 model as ETS( ) for (Error, Trend, Seasonal). This label can also be thought of as ExponenTial Smoothing.
+#### EST(A,N,N): simple exponential smoothing with additive errors
+Recall the component form of simple exponential smoothing:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Component%20form.png)
