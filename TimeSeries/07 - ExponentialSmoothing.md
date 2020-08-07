@@ -133,3 +133,6 @@ autoplot(hyndsight) +
   autolayer(fc, series="HW multi damped", PI=FALSE)+ 
   guides(colour=guide_legend(title="Daily forecasts"))
 ```
+## A taxonomy of exponential smoothing methods
+Exponential smoothing methods are not restricted to those presented so far. By considering variation in the combinations of the rend and seasonal components, nine
+exponential methods are possible.
