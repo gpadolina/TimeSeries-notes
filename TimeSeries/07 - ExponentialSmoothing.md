@@ -180,3 +180,7 @@ Then we can write the multiplicative form of the state space model as
 For this model, we assume that the one-step-ahead training errors are given by
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/One-step-ahead%20training%20errors.png)
+
+Substituting this into the error correction equations for Holt's linear method we obtain
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt's%20linear%20method.png)
