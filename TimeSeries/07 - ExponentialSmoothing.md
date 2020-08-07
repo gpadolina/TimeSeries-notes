@@ -193,3 +193,11 @@ Specifying one-step-ahead training errors as relative errors such that
 and following an approach similar to the used above, the innovations state space model underlying Holt's linear method with multiplicative errors is specified as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt's%20linear%20method%20with%20multiplicative%20errors.png)
+
+#### Other ETS model
+In a similar fashion, we can write an innovations state space model for each exponential smoothing methods. Below are the equations for all of the models in the
+ETS framework.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Additive%20error%20models.png)
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Multiplicative%20error%20models.png)
