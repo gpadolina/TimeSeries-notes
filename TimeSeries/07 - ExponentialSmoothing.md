@@ -144,3 +144,11 @@ exponential methods are possible.
 Recursive formulas for appyling the nine exponential smoothing methods:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Recursive%20formulas%20for%20nine%20exponential%20smoothing%20methods.png)
+
+## Innovations state space models for exponential smoothing
+The exponential smoothing methods presented are algorithms which generate point forecasts. The statistical models in this section generate the same point forecasts,
+but can also generate prediction or forecast intervals. A statistical model is a stochastic or random data generating process that can produce an entire forecast
+distribution.
+
+Each model consists of a measurement equation that describes the observed data and some state equations that describe how the unobserved components or states
+(level, trend, seasonal) change over time. Hence, these are referred to as *state space models*.
