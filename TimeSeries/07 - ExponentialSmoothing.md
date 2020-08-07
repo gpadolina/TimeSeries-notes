@@ -184,3 +184,8 @@ For this model, we assume that the one-step-ahead training errors are given by
 Substituting this into the error correction equations for Holt's linear method we obtain
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt's%20linear%20method.png)
+
+#### ETS(M,A,N): Holt's linear method with multiplicative errors
+Specifying one-step-ahead training errors as relative errors such that
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/One-step-ahead%20training%20errors%20multiplicative.png)
