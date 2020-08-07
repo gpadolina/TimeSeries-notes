@@ -175,3 +175,8 @@ We can specifiy models with multiplicative errors by writing the one-step-ahead 
 Then we can write the multiplicative form of the state space model as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/State%20space%20model%20multiplicative%20form.png)
+
+#### ETS(A,A,N): Holt's linear method with additive errors
+For this model, we assume that the one-step-ahead training errors are given by
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/One-step-ahead%20training%20errors.png)
