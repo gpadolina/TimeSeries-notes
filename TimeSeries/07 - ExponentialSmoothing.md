@@ -162,3 +162,7 @@ model as ETS( ) for (Error, Trend, Seasonal). This label can also be thought of 
 Recall the component form of simple exponential smoothing:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Component%20form.png)
+
+If we re-arrange the smoothing equation for the level, we get the "error correction" form:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Error%20correction%20form.png)
