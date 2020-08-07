@@ -152,3 +152,9 @@ distribution.
 
 Each model consists of a measurement equation that describes the observed data and some state equations that describe how the unobserved components or states
 (level, trend, seasonal) change over time. Hence, these are referred to as *state space models*.
+
+For each method there exist two models: one with additive errors and one with multiplicative erros. The point forecasts producded by the models are identical if
+they use the same smoothing parameter values. They will, however, generate different prediction intervals.
+
+To distinguish between a model with additive errors and one with multiplicative errors, we add a third letter to the classification table. We label each state space
+model as ETS( ) for (Error, Trend, Seasonal). This label can also be thought of as ExponenTial Smoothing.
