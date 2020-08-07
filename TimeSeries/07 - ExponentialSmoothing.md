@@ -140,3 +140,7 @@ exponential methods are possible.
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-way%20classical%20of%20exponential%20smoothing.png)
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-way%20classification%20of%20exponential%20smoothing%20-%202.png)
+
+Recursive formulas for appyling the nine exponential smoothing methods:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Recursive%20formulas%20for%20nine%20exponential%20smoothing%20methods.png)
