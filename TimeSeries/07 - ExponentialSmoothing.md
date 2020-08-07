@@ -117,3 +117,8 @@ autoplot(aust) +
   ggtitle("International visitors nights in Australia") + 
   guides(colour=guide_legend(title="Forecast"))
 ```
+#### Holt-Winters' damped method
+Damping is possible with both additive and multiplicative Holt-Winters' methods. A method that often provides accurate and robust forecasts for seasonal data is
+the Holt-Winters method with a damped trend and multiplicative seasonality:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt-Winters'%20damped%20method.png)
