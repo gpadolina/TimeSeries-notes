@@ -125,3 +125,11 @@ the Holt-Winters method with a damped trend and multiplicative seasonality:
 ```
 hw(y, damped=TRUE, seasonal="multiplicative")
 ```
+#### Example: Holt-Winters method
+```
+ fc <- hw(subset(hyndsight,end=length(hyndsight)-35), 
+  damped = TRUE, seasonal="multiplicative", h=35)
+autoplot(hyndsight) +
+  autolayer(fc, series="HW multi damped", PI=FALSE)+ 
+  guides(colour=guide_legend(title="Daily forecasts"))
+```
