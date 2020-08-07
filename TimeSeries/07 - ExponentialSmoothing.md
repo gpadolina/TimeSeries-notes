@@ -201,3 +201,9 @@ ETS framework.
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Additive%20error%20models.png)
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Multiplicative%20error%20models.png)
+
+## Estimation and model selection
+#### Estimating ETS models
+An alternaitve to estimating the parameters by minimizing the sum of squared errors is to maximize the "likelihood". The likelihood is the probability of the data
+arising from the specified model. Thus, a large likelihood is associated with a good model. For an additive model, maximizing the likelihood (assuming normally
+distributed errors) gives the same results as minimizing the sum of squared errors.
