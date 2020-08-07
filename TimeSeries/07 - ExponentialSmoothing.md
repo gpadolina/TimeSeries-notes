@@ -122,3 +122,6 @@ Damping is possible with both additive and multiplicative Holt-Winters' methods.
 the Holt-Winters method with a damped trend and multiplicative seasonality:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Holt-Winters'%20damped%20method.png)
+```
+hw(y, damped=TRUE, seasonal="multiplicative")
+```
