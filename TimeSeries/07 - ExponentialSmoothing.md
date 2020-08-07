@@ -136,3 +136,5 @@ autoplot(hyndsight) +
 ## A taxonomy of exponential smoothing methods
 Exponential smoothing methods are not restricted to those presented so far. By considering variation in the combinations of the rend and seasonal components, nine
 exponential methods are possible.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-way%20classical%20of%20exponential%20smoothing.png)
