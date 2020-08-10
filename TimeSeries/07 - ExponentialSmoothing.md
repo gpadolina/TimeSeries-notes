@@ -319,3 +319,11 @@ If ```fan=TRUE```, ```level=seq(50,99,by=1 ```. This is suitable for fan plots.
 If ```simulate=TRUE```, prediction intervals are produced by simulation rathen than using algebraic formulas.
 ##### bootstrap
 If ```bootstrap=TRUE``` and ```simulate=TRUE```, then the simulated prediction intervals use re-sampled errors rather than normally distributed errors.
+##### npaths
+The number of sample paths used in computed simulated prediction intervals.
+##### PI
+If ```PI=TRUE```, then prediction intervals are produced; otherwise only point forecasts are calculated.
+##### lambda
+The Box-Cox transformation parameter. This is ignored if ```lambda=NULL```. Otherwise, the forecasts are back-transformed via an inverse Box-Cox transformation.
+##### biasadj
+If ```lambda``` is not ```NULL```, the back-transformed forecasts and prediction intervals are bias-adjusted.
