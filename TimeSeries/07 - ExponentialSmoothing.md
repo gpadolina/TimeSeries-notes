@@ -265,3 +265,23 @@ Only models with additive components will be considered if ```additive.only=TRUE
 If ```restrict=TRUE``` (the default), the models that cause numerical difficulties are not considered in model selection.
 ##### allow.multiplicative.trend
 Multiplicative trend models are also available. Set this argument to ```TRUE``` to allow this models to be considered.
+
+#### Working with ```ets( )``` objects
+The ```ets( )``` function will return an object of class ```ets( )```. There are many R functions designed to make working with ```ets( )``` objects easy. A few of
+them are:
+##### coef( )
+returns all fitted parameters.
+##### accuracy( )
+returns accuracy measures computed on the training data.
+##### summary( )
+prints some summary information about the fitted model.
+##### autoplot( ) and plot( )
+produce time plots of the components.
+##### residuals( )
+returns residuals from the estimated model.
+##### fitted( )
+returns one-step forecasts for the training data.
+##### simulate( )
+will simulate future sample paths from the fitted model.
+##### forecast( )
+computes point forecasts and prediction intervals.
