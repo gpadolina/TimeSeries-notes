@@ -301,3 +301,8 @@ For a few ETS models, there are no known formulas for prediction intervals. In t
 computes prediction intervals from the percentiles of these simulated future paths.
 
 #### Using ```forecast( )```
+```
+forecast(object, h=ifelse(object$m>1, 2*object$m, 10), 
+  level=c(80,95), fan=FALSE, simulate=FALSE, bootstrap=FALSE, 
+  npaths=5000, PI=TRUE, lambda=object$lambda, biasadj=NULL, ...)
+```
