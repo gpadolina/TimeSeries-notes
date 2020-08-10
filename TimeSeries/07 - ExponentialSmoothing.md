@@ -296,3 +296,8 @@ For ETS models, a prediction interval can be written as
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/ETS%20model%20prediction%20interval.png)
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Forecast%20variance%20expressions.png)
+
+For a few ETS models, there are no known formulas for prediction intervals. In these cases, the ```forecast( )``` function uses simulated future sample paths and
+computes prediction intervals from the percentiles of these simulated future paths.
+
+#### Using ```forecast( )```
