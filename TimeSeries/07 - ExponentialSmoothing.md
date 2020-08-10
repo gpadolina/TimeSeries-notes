@@ -294,3 +294,5 @@ differ between models with additive and multiplicative methods.
 For ETS models, a prediction interval can be written as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/ETS%20model%20prediction%20interval.png)
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Forecast%20variance%20expressions.png)
