@@ -301,8 +301,21 @@ For a few ETS models, there are no known formulas for prediction intervals. In t
 computes prediction intervals from the percentiles of these simulated future paths.
 
 #### Using ```forecast( )```
+The R code below shows the possible arguments that this function takes when applied to an ETS model.
 ```
 forecast(object, h=ifelse(object$m>1, 2*object$m, 10), 
   level=c(80,95), fan=FALSE, simulate=FALSE, bootstrap=FALSE, 
   npaths=5000, PI=TRUE, lambda=object$lambda, biasadj=NULL, ...)
 ```
+##### object
+The object returned by the ```ets( )``` function.
+##### h
+The forecast horizon - the number of periods to be forecast.
+##### level
+The confidence level for the prediction intervals.
+##### fan
+If ```fan=TRUE```, ```level=seq(50,99,by=1 ```. This is suitable for fan plots.
+##### simulate
+If ```simulate=TRUE```, prediction intervals are produced by simulation rathen than using algebraic formulas.
+##### bootstrap
+If ```bootstrap=TRUE``` and ```simulate=TRUE```, then the simulated prediction intervals use re-sampled errors rather than normally distributed errors.
