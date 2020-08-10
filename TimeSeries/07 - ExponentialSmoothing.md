@@ -230,3 +230,17 @@ ETS(A,A,M), and ETS(A,Ad,M) due to division by values potentially close to zero 
 
 Models with multiplicative errors are useful when the data are strictly positive, but are not numerically stable when the data contain zeros or negative values.
 Therefore, multiplicative error models will not be considered if the time series is not strictly positive.
+
+#### The ```ets( )``` function in R
+The models can be estimated in R using the ```ets( )``` function in the *forecast* package. Unlike the ```ses( )```, ```holt( )```, and ```hw( )```, the ```ets( )```
+function does not produce forecasts. Rather, it estimates the model parameters and returns information about the fitted model. By default it uses the AICc to select
+an appropriate model, although other information criteria can be selected.
+
+The R code below shows the most important arguments that this function can take and their default values. If only the time series is specified and all other arguments
+are left at their default values, then an appropriate model will be selected automatically.
+```
+ets(y, model="ZZZ", damped=NULL, alpha=NULL, beta=NULL, 
+  gamma=NULL, phi=NULL, lambda=NULL, biasadj=FALSE, 
+  additive.only=FALSE, restrict=TRUE, 
+  allow.multiplicative.trend=FALSE)
+```
