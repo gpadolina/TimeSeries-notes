@@ -224,3 +224,6 @@ The AIC corrected for small sample bias (AICc) is defined as
 and the Bayesian Information Criterion (BIC) is
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/BIC.png)
+
+Three of the combinations of (Error, Trend, Seasonal) can lead to numerical difficulties. Specifically, the models that can cause such instabilities are ETS(A,N,M),
+ETS(A,A,M), and ETS(A,Ad,M) due to division by values potentially close to zero in the state equations.
