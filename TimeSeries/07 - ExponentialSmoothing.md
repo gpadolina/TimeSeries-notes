@@ -227,3 +227,6 @@ and the Bayesian Information Criterion (BIC) is
 
 Three of the combinations of (Error, Trend, Seasonal) can lead to numerical difficulties. Specifically, the models that can cause such instabilities are ETS(A,N,M),
 ETS(A,A,M), and ETS(A,Ad,M) due to division by values potentially close to zero in the state equations.
+
+Models with multiplicative errors are useful when the data are strictly positive, but are not numerically stable when the data contain zeros or negative values.
+Therefore, multiplicative error models will not be considered if the time series is not strictly positive.
