@@ -214,3 +214,13 @@ determine which of the ETS models is most appropriate for a given time series.
 For ETS models, Akaike's Information Criterion (AIC) is defined as 
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AIC.png)
+
+where L is the likelihood of the model and k is the total number of parameters and initial states that have been estimated (including the residual variance).
+
+The AIC corrected for small sample bias (AICc) is defined as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AICc.png)
+
+and the Bayesian Information Criterion (BIC) is
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/BIC.png)
