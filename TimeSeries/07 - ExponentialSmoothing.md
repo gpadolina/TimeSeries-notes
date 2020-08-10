@@ -285,3 +285,12 @@ returns one-step forecasts for the training data.
 will simulate future sample paths from the fitted model.
 ##### forecast( )
 computes point forecasts and prediction intervals.
+
+## Forecasting with ETS models
+####  Prediction intervals
+A big advantage of the models is that prediction intervals can also be generated - something that cannot be done using the methods. The prediction intervals will
+differ between models with additive and multiplicative methods.
+
+For ETS models, a prediction interval can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/ETS%20model%20prediction%20interval.png)
