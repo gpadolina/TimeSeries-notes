@@ -207,3 +207,10 @@ ETS framework.
 An alternaitve to estimating the parameters by minimizing the sum of squared errors is to maximize the "likelihood". The likelihood is the probability of the data
 arising from the specified model. Thus, a large likelihood is associated with a good model. For an additive model, maximizing the likelihood (assuming normally
 distributed errors) gives the same results as minimizing the sum of squared errors.
+#### Model selection
+A great advantage of the ETS statistical framekwork is that information criteria can be used for model selection. The AIC, AICc, and BIC can be used here to
+determine which of the ETS models is most appropriate for a given time series.
+
+For ETS models, Akaike's Information Criterion (AIC) is defined as 
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AIC.png)
