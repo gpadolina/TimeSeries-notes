@@ -244,3 +244,24 @@ ets(y, model="ZZZ", damped=NULL, alpha=NULL, beta=NULL,
   additive.only=FALSE, restrict=TRUE, 
   allow.multiplicative.trend=FALSE)
 ```
+##### y
+The time series to be forecast.
+##### model
+A three-letter code indicating the model to be estimates using the ETS classification and notation. The possible inputs are "N" for none, "A" for additive, "M" for
+multiplicative or "Z" for automatic selection.
+##### damped
+If ```damped=TRUE```, then a damped trend will be used (either A or M). If ```damped=FALSE```, then a non-damped trend will be used. If ```damped=NULL``` (the default),
+then either a damped or non-damped trend will be selected, depending on which model has the smallest value for the information criterion.
+##### alpha, beta, gamma, phi
+The values of the smoothing parameters can be specified using these arguments. If they are NULL, the parameters are estimated.
+##### lambda
+Box-Cox transformation parameter. It will be ignored if ```lambda=NULL```. Otherwise, the time series will be transformed before the model is estimated. When ```lambda```
+is not ```NULL```, ```additive.only``` is set to ```TRUE```.
+##### biasadj
+If ```TRUE``` and ```lambda``` is not ```NULL```, then the back-transformed fitted values and forecasts will be bias-adjusted.
+##### additive.only
+Only models with additive components will be considered if ```additive.only=TRUE```. Otherwise, all models will be considered.
+##### restrict
+If ```restrict=TRUE``` (the default), the models that cause numerical difficulties are not considered in model selection.
+##### allow.multiplicative.trend
+Multiplicative trend models are also available. Set this argument to ```TRUE``` to allow this models to be considered.
