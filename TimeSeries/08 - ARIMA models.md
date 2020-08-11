@@ -79,3 +79,14 @@ The backward shift operator is convenient for describing the process of differen
 Note that a first difference is represented by (1-B). Similarly, if second-order differences have to be computed, then:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Second-order%20differences.png)
+
+#### Autoregressive models
+In a multiple regression model, we forecast the variable of interest using a linear combination of predictors. In an autoregression model, we forecast the variable of
+interest using a linear combination of past values of the variable. The term autoregression indicates that it is a regression of the variable against itself.
+
+Thus, an autoregressive model of order p can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Autoregressive%20model.png)
+
+where et is white noise. This is like a multiple regression but with *lagged values* of yt as predictors. We refer to this as an *AR(p) model*, an autoregressive
+model of order p.
