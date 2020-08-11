@@ -48,3 +48,12 @@ In practice, it is almost never necessary to go beyong second-order differences.
 A seasonal difference is the difference between an observation and the previous observation from the same season.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Seasonal%20differencing.png)
+
+Sometimes it is necessary to take both a seasonal difference and a first difference to obtain stationary data.
+
+When both seasonal and first differences are applied, it makes no difference which is done first - the result will be the same. However, if the data have a strong
+seasonal pattern, we recommend that seasonal differencing be done first because the resulting series will sometimes be stationary and there will be no need for a
+further first difference.
+
+It is important that if differencing is used, the differences are interpretable. First differences are the change between one observation and the next. Seasonal
+differences are the change between one year to the next.
