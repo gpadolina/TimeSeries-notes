@@ -44,3 +44,7 @@ Occasionally the differenced data will not appear to be stationary and it may be
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Second-order%20differencing.png)
 
 In practice, it is almost never necessary to go beyong second-order differences.
+#### Seasonal differencing
+A seasonal difference is the difference between an observation and the previous observation from the same season.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Seasonal%20differencing.png)
