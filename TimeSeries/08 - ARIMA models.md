@@ -57,3 +57,14 @@ further first difference.
 
 It is important that if differencing is used, the differences are interpretable. First differences are the change between one observation and the next. Seasonal
 differences are the change between one year to the next.
+#### Unit root tests
+One way to determine more objectively whether differencing is required is to use a unit root test. These are statistical hypothesis tests of stationarity that are
+designed for determining whether differencing is required.
+
+A number of unit root tests are available, which are based on different assumptions and may lead to conflicting answers. In our analysis, we use the *Kwiatkowski-
+Phillips-Schmidt-Shin (KPSS)* test. In this test, the null hypothesis is that the data are stationary and we look for evidence that the null hypothesis is false.
+Consequently, small p-values less than 0.05 suggest that differencing is required. The test can be computed using the ```ur.kpss( )``` function from the urca package.
+```
+library(urca)
+ur.kpss( ) %>% summary( )
+```
