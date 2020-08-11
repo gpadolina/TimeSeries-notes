@@ -68,3 +68,14 @@ Consequently, small p-values less than 0.05 suggest that differencing is require
 library(urca)
 ur.kpss( ) %>% summary( )
 ```
+## Backshift notation
+The backward shift operator B is a useful notational device when working with time series lags. In other words, B, operating on yt, has the effect of shifting the data
+back one period. Two applications of B to yt shifts the data back two periods.
+
+The backward shift operator is convenient for describing the process of differencing. A first difference can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/First%20difference%20backward%20shift.png)
+
+Note that a first difference is represented by (1-B). Similarly, if second-order differences have to be computed, then:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Second-order%20differences.png)
