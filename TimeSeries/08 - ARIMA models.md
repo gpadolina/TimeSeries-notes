@@ -12,3 +12,11 @@ length, so before we observe the series we cannot be sure where the peaks and tr
 
 In general, a stationary time series will have no predictable patterns in the long-term. Time plots will show the series to be roughly horizontal although some
 cyclic behavior is possible, with constant variance.
+#### Differencing
+To make a non-stationary time series stationary - compute the differences between consecutive observations. This is known as *differencing*.
+
+Transformations such as logarithms can help to stablize the variance of a time series. Differencing can help stablize the mean of a time series by removing changes
+in the level of a time series and therefore, eliminating or reducing trend and seasonality.
+
+The ACF plot is useful for identifying non-stationary time series. For a stationary time series, the ACF will drop to zero relatively quickly, while the ACF of
+non-stationary data decreases slowly. Also, for non-stationary data, the value of r1 is often large and positive.
