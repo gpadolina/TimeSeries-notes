@@ -38,3 +38,9 @@ Random walk models are widely used for non-stationary data, particularly financi
 * sudden and unpredictable changes in direction
 The forecasts from a random walk model are equal to the last observation, as future movements are unpredictable and are equally likely to be up or down. Thus, the
 random walk model underpins naïve forecasts.
+#### Second-order differencing
+Occasionally the differenced data will not appear to be stationary and it may be necessary to difference the data a second time to obtain a stationary series:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Second-order%20differencing.png)
+
+In practice, it is almost never necessary to go beyong second-order differences.
