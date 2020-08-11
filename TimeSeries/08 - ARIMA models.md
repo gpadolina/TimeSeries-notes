@@ -36,3 +36,5 @@ where et denotes white noise. Rearranging leads to the "random walk" model
 Random walk models are widely used for non-stationary data, particularly financial and economic data. Random walks typically have:
 * long periods of apparent trends up or down
 * sudden and unpredictable changes in direction
+The forecasts from a random walk model are equal to the last observation, as future movements are unpredictable and are equally likely to be up or down. Thus, the
+random walk model underpins naïve forecasts.
