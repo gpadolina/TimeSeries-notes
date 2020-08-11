@@ -20,3 +20,19 @@ in the level of a time series and therefore, eliminating or reducing trend and s
 
 The ACF plot is useful for identifying non-stationary time series. For a stationary time series, the ACF will drop to zero relatively quickly, while the ACF of
 non-stationary data decreases slowly. Also, for non-stationary data, the value of r1 is often large and positive.
+#### Random walk model
+The differenced series is the change between the consecutive observations in the original series and can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Difference%20series.png)
+
+When the differenced series is white noise, the model for the original series can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/White%20noise%20difference%20series.png)
+
+where et denotes white noise. Rearranging leads to the "random walk" model
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Random%20walk%20model.png)
+
+Random walk models are widely used for non-stationary data, particularly financial and economic data. Random walks typically have:
+* long periods of apparent trends up or down
+* sudden and unpredictable changes in direction
