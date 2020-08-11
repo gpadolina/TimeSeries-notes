@@ -90,3 +90,13 @@ Thus, an autoregressive model of order p can be written as
 
 where et is white noise. This is like a multiple regression but with *lagged values* of yt as predictors. We refer to this as an *AR(p) model*, an autoregressive
 model of order p.
+
+For an AR(1) model:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AR(1)%20model.png)
+
+We normally restrict autoregressive models to stationary data, in which case some constraints on the values of the parameters are required.
+
+![parameters](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AR%20parameters.png)
+
+When p>=3, the restrictions are much more complicated.
