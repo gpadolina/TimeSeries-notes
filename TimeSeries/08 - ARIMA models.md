@@ -164,3 +164,10 @@ estimated as the last coefficient in an autoregressive model.
 
 If the data are from an ARIMA(p,d,0) or ARIMA(0,d,q) model, then the ACF and PACF plots can be helpful in determining the value of p or q. If p and q are both
 positive, then the plots do not help in finding suitable values of p and q.
+
+The data may follow an ARIMA(p,d,0) model if the ACF and PACF plots of the differenced data show the following patterns:
+* the ACF is exponentially decaying or sinusoidal
+* there is a significant spike at lag p in the PACF, but none beyond lag p.
+The data may follow an ARIMA(0,d,q) model if the ACF and PACF plots of the differenced data show the following patterns:
+* the PACF is exponentially decaying or sinusoidal
+* there is a significant spike at lag q in the ACF, but none beyond lag q.
