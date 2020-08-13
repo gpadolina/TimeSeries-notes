@@ -80,7 +80,7 @@ Note that a first difference is represented by (1-B). Similarly, if second-order
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Second-order%20differences.png)
 
-#### Autoregressive models
+## Autoregressive models
 In a multiple regression model, we forecast the variable of interest using a linear combination of predictors. In an autoregression model, we forecast the variable of
 interest using a linear combination of past values of the variable. The term autoregression indicates that it is a regression of the variable against itself.
 
