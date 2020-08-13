@@ -137,3 +137,5 @@ The same stationarity and invertibility conditions that are used for autoregress
 We have some special cases of the ARIMA models:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Special%20cases%20of%20ARIMA.png)
+
+Selecting appropriate values for p, d, and q can be difficult. However, the ```auto.arima( )``` or ```ARIMA( )``` function in R will do it for you automatically.
