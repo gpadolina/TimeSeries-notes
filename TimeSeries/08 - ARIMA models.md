@@ -153,3 +153,14 @@ the long-term forecast standard deviation will go to the standard deviation of t
 
 The value of p is important if the data show cycles. To obtain cyclic forecasts, it is necessary to have p >= 2, along with some additional conditions on the
 parameters.
+
+#### ACF and PACF plots
+It is usually not possible to tell, simply from a time plot, what values of p and q are appropriate for the data. However, it is sometimes possible to use the
+ACF plot and the closely related PACF plot, to determine appropriate values for p and q.
+
+To overcome this problem, we can use *partial autocorrelations*. These measure the relationship between yt and yt-k after removing the effects of lags. So the
+first partial autocorrelation is identical to the first autocorrelation because there is nothing between them to remove. Each partial autocorrelation can be
+estimated as the last coefficient in an autoregressive model.
+
+If the data are from an ARIMA(p,d,0) or ARIMA(0,d,q) model, then the ACF and PACF plots can be helpful in determining the value of p or q. If p and q are both
+positive, then the plots do not help in finding suitable values of p and q.
