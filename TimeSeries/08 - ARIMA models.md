@@ -116,3 +116,7 @@ estimating the trend-cycle of past values.
 It is possible to write any stationary AR(p) model as an MA(infinity) model. For example, using repeated substitution, we can demonstrate this for an AR(1) model:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AR(1)%20model%20repeated%20substitution.png)
+
+The reverse result holds if we impose some constraints on the MA parameters. Then the MA model is called *invertible*. That is, we can write any invertible MA(q)
+process as an AR(infinity) process. Invertible models are not simply introduced to enable us to convert from MA models to AR models. They also have some desirable
+mathematical properties.
