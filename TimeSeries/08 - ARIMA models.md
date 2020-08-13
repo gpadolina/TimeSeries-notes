@@ -105,3 +105,10 @@ When p>=3, the restrictions are much more complicated.
 Rather than using past values of the forecast variable in regression, a moving average model uses past forecast errors in a regression like model.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Moving%20average%20model.png)
+
+We refer to this as an *MA(q) model*, a moving average model of order q. Of course, we do not observe the values of et, so it is not really a regression in
+the usual sense.
+
+Notice that each value of yt can be thought of as a weighted moving average of the past few forecast errors. However, moving average models should not be
+confused with the moving average *smoothing*. A moving average mdel is used for forecasting future values, while moving average smoothing is used for
+estimating the trend-cycle of past values.
