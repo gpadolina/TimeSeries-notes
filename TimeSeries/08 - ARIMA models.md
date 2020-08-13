@@ -131,3 +131,9 @@ The predictors on the right hand side include both lagged values of yt and lagge
 * p = order of the autoregressive part
 * d = degree of first differencing involved
 * q = order of the moving average part
+
+The same stationarity and invertibility conditions that are used for autoregressive and moving average models also apply to an ARIMA model.
+
+We have some special cases of the ARIMA models:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Special%20cases%20of%20ARIMA.png)
