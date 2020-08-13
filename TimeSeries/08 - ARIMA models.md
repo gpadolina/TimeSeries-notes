@@ -147,3 +147,9 @@ even when you rely on an automatic procedure to choose the model for you.
 The constant c ahs an important effect on the long-term forecasts obtained from these models.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Constant%20C%20effect%20ARIMA.png)
+
+The value of d also has an effect on the prediction intervals - the higher the value of d, the more rapidly the prediction intervals increase in size. For d = 0,
+the long-term forecast standard deviation will go to the standard deviation of the historical data, so the prediction intervals will all be essentially the same.
+
+The value of p is important if the data show cycles. To obtain cyclic forecasts, it is necessary to have p >= 2, along with some additional conditions on the
+parameters.
