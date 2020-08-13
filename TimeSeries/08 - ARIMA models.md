@@ -112,3 +112,7 @@ the usual sense.
 Notice that each value of yt can be thought of as a weighted moving average of the past few forecast errors. However, moving average models should not be
 confused with the moving average *smoothing*. A moving average mdel is used for forecasting future values, while moving average smoothing is used for
 estimating the trend-cycle of past values.
+
+It is possible to write any stationary AR(p) model as an MA(infinity) model. For example, using repeated substitution, we can demonstrate this for an AR(1) model:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AR(1)%20model%20repeated%20substitution.png)
