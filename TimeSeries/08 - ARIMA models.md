@@ -139,3 +139,11 @@ We have some special cases of the ARIMA models:
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Special%20cases%20of%20ARIMA.png)
 
 Selecting appropriate values for p, d, and q can be difficult. However, the ```auto.arima( )``` or ```ARIMA( )``` function in R will do it for you automatically.
+
+#### Understanding ARIMA models
+The ```auto.arima( )``` function is useful, but anything automated can be a little dangerous and it is worth understanding something of the behavior of the models
+even when you rely on an automatic procedure to choose the model for you.
+
+The constant c ahs an important effect on the long-term forecasts obtained from these models.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Constant%20C%20effect%20ARIMA.png)
