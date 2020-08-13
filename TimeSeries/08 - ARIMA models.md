@@ -120,3 +120,14 @@ It is possible to write any stationary AR(p) model as an MA(infinity) model. For
 The reverse result holds if we impose some constraints on the MA parameters. Then the MA model is called *invertible*. That is, we can write any invertible MA(q)
 process as an AR(infinity) process. Invertible models are not simply introduced to enable us to convert from MA models to AR models. They also have some desirable
 mathematical properties.
+
+## Non-seasonal ARIMA models
+If we combine differencing with autoregression and a moving average model, we obtain a non-seasonal ARIMA model. ARIMA is an acronym for AutoRegressive Integrated
+Moving Average. In this context, integration is the reverse of differencing. The full model can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Non-seasonal%20ARIMA%20model.png)
+
+The predictors on the right hand side include both lagged values of yt and lagged errors. We call this an *ARIMA(p,d,q) model* where
+* p = order of the autoregressive part
+* d = degree of first differencing involved
+* q = order of the moving average part
