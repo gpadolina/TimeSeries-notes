@@ -100,3 +100,8 @@ We normally restrict autoregressive models to stationary data, in which case som
 ![parameters](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AR%20parameters.png)
 
 When p>=3, the restrictions are much more complicated.
+
+## Moving average models
+Rather than using past values of the forecast variable in regression, a moving average model uses past forecast errors in a regression like model.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Moving%20average%20model.png)
