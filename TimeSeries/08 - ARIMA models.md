@@ -251,3 +251,9 @@ Multi-step prediction intervals for ARIMA(0,0,q) models are relatively easy to c
 Then, the estimated forecast variance can be written as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Estimated%20Forecast%20Variance.png)
+
+More general results and other special cases of multi-step prediction intervals for an ARIMA(p,d,q) model are given in more advanced textbooks.
+
+The prediction intervals for ARIMA models are based on assumptions that the residuals are uncorrelated and normally distributed. If either of these assumptions
+does not hold, then the prediction intervals may be incorrect. For this reason, always plot the ACF and histogram of the residuals to check the assumptions
+before producing prediction intervals.
