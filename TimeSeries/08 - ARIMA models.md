@@ -185,3 +185,9 @@ methods and different optimization algorithms.
 
 In practice, R will report the value of the log likelihood of the data; that is, the logarithm of the probability of the observed data coming from the estimated
 model. For given values of p, d, and q, R will try to maximize the log likelihood when finding parameter estimates.
+
+#### Information Criteria
+Akaike's Information Criterion (AIC), which was useful in selecting predictors for regression, is also useful for determining the order of an ARIMA model. It can
+be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AIC%20ARIMA.png)
