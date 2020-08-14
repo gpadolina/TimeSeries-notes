@@ -191,3 +191,7 @@ Akaike's Information Criterion (AIC), which was useful in selecting predictors f
 be written as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AIC%20ARIMA.png)
+
+For ARIMA models, the corrected AIC can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AICc%20ARIMA.png)
