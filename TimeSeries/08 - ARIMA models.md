@@ -199,3 +199,7 @@ For ARIMA models, the corrected AIC can be written as
 and the Bayesian Information Criterion can be written as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/BIC%20ARIMA.png)
+
+It is important to note that these information criteria tend to not be good guides to selecting the appropriate order of differencing (d) of a model, but only for
+selecting the values of p and q. This is because the differencing changes the data on which the likelihood is computed, making the AIC values between models with
+different orders of differencing not comparable. So we need to use some other approach to choose d and then we can use the AICc to select p and q.
