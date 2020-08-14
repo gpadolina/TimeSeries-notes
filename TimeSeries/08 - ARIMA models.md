@@ -241,3 +241,9 @@ The calculation of ARIMA prediction intervals is more difficult.
 The first prediction interval is easy to calculate. If small sigma is the standard deviation of the residuals, then a 95% prediction interval is given by
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/95%25%20Prediction%20Interval.png)
+
+This result is true for all ARIMA models regardless of their parameters and orders.
+
+Multi-step prediction intervals for ARIMA(0,0,q) models are relatively easy to calculate. We can write the model as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Multi-step%20Prediction%20Interval.png)
