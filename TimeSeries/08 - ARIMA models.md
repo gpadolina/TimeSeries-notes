@@ -171,3 +171,11 @@ The data may follow an ARIMA(p,d,0) model if the ACF and PACF plots of the diffe
 The data may follow an ARIMA(0,d,q) model if the ACF and PACF plots of the differenced data show the following patterns:
 * the PACF is exponentially decaying or sinusoidal
 * there is a significant spike at lag q in the ACF, but none beyond lag q.
+
+## Estimation and order selection
+#### Maximum Likelihood estimation
+Once the model order has been identified(ie the values of p,d,and q), we need to estimate the parameters c. When R estimates the ARIMA model, it uses maximum
+likelihood estimation (MLE). This technique finds the values of the parameters which maximise the probability of obtaining the data that we have observed. For
+ARIMA models, MLE is similar to the least squares estiamtes that would be obtained by minimizing
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/MLE.png)
