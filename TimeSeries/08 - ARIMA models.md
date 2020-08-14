@@ -257,3 +257,6 @@ More general results and other special cases of multi-step prediction intervals 
 The prediction intervals for ARIMA models are based on assumptions that the residuals are uncorrelated and normally distributed. If either of these assumptions
 does not hold, then the prediction intervals may be incorrect. For this reason, always plot the ACF and histogram of the residuals to check the assumptions
 before producing prediction intervals.
+
+As with most prediction interval calculations, ARIMA-based intervals tend to be too narrow. This occurs because only the variation in the rrors has been accounted
+for.
