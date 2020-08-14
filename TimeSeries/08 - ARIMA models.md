@@ -179,3 +179,9 @@ likelihood estimation (MLE). This technique finds the values of the parameters w
 ARIMA models, MLE is similar to the least squares estiamtes that would be obtained by minimizing
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/MLE.png)
+
+Note that ARIMA models are much complicated to estimate than regression models and different software will give slightly different answers as they use different
+methods and different optimization algorithms.
+
+In practice, R will report the value of the log likelihood of the data; that is, the logarithm of the probability of the observed data coming from the estimated
+model. For given values of p, d, and q, R will try to maximize the log likelihood when finding parameter estimates.
