@@ -216,3 +216,8 @@ If you want to choose the model yourself, use the ```auto.arima( )``` function w
 function ```arima( )``` in R which also fits an ARIMA model. However, it does not allow for the constant c unless d=0 and it does not return everything required
 for other functions in the *forecast* package to work. Finally, it does not allow the estimated model to be applied to new data (which is useful for checking
 forecast accuracy). Consequently, it is recommended that ```ARIMA( )``` be used instead.
+#### Modelling procedure
+When fitting an ARIMA model to a set of non-seasonal time series data, the following procedure provides a useful general approach.
+1. Plot the data and identify any unusual observations.
+2. If necessary, transform the data using a Box-Cox transformation to stablize the variance.
+3. IF the data are non-stationary, take first differences of the data until the data are stationary.
