@@ -203,3 +203,11 @@ and the Bayesian Information Criterion can be written as
 It is important to note that these information criteria tend to not be good guides to selecting the appropriate order of differencing (d) of a model, but only for
 selecting the values of p and q. This is because the differencing changes the data on which the likelihood is computed, making the AIC values between models with
 different orders of differencing not comparable. So we need to use some other approach to choose d and then we can use the AICc to select p and q.
+
+## ARIMA modelling in R
+#### How does ```auto.arima( )``` work?
+The ```auto.arima( )``` function in R uses a variation of the Hyndman-Khandakar algorithm, which combines unit root tests, minimization of the AICc and MLE to
+obtain an ARIMA model. The arguments to ```auto.arima( )``` provide many variations on the algorithm.
+
+These approximations can be avoided with the argument ```approximation=FALSE```. It is possible that the minimum AICc model will not be found due to these
+approximations or because the use of a stepwise procedure. A much larger set of models will be search if the argument ```stepwise=FALSE``` is used.
