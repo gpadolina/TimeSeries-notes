@@ -234,3 +234,10 @@ the following three steps.
 1. Expand the ARIMA equation so that yt is on the left hand side and all other terms are on the right.
 2. Rewrite the equation by replacing t with T + h.
 3. On the right hand side of the equation, replace future observations with their forecasts, future errors with zero, and past errors with the corresponding residuals.
+
+#### Prediction intervals
+The calculation of ARIMA prediction intervals is more difficult.
+
+The first prediction interval is easy to calculate. If small sigma is the standard deviation of the residuals, then a 95% prediction interval is given by
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/95%25%20Prediction%20Interval.png)
