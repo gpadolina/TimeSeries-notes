@@ -247,3 +247,7 @@ This result is true for all ARIMA models regardless of their parameters and orde
 Multi-step prediction intervals for ARIMA(0,0,q) models are relatively easy to calculate. We can write the model as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Multi-step%20Prediction%20Interval.png)
+
+Then, the estimated forecast variance can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Estimated%20Forecast%20Variance.png)
