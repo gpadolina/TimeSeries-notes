@@ -195,3 +195,7 @@ be written as
 For ARIMA models, the corrected AIC can be written as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/AICc%20ARIMA.png)
+
+and the Bayesian Information Criterion can be written as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/BIC%20ARIMA.png)
