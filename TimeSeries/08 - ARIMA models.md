@@ -226,3 +226,11 @@ When fitting an ARIMA model to a set of non-seasonal time series data, the follo
 6. Check the residuals from your chosen model by plotting the ACF of the residuals and doing a portmanteau teast of the residuals. If they do not look like white
 noise, try a modified model.
 7. Once the residuals look like white noise, calculate forecasts.
+
+## Forecasting
+#### Point forecasts
+Although we have calculated forecasts from the ARIMA models in our examples, we have not yet explained how they are obtained. Point forecasts can be calculated using
+the following three steps.
+1. Expand the ARIMA equation so that yt is on the left hand side and all other terms are on the right.
+2. Rewrite the equation by replacing t with T + h.
+3. On the right hand side of the equation, replace future observations with their forecasts, future errors with zero, and past errors with the corresponding residuals.
