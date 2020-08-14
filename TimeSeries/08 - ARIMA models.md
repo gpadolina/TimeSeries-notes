@@ -211,3 +211,8 @@ obtain an ARIMA model. The arguments to ```auto.arima( )``` provide many variati
 
 These approximations can be avoided with the argument ```approximation=FALSE```. It is possible that the minimum AICc model will not be found due to these
 approximations or because the use of a stepwise procedure. A much larger set of models will be search if the argument ```stepwise=FALSE``` is used.
+#### Choosing your own model
+If you want to choose the model yourself, use the ```auto.arima( )``` function wiht a single value for input for ```pdq( )``` and ```PDQ( )```. There is another
+function ```arima( )``` in R which also fits an ARIMA model. However, it does not allow for the constant c unless d=0 and it does not return everything required
+for other functions in the *forecast* package to work. Finally, it does not allow the estimated model to be applied to new data (which is useful for checking
+forecast accuracy). Consequently, it is recommended that ```ARIMA( )``` be used instead.
