@@ -260,3 +260,11 @@ before producing prediction intervals.
 
 As with most prediction interval calculations, ARIMA-based intervals tend to be too narrow. This occurs because only the variation in the rrors has been accounted
 for.
+
+## Seasonal ARIMA models
+So far, we have restricted our attention to non-seasonal data and non-seasonal ARIMA models. However, ARIMA models are also capable of modelling a wide range of
+seasonal data.
+
+A seasonal ARIMA model is formed by including additional seasonal terms in the ARIMA models we have seen so far written as follows:
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Seasonal%20ARIMA%20model.png)
