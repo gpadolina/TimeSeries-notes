@@ -278,3 +278,7 @@ The seasonal part of an AR or MA model will be seen in the seasonal lags of the 
 Similarly, an ARIMA(0,0,0)(1,0,0)12 model will show:
 * exponential decay in the seasonal lags of the ACF
 * a single significant spike at 12 in the PACF
+## ARIMA vs ETS
+It is commonly held myth that ARIMA models are more general than exponential smoothing. While linear exponential smoothing models are all special cases of ARIMA
+model, the non-linear exponential smoothing models have no equivalent ARIMA counterparts. On the other hand, there are also many ARIMA models that have no exponential
+smoothing counterparts. In particular, all ETS model are non-stationary, while some ARIMA models are stationary.
