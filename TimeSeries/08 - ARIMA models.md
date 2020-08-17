@@ -271,3 +271,10 @@ A seasonal ARIMA model is formed by including additional seasonal terms in the A
 
 where m = number of observations per year. We use the uppercase notation for the seasonal parts of the model and lowercase notation for the non-seasonal parts of the
 model.
+#### ACF/PACF
+The seasonal part of an AR or MA model will be seen in the seasonal lags of the PACF and ACF. For example, an ARIMA(0,0,0)(0,0,1)12 model will show:
+* a spike at lag 12 in the ACF but no other significant spikes
+* exponential decay in the seasonal lags of the PACF(ie lags at 12, 24, 36...)
+Similarly, an ARIMA(0,0,0)(1,0,0)12 model will show:
+* exponential decay in the seasonal lags of the ACF
+* a single significant spike at 12 in the PACF
