@@ -282,3 +282,8 @@ Similarly, an ARIMA(0,0,0)(1,0,0)12 model will show:
 It is commonly held myth that ARIMA models are more general than exponential smoothing. While linear exponential smoothing models are all special cases of ARIMA
 model, the non-linear exponential smoothing models have no equivalent ARIMA counterparts. On the other hand, there are also many ARIMA models that have no exponential
 smoothing counterparts. In particular, all ETS model are non-stationary, while some ARIMA models are stationary.
+
+The ETS models with seasonality or non-damped trend or both have two unit roots (they need two levels of differencing to make them stationary). All other ETS models
+have one unit root (they need one level of differencing to make them stationary).
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Equivalence%20relationships%20between%20ETS%20and%20ARIMA%20models.png)
