@@ -268,3 +268,6 @@ seasonal data.
 A seasonal ARIMA model is formed by including additional seasonal terms in the ARIMA models we have seen so far written as follows:
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Seasonal%20ARIMA%20model.png)
+
+where m = number of observations per year. We use the uppercase notation for the seasonal parts of the model and lowercase notation for the non-seasonal parts of the
+model.
