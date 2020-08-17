@@ -8,3 +8,8 @@ In this chapter, we will allow the error from a regression to contain autocorrel
 equation. The error series nt is asummed to follow an ARIMA model. For example, if nt follow an ARIMA(1,1,1) model, we write,
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/ARIMA(1%2C1%2C1)%20model.png)
+
+where et is a white noise series.
+
+Notice that the model has two error terms here - the error from the regression model, which we denote by nt and the error from the ARIMA model, which we denote by et.
+Only the ARIMA model errors are assummed to be white noise.
