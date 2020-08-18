@@ -72,3 +72,15 @@ seasonal periods, the shortest of which is the daily patter of period 48.
 
 Seasonal versions of ARIMA and ETS models are designed for shorter periods such as 12 for monthly data or 4 for quarterly data. The ```ets( )``` function restricts
 seasonality to be a maximum period of 24 to allow hourly data but not data with a larger seasonal frequency.
+
+The ```Arima( )``` and ```auto.arima( )``` funcitons will allow a seasonal period up to m=350, but in practice will usually run out of memory whenever the seasonal
+period is more than about 200. In any cases, seasonal differencing of high order does not make a lot of sense.
+
+So for such time series, we prefer a harmonic regression approach where the seasonal pattern is modelled using Fourier terms with short-term time series dynamics
+handled by an ARMA error.
+
+The advantages of this approach are:
+* it allows any length seasonality.
+* for data with more than one seasonal period, Fourier terms of different frequencies can be included.
+* the smoothness of the seasonal pattern can be controlled by K, the number of Fourier sin and cos pairs - the seasonal pattern is smoother for smaller values of K.
+* the short-term dynamics are easily handled with a simple ARMA error.
