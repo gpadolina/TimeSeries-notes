@@ -53,3 +53,9 @@ As with ordinary regression models, in order to obtain forecasts we first need t
 There are two different ways of modelling a linear trend. A *deterministic trend* is obtained using the regression model
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Deterministic%20trend.png)
+
+where nt is an ARMA process. A *stochastic trend* is obtained using the model
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Deterministic%20trend.png)
+
+where nt is an ARIMA process with d = a. In the latter case, we can difference both sides.
