@@ -44,3 +44,5 @@ fit <- Arima(y, xreg=x, order=c(1,1,0))
 The ```auto.arima( )``` function will also handle regression terms via the ```xreg``` argument. The user must specify the predictor variables to include, but
 ```auto.arima( )``` will select the best ARIMA model for the errors. If differencing is required, then all variables are differenced during the estimation process,
 although final model will be expressed in terms of the original variables.
+
+The AICc is calculated for the final model and this value can be used to determine the best predictors.
