@@ -13,3 +13,11 @@ where et is a white noise series.
 
 Notice that the model has two error terms here - the error from the regression model, which we denote by nt and the error from the ARIMA model, which we denote by et.
 Only the ARIMA model errors are assummed to be white noise.
+## 9.1 Estimation
+When we estimate the parameters from the model, we need to minimize the sum of squared et values. IF we minimize the sum of squared nt values instead (which is what
+would happen if we estimated the regression model ignoring the autocorrelations in the errors), then several problems arise.
+1. The estimated coefficients b0,...,bk are no longer the best estimates, as some information has been ignored in the calculation.
+2. Any statistical tests associated with the model (eg t-tests on the coefficients) will be incorrect.
+3. The AICc values of the fitted models are no longer a good guide as to which is the best model for forecasting.
+4. In most cases, the p-values associated with the coefficients will be too small and so some predictor variables will appear to be important when they are not.
+This is known as "spurious regression."
