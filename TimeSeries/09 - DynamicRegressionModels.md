@@ -49,3 +49,7 @@ The AICc is calculated for the final model and this value can be used to determi
 ## Forecasting
 To forecast using a regression model with ARIMA errors, we need to forecast the regression part of the model and the ARIMA part of the model and combine the results.
 As with ordinary regression models, in order to obtain forecasts we first need to forecast the predictors.
+## Stochastic and deterministic trends
+There are two different ways of modelling a linear trend. A *deterministic trend* is obtained using the regression model
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Deterministic%20trend.png)
