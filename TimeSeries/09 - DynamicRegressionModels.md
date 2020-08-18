@@ -13,7 +13,7 @@ where et is a white noise series.
 
 Notice that the model has two error terms here - the error from the regression model, which we denote by nt and the error from the ARIMA model, which we denote by et.
 Only the ARIMA model errors are assummed to be white noise.
-## 9.1 Estimation
+## Estimation
 When we estimate the parameters from the model, we need to minimize the sum of squared et values. IF we minimize the sum of squared nt values instead (which is what
 would happen if we estimated the regression model ignoring the autocorrelations in the errors), then several problems arise.
 1. The estimated coefficients b0,...,bk are no longer the best estimates, as some information has been ignored in the calculation.
@@ -84,3 +84,6 @@ The advantages of this approach are:
 * for data with more than one seasonal period, Fourier terms of different frequencies can be included.
 * the smoothness of the seasonal pattern can be controlled by K, the number of Fourier sin and cos pairs - the seasonal pattern is smoother for smaller values of K.
 * the short-term dynamics are easily handled with a simple ARMA error.
+
+The only real disadvantage (compared to a seasonal ARIMA model) is that the seasonality is assumed to be fixed - the seasonal pattern is not allowed to change over
+time.
