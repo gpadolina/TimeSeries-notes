@@ -21,3 +21,10 @@ would happen if we estimated the regression model ignoring the autocorrelations 
 3. The AICc values of the fitted models are no longer a good guide as to which is the best model for forecasting.
 4. In most cases, the p-values associated with the coefficients will be too small and so some predictor variables will appear to be important when they are not.
 This is known as "spurious regression."
+
+Minimizing the sum of squared et values avoids these problems. Alternatively, maximum likelihood estimation can be used; this will give similar estimates of the
+coefficients.
+
+An important consideration when estimating a regression with ARMA erorrs is that all of the variables in the model must first be stationary. Thus, we first have
+to check that yt and all of the predictors appear to be stationary. One exception to this is the case where non-stationary variables are co-integrated. If there
+exists a linear combination of the non-stationary yt and the predictors that is stationary, then the estimated coefficients will be consistent.
