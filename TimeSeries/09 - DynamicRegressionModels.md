@@ -59,3 +59,8 @@ where nt is an ARMA process. A *stochastic trend* is obtained using the model
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Deterministic%20trend.png)
 
 where nt is an ARIMA process with d = a. In the latter case, we can difference both sides.
+
+There is an implicit assumption with deterministic trends that the slope of the trend is not going to change over time. On the other hand, stochastic trends can change
+and the estimated growth is only assumed to be the average growth over the historical period, not necessarily the rate of growth that will be observed into the future.
+Consequently, it is safer to forecast with stochastic trends, especially for longer forecast horizon, as the prediction intervals allow for greater uncertainty in
+future growth.
