@@ -28,3 +28,7 @@ coefficients.
 An important consideration when estimating a regression with ARMA erorrs is that all of the variables in the model must first be stationary. Thus, we first have
 to check that yt and all of the predictors appear to be stationary. One exception to this is the case where non-stationary variables are co-integrated. If there
 exists a linear combination of the non-stationary yt and the predictors that is stationary, then the estimated coefficients will be consistent.
+
+We therefore first difference the non-stationary variables in the model. It is often desirable to maintain the form of the relationship between yt and the predictors
+and consequently it is common to difference all of the variables if any of them need differencing. The resulting model is then called a "model in differences", as
+distinct from a "model in levels", which is what is obtained when the original data are used without differencing.
