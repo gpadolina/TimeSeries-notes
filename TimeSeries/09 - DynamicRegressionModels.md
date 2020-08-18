@@ -64,3 +64,11 @@ There is an implicit assumption with deterministic trends that the slope of the 
 and the estimated growth is only assumed to be the average growth over the historical period, not necessarily the rate of growth that will be observed into the future.
 Consequently, it is safer to forecast with stochastic trends, especially for longer forecast horizon, as the prediction intervals allow for greater uncertainty in
 future growth.
+## Dynamic harmonic regression
+Where there are long seasonal periods, a dynamic regression with Fourier terms is often better than other models.
+
+For example, daily data can have annual seasonality of length 365, weekly data has seasonal period of approximately 52, while half-hourly data can have several
+seasonal periods, the shortest of which is the daily patter of period 48.
+
+Seasonal versions of ARIMA and ETS models are designed for shorter periods such as 12 for monthly data or 4 for quarterly data. The ```ets( )``` function restricts
+seasonality to be a maximum period of 24 to allow hourly data but not data with a larger seasonal frequency.
