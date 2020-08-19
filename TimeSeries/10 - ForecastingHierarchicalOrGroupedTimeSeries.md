@@ -32,3 +32,9 @@ For the hierarchical structure above, we can write
 ## Grouped time series
 Grouped time series involve more general aggregation structures than hierarchical time series. With grouped time series, the structure does not naturally disaggregate
 in a unique hierarchical manner and often the disaggregating factors are both nested and crossed.
+
+The figure below shows a K = 2-level grouped structure. At the top of the grouped structure is the Total, the most aggregate level of the data, again represented by yt.
+The Total can be disaggregated by attributed (A, B) forming series yA,t and yB, or attributes (X, Y) forming series yX,t and yY,t. At the bottom level, the data are
+disaggregated by both attributes.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-level%20grouped%20structure.png)
