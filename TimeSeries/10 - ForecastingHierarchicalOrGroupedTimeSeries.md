@@ -41,3 +41,6 @@ disaggregated by both attributes.
 
 Grouped time series can be sometimes thought of as hierarchical time series that do not impose a unique hierarchical structure, in the sense that the order by which
 the series can grouped is not unique.
+## The bottom-up approach
+A simple method for generating coherent forecasts is the bottom-up approach. This approach involves first generating forecasts for each series at the bottom-level
+and then summing these to produce forecasts for all the series in the structure.
