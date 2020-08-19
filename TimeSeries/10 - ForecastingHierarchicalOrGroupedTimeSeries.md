@@ -38,3 +38,6 @@ The Total can be disaggregated by attributed (A, B) forming series yA,t and yB, 
 disaggregated by both attributes.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-level%20grouped%20structure.png)
+
+Grouped time series can be sometimes thought of as hierarchical time series that do not impose a unique hierarchical structure, in the sense that the order by which
+the series can grouped is not unique.
