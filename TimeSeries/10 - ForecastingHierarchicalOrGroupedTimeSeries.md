@@ -44,3 +44,11 @@ the series can grouped is not unique.
 ## The bottom-up approach
 A simple method for generating coherent forecasts is the bottom-up approach. This approach involves first generating forecasts for each series at the bottom-level
 and then summing these to produce forecasts for all the series in the structure.
+
+An advantage of this approach is that we are forecasting at the bottom-level of a structure and therefore no information is lost due to aggregation. On the other
+hand, bottom-level data can be quite noisy and more challenging to model and forecast.
+
+#### The hts package for R
+Forecast can be produced using the ```forecast( )``` function applied to objects created by ```hts( )``` or ```gts( )```. The hts package has thee built-in options
+to produce forecasts: ETS models, ARIMA models or random walks; these are controlled by the ```fmethod``` argument. It also use several methods for producing
+coherent forecasts, controlled by the ```method``` argument.
