@@ -28,3 +28,7 @@ hierarchies.
 For the hierarchical structure above, we can write
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Hierarchical%20structure%20equation.png)
+
+## Grouped time series
+Grouped time series involve more general aggregation structures than hierarchical time series. With grouped time series, the structure does not naturally disaggregate
+in a unique hierarchical manner and often the disaggregating factors are both nested and crossed.
