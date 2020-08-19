@@ -7,4 +7,11 @@ so collection of time series follow a hierarchical aggregation structure. Theref
 Hierarchical time series often arise due to geographic divisions. For example, the total bicycle sales can be disaggregated by country, then within each country
 by state, within each state by region, and so on down to the outlet level.
 
-Our bicycle manufacturer may disaggregate sales by both product type and by geographic location.
+Our bicycle manufacturer may disaggregate sales by both product type and by geographic location. Then we have a more complicated aggregation structure where the
+product hierarchy and the geographic hierarchy can be both used together. We usually refer to these as "grouped time series".
+
+It is common to produce disaggregated forecasts based on disaggregated time series and we usually require the forecasts to add up in the same way as the data.
+For example, forecasts of regional sales should add up to give forecasts of state sales, which should in turn add up to give a forecast for the national sales.
+
+We discuss forecasting large collection of time series that must add up in some way. The challenge is that we require forecasts that are *coherent* across the
+aggregation structure. That is, we require forecasts to add up in a manner that is consistent with the aggregation strucutre of the collection of time series.
