@@ -69,3 +69,7 @@ The two most common top-down approaches specify disaggregation proportions based
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Average%20historical%20proportions.png)
 
 This approach is implemented in the ```forecast( )``` function by setting ```method="tdgsa"```, where ```tdgsa``` stands for "top-down Gross-Sohl method A".
+
+#### Proportions of the historical averages
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Proportions%20of%20the%20historical%20averages.png)
