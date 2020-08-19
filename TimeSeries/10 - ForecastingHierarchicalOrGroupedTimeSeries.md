@@ -59,3 +59,8 @@ forecast(timeseries, method="bu", fmethod="arima"
 ```
 which will apply the ```auto.arima( )``` function to every bottom-level series in our collection of time series. Similarly, ETS models would be used if
 ```fmethod="ets"``` was used.
+## Top-down approaches
+Top-down approaches only work with strictly hierarchical aggregation structures and not with grouped structures. They involve first generating forecasts for the
+Total series yt and then disaggregating these down the hierarchy.
+
+The two most common top-down approaches specify disaggregation proportions based on the historical proportions of the data.
