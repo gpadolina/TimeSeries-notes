@@ -75,3 +75,8 @@ This approach is implemented in the ```forecast( )``` function by setting ```met
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Proportions%20of%20the%20historical%20averages.png)
 
 This approach is implemented in the ```forecast( )``` function by setting ```method="tdgsf"```, where ```tdgsf``` stands for "top-down Gross-Sohl method F".
+
+A convenient attribute of such top-down approaches is their simplicity. One only needs to model and generate forecasts for the most aggregated top-level series.
+In general, these approaches seems to produce quiet reliable forecasts for the aggregate levels and they are useful with low count data. On the other hand,
+one disadvantage is the loss of information due to aggregation. Using such top-down approaches, we are unable to capture and take advantage of individual series
+characteristics such as time dynamics, special events, etc.
