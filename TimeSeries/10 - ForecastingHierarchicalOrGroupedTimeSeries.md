@@ -24,3 +24,7 @@ into three and two series respectively at bottom-level of the hierarchy.
 
 In this example, the total number of series in the hierarchy is n = 1 + 2 + 5 = 8, while the number of series at the bottom-level is m = 5. Note that n > m in all
 hierarchies.
+
+For the hierarchical structure above, we can write
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Hierarchical%20structure%20equation.png)
