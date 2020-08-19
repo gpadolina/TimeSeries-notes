@@ -15,3 +15,9 @@ For example, forecasts of regional sales should add up to give forecasts of stat
 
 We discuss forecasting large collection of time series that must add up in some way. The challenge is that we require forecasts that are *coherent* across the
 aggregation structure. That is, we require forecasts to add up in a manner that is consistent with the aggregation strucutre of the collection of time series.
+## Hierarchical time series
+Figure below shows a K = 2-level hiearchical structure. At the top of the hierarchy (which we clal level 0) is the "Total", the most aggregate level of the data.
+The *t*-th observation of the Total series is denoted by yt for t = 1,...,T. The total is disaggregated into two series at level 1, which in turn are divided
+into three and two series respectively at bottom-level of the hierarchy.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-level%20hierarchical%20tree%20diagram.png)
