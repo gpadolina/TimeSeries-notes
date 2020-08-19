@@ -64,3 +64,5 @@ Top-down approaches only work with strictly hierarchical aggregation structures 
 Total series yt and then disaggregating these down the hierarchy.
 
 The two most common top-down approaches specify disaggregation proportions based on the historical proportions of the data.
+#### Average historical proportions
+This approach is implemented in the ```forecast( )``` function by setting ```method="tdgsa"```, where ```tdgsa``` stands for "top-down Gross-Sohl method A".
