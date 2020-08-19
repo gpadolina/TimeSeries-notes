@@ -73,3 +73,5 @@ This approach is implemented in the ```forecast( )``` function by setting ```met
 #### Proportions of the historical averages
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Proportions%20of%20the%20historical%20averages.png)
+
+This approach is implemented in the ```forecast( )``` function by setting ```method="tdgsf"```, where ```tdgsf``` stands for "top-down Gross-Sohl method F".
