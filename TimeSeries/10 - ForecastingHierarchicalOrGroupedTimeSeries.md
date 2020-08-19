@@ -21,3 +21,6 @@ The *t*-th observation of the Total series is denoted by yt for t = 1,...,T. The
 into three and two series respectively at bottom-level of the hierarchy.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Two-level%20hierarchical%20tree%20diagram.png)
+
+In this example, the total number of series in the hierarchy is n = 1 + 2 + 5 = 8, while the number of series at the bottom-level is m = 5. Note that n > m in all
+hierarchies.
