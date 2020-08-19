@@ -52,3 +52,10 @@ hand, bottom-level data can be quite noisy and more challenging to model and for
 Forecast can be produced using the ```forecast( )``` function applied to objects created by ```hts( )``` or ```gts( )```. The hts package has thee built-in options
 to produce forecasts: ETS models, ARIMA models or random walks; these are controlled by the ```fmethod``` argument. It also use several methods for producing
 coherent forecasts, controlled by the ```method``` argument.
+
+For example,suppose we wanted bottom-up forecasts using ARIMA models applied to the prison data. Then we would use
+```
+forecast(timeseries, method="bu", fmethod="arima"
+```
+which will apply the ```auto.arima( )``` function to every bottom-level series in our collection of time series. Similarly, ETS models would be used if
+```fmethod="ets"``` was used.
