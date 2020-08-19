@@ -80,3 +80,8 @@ A convenient attribute of such top-down approaches is their simplicity. One only
 In general, these approaches seems to produce quiet reliable forecasts for the aggregate levels and they are useful with low count data. On the other hand,
 one disadvantage is the loss of information due to aggregation. Using such top-down approaches, we are unable to capture and take advantage of individual series
 characteristics such as time dynamics, special events, etc.
+
+#### Forecast proportions
+Because historical proportions used for disaggregation do not take account of how those proportions may change over time, top-down approaches based on historical
+proportions tend to produce less accurate forecasts at lower levels of the hierarchy than bottom-up approaches. To address this issues, proportions bases on forecasts
+rathen than historical data can be used.
