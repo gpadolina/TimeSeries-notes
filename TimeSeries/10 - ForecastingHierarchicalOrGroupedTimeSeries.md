@@ -135,3 +135,9 @@ Suppose we generate coherent forecasts using mapping matrices equation.
 
 First we want to make sure we have unbiased forecasts. If the base forecasts yh are unbiased, then the coherent forecast yh will be unbiased provided SPS = S. This
 provides a constraint on the matrix G. Interestingly, no top-down method satisfies this constraint, so all top-down methods are biased.
+
+Next we need to find the error in our forecasts. Wickramasuriya show that variance-covariance matrix of the h-step-ahead coherent forecasts errors is given by
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Variance-covariance%20matrix.png)
+
+The objective is to find a matrix P that minimizes the error variances of the coherent forecasts. These 
