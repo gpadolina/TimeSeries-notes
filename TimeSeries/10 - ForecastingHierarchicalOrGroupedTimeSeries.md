@@ -112,3 +112,7 @@ coherent forecast yh.
 The P matrix is defined according to the approach implemented.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/P%20matrix%20using%20bottom-up%20approach.png)
+
+If any of the top-down approaches were used then
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/P%20matrix%20using%20top-down%20approach.png)
