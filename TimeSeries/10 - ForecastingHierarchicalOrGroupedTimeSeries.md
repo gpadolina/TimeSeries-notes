@@ -96,3 +96,12 @@ series below the "middle-level", coherent forecasts are generated using a top-do
 
 This approach is implemented in the ```forecast( )``` function by setting ```method="mo"``` and by specifying the appropriate middle level via the ```level```
 argument. For the top-down disaggregation below the middle level, the top-down forecast proportions method is used.
+## Mapping matrices
+All of the methods considered so far can be expressed using a common notation.
+
+Suppose we forecast all series independently, ignoring the aggregating constraints. We call these the *base forecasts* and denote them by yh, where h is the forecast
+horizon. They are stacked in the same order as the data yt.
+
+Then all forecasting approaches for either hierarchical or grouped structures can be represented as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Mapping%20matrices.png)
