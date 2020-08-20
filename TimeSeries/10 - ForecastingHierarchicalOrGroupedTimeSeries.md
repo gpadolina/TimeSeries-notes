@@ -85,3 +85,7 @@ characteristics such as time dynamics, special events, etc.
 Because historical proportions used for disaggregation do not take account of how those proportions may change over time, top-down approaches based on historical
 proportions tend to produce less accurate forecasts at lower levels of the hierarchy than bottom-up approaches. To address this issues, proportions bases on forecasts
 rathen than historical data can be used.
+
+One disadvantage of all top-down approaches, including this one, is that it does not produce unbiases coherent forecast.
+
+This approached is implemented in the ```forecast( )``` function by setting ```method="tdfp"``` where ```tdfp``` stands for "top-down forecast proportions".
