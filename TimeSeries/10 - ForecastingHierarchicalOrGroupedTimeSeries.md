@@ -124,3 +124,7 @@ We can rewrite the equation for mapping matrices as
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Forecast%20reconciliation.png)
 
 where R = SP is a "projection" or a "reconciliation matrix." That is, it take the incoherent base forecast yh and reconciles them to produce coherent forecast yh.
+
+In general, we could use other P matrices and then R will be combining and reconciling all the base forecasts in order to produce coherent forecasts.
+
+In fact, we can find the optimal P matrix to give the most accurate reconciled forecasts.
