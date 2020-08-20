@@ -145,3 +145,7 @@ The objective is to find a matrix P that minimizes the error variances of the co
 Wickramasuriya show that the matrix P which minimizes the trace of Vh such that SPS = S is given by
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Matrix%20P%20that%20minimizes%20the%20trace.png)
+
+Therefore, the optimal reconciled forecasts are given by
+
+We refer to this as the "MinT" (or Minimum Trace) estimator.
