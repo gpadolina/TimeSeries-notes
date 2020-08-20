@@ -128,3 +128,10 @@ where R = SP is a "projection" or a "reconciliation matrix." That is, it take th
 In general, we could use other P matrices and then R will be combining and reconciling all the base forecasts in order to produce coherent forecasts.
 
 In fact, we can find the optimal P matrix to give the most accurate reconciled forecasts.
+## The optimal reconciliation approach
+Optimal forecast reconciliation will occur if we can find the G matrix which minimizes the forecast error of the set of coherent forecasts.
+
+Suppose we generate coherent forecasts using mapping matrices equation.
+
+First we want to make sure we have unbiased forecasts. If the base forecasts yh are unbiased, then the coherent forecast yh will be unbiased provided SPS = S. This
+provides a constraint on the matrix G. Interestingly, no top-down method satisfies this constraint, so all top-down methods are biased.
