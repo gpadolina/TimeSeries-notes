@@ -89,3 +89,10 @@ rathen than historical data can be used.
 One disadvantage of all top-down approaches, including this one, is that it does not produce unbiases coherent forecast.
 
 This approached is implemented in the ```forecast( )``` function by setting ```method="tdfp"``` where ```tdfp``` stands for "top-down forecast proportions".
+## Middle-out approach
+The middle-out approach combines bottom-up and top-down approaches. First, a "middle level" is chosen and forecasts are generated for all the series at this level.
+For the series above the middle level, coherent forecasts are generated using the bottom-up approach by aggregating the "middle-level" forecasts upwards. For the
+series below the "middle-level", coherent forecasts are generated using a top-down approach by disaggregating the "middle level" forecasts downwards.
+
+This approach is implemented in the ```forecast( )``` function by setting ```method="mo"``` and by specifying the appropriate middle level via the ```level```
+argument. For the top-down disaggregation below the middle level, the top-down forecast proportions method is used.
