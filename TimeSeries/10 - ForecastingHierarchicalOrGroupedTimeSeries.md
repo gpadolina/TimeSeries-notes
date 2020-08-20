@@ -116,3 +116,5 @@ The P matrix is defined according to the approach implemented.
 If any of the top-down approaches were used then
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/P%20matrix%20using%20top-down%20approach.png)
+
+For a middle out approach, the P matrix will be a combination of the above two.
