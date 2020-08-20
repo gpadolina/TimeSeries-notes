@@ -148,4 +148,6 @@ Wickramasuriya show that the matrix P which minimizes the trace of Vh such that 
 
 Therefore, the optimal reconciled forecasts are given by
 
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Optimal%20reconciled%20forecasts.png)
+
 We refer to this as the "MinT" (or Minimum Trace) estimator.
