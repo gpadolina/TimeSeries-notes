@@ -105,3 +105,10 @@ horizon. They are stacked in the same order as the data yt.
 Then all forecasting approaches for either hierarchical or grouped structures can be represented as
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Mapping%20matrices.png)
+
+where P is a matrix that maps the base forecasts into the bottom-level and the summing matrix S sums these up using the aggregation structure to produce a set of
+coherent forecast yh.
+
+The P matrix is defined according to the approach implemented.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/P%20matrix%20using%20bottom-up%20approach.png)
