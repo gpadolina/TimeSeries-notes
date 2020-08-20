@@ -140,4 +140,8 @@ Next we need to find the error in our forecasts. Wickramasuriya show that varian
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Variance-covariance%20matrix.png)
 
-The objective is to find a matrix P that minimizes the error variances of the coherent forecasts. These 
+The objective is to find a matrix P that minimizes the error variances of the coherent forecasts.
+
+Wickramasuriya show that the matrix P which minimizes the trace of Vh such that SPS = S is given by
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Matrix%20P%20that%20minimizes%20the%20trace.png)
