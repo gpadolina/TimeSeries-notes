@@ -118,3 +118,9 @@ If any of the top-down approaches were used then
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/P%20matrix%20using%20top-down%20approach.png)
 
 For a middle out approach, the P matrix will be a combination of the above two.
+#### Forecast reconciliation
+We can rewrite the equation for mapping matrices as
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Forecast%20reconciliation.png)
+
+where R = SP is a "projection" or a "reconciliation matrix." That is, it take the incoherent base forecast yh and reconciles them to produce coherent forecast yh.
