@@ -46,3 +46,11 @@ with long time series.
 #### Complex seasonality with covariates
 TBATS models do not allow for covariates, although they can be included in dynamic harmonic regression models. One commong application of such models is electricity
 demand modeling.
+## Vector autoregressions
+One limitation of the models that we have considered so far is that they impose an unidirectional relationship - the forecast variable is influenced by the predictor
+variables, but not vice versa. However, there are many cases where the reverse should also be allowed for - where all variables affect each other.
+
+Such feedback relationships are allowed for in the vector autoregressive (VAR) framework. In this framework, all variables are treated symmetrically. They are all
+modeled as if they all influence each other equally. In more formal terminology, all variables are now treated as "endogenous."
+
+A VAR model is a generalization of the univariate autoregressive model for forecasting a vector of time series.
