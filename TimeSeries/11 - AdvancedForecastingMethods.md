@@ -30,3 +30,8 @@ With multiple seasonalities, we can use Fourier terms. Because there are multipl
 the seasonal periods are 169 and 845, so the Fourier terms are of the form
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Fourier%20terms.png)
+
+The ```fourier( )``` function can generate these for you.
+
+The total number of Fourier terms for each seasonal period have been chosen to minimize the AICc. We will use a log transformation (lambda=0) to ensure the forecasts
+prediction intervals remain positive.
