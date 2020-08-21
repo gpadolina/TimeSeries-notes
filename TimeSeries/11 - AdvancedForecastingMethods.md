@@ -25,3 +25,8 @@ forecasting using ETS or some other method. The ```stlf( )``` function will do t
 calls %>% stlf( ) %>%
   autoplot( ) + xlab("Week")
 ```
+#### Dynamic harmonic regression with multiple seasonal periods
+With multiple seasonalities, we can use Fourier terms. Because there are multiple seasonalities, we need to add Fourier terms for each seasonal period. In this case,
+the seasonal periods are 169 and 845, so the Fourier terms are of the form
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Fourier%20terms.png)
