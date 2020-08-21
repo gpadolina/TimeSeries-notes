@@ -54,3 +54,11 @@ Such feedback relationships are allowed for in the vector autoregressive (VAR) f
 modeled as if they all influence each other equally. In more formal terminology, all variables are now treated as "endogenous."
 
 A VAR model is a generalization of the univariate autoregressive model for forecasting a vector of time series.
+
+If the series are stationary, we forecast them by fitting a VAR to the data directly known as a "VAR in levels." If the series are non-stationary, we take differences
+of the data in order to make them stationary, then fit a VAR model known as "VAR in differences."
+
+VAR models are implemented in the *vars package* in R. It contains a function ```VARselect( )``` for selecting the numbers of lags p using four different information
+criteria: AIC, HQ, SC, and FPE. We have met the AIC before and SC is simply another name for the BIC, which stands for Schwartz Criterion. HQ is the Hannan-Quinn
+criterion and FPE is the "Final Prediction Error" criterion. Care should be taken when using the AIC as it tends to choose large numbers of lags. Instead, for
+VAR modes, we prefer to use the BIC.
