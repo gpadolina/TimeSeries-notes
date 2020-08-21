@@ -35,3 +35,11 @@ The ```fourier( )``` function can generate these for you.
 
 The total number of Fourier terms for each seasonal period have been chosen to minimize the AICc. We will use a log transformation (lambda=0) to ensure the forecasts
 prediction intervals remain positive.
+
+#### TBATS models
+An alternative approach uses a combination of Fourier terms with an exponential smoothing state space model and a Box-Cox transformation, in a completely automated
+manner. As with many automated modeling framework, there may be cases where it gives poor results, but it can be a useful approach in some circumstances.
+
+A TBATS model differs from dynamic harmonic regression in that the seasonality is allowed to change slowly over time in a TBATS model, while harmonic regression
+terms force the seasonal patterns to repeat periodically without changing. One drawback of TBATS models, however, is that they can be slow to estimate, especially
+with long time series.
