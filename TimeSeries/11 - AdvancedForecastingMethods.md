@@ -43,3 +43,6 @@ manner. As with many automated modeling framework, there may be cases where it g
 A TBATS model differs from dynamic harmonic regression in that the seasonality is allowed to change slowly over time in a TBATS model, while harmonic regression
 terms force the seasonal patterns to repeat periodically without changing. One drawback of TBATS models, however, is that they can be slow to estimate, especially
 with long time series.
+#### Complex seasonality with covariates
+TBATS models do not allow for covariates, although they can be included in dynamic harmonic regression models. One commong application of such models is electricity
+demand modeling.
