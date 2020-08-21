@@ -62,3 +62,9 @@ VAR models are implemented in the *vars package* in R. It contains a function ``
 criteria: AIC, HQ, SC, and FPE. We have met the AIC before and SC is simply another name for the BIC, which stands for Schwartz Criterion. HQ is the Hannan-Quinn
 criterion and FPE is the "Final Prediction Error" criterion. Care should be taken when using the AIC as it tends to choose large numbers of lags. Instead, for
 VAR modes, we prefer to use the BIC.
+
+VARS are useful in several contexts:
+1. forecasting a collection of related variables where no explicit interpretation is required.
+2. testing whether one variable is useful in forecasting another (the basis of Granger causality tests).
+3. impulse response analysis, where the response of one variable to a sudden but temporary change in another variable is analyzed.
+4. forecasts error variance decomposition, where the proportion of the forecast variance of each variable is attributed to the effects of the other variables.
