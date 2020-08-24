@@ -115,3 +115,10 @@ First, the time series is Box-Cox transformed and then decomposed into trend, se
 the remainder component to get boostrapped remainder series. Because there may be autocorrelation present in an STL remainder series, we cannot simply use the
 re-draw procedure. Instead, we use a blocked bootstrap, where contiguous sections of the time series are selected at random and joined together. These bootstrapped
 remainder series are added to the trend and seasonal components and the Box-Cox transformation is reverse to give variations on the original time series.
+
+This type of bootstrapping can be useful in two ways. First, it helps us to get a better measure of forecast uncertainty and second, it provides a way of improving
+our point forecasts using bagging.
+#### Prediction intervals from bootstrapped series
+Almost all prediction intervals from time series models are too narrow. This is a well-known phenomenon and arises because they do not account for all sources of
+uncertainty. Hyndman et al measured the size of the problem by computing the actual coverage percentage of the prediction intervals on test data and found that
+for ETS models, nominal 95% intervals may only provide coverage between 71% and 87%. The difference is due to missing sources of uncertainty.
