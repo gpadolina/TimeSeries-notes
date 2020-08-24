@@ -96,3 +96,10 @@ We call this a neural network autoregression or NNAR model.
 We only consider feed-forward networks with one hidden layer and we use the notation NNAR(p,k) to indicate there are p lagged inputs and k nodes in the hidden layer.
 For example, a NNAR(9,5) model is a neural network with the last nine observations(yt-1,yt-2,...,yt-9) used as inputs for forecasting the output yt and with five
 neurons in the hidden layer.
+
+The ```nnetar( )``` function fits an NNAR(p,P,k)m model. If the values of p and P are not specified, they are selected automatically. For non-seasonal time series,
+the default is the optimal number of lags (according to the AIC) for a linear AR(p) model. For seasonal time series, the default values are P=1 and p is chosen
+from the optimal linear model fitted to the seasonally adjusted data. If k is not specified, it is set to k = (p + P + 1)/2.
+
+When it comes to forecasting, the network is applied iteratively. For forecasting one step ahead, we simply use the available historical inputs. For forecasting
+two steaps ahead, we use the one-step forecast as an input, along with the historical data.
