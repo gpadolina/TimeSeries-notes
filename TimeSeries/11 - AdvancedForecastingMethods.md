@@ -128,3 +128,11 @@ There are at least four sources of uncertainty in forecasting using time series 
 2. The parameter estimates.
 3. The choise of model for the historical data.
 4. The continuation of the historical data generating process into the future.
+#### Bagged ETS forecasts
+Another use for these bootstrapped time series is to improve forecast accuracy. If we produce forecasts from each of the additional time series and average the
+resulting forecasts, we get better forecasts than if we simply forecast the original time series directly. This is called "bagging" which stands for "bootstrap
+aggregating."
+
+We could simply average the simulated future sample paths computed earlier. However, if our interest is only in improving point forecast accuracy and not in also
+obtaining improved prediction intervals, then it is quicker to average the point forecast from each series. The speed improvement comes about because we do not
+need to produce so many simulated series.
