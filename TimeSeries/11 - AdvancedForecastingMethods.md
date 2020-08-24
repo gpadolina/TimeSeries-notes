@@ -88,3 +88,11 @@ Once we add an intermediate layer with hidden neurons, the neural network become
 This is known as a *multilayer feed-forward network*, where each layer of nodes receives inputs from the previous layers. The outputs of the nodes in one layer
 are inputs to the next layer. The inputs to each node are combined using a weighted linear combination. The result is then modified by a nonlinear function
 before being output.
+
+#### Neural network autoregression
+With time series data, lagged values of the time series can be used as inputs to a neural network, just as we used lagged values in a linear autoregression model.
+We call this a neural network autoregression or NNAR model.
+
+We only consider feed-forward networks with one hidden layer and we use the notation NNAR(p,k) to indicate there are p lagged inputs and k nodes in the hidden layer.
+For example, a NNAR(9,5) model is a neural network with the last nine observations(yt-1,yt-2,...,yt-9) used as inputs for forecasting the output yt and with five
+neurons in the hidden layer.
