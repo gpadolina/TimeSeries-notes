@@ -78,3 +78,5 @@ outputs form the top layer. There may also be intermediate layers containing hid
 The simplest networks contain no hidden layers and are equivalent to linear regressions. The figure below shows the neural network version of a linear regression
 with four predictors. The coefficnets attached to these predictors are called weights. These forecasts are obtained by a linear combination of the inputs. The
 weights are selected in the neural network frame using a learning algorithm that minimizes a cost function such as the MSE.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Simple%20neural%20network%20equivalent%20to%20linear%20regression.png)
