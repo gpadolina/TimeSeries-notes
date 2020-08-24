@@ -68,3 +68,13 @@ VARS are useful in several contexts:
 2. testing whether one variable is useful in forecasting another (the basis of Granger causality tests).
 3. impulse response analysis, where the response of one variable to a sudden but temporary change in another variable is analyzed.
 4. forecasts error variance decomposition, where the proportion of the forecast variance of each variable is attributed to the effects of the other variables.
+## Neural network models
+Artificial neural networks are forecasting methods that are based on simple mathematical models of the brain. They allow complex nonlinear relationships between the
+response variable and its predictors.
+#### Neural network architecture
+A neural network can be thought of as a network of "neurons" which are organized in layers. The predictors or inputs form the bottom layer and the forecasts or
+outputs form the top layer. There may also be intermediate layers containing hidden neurons.
+
+The simplest networks contain no hidden layers and are equivalent to linear regressions. The figure below shows the neural network version of a linear regression
+with four predictors. The coefficnets attached to these predictors are called weights. These forecasts are obtained by a linear combination of the inputs. The
+weights are selected in the neural network frame using a learning algorithm that minimizes a cost function such as the MSE.
