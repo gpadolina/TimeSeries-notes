@@ -80,3 +80,7 @@ with four predictors. The coefficnets attached to these predictors are called we
 weights are selected in the neural network frame using a learning algorithm that minimizes a cost function such as the MSE.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Simple%20neural%20network%20equivalent%20to%20linear%20regression.png)
+
+Once we add an intermediate layer with hidden neurons, the neural network becomes non-linear.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Neural%20network%20with%20four%20inputs%20and%20one%20hidden%20layer%20with%20three%20hidden%20neurons.png)
