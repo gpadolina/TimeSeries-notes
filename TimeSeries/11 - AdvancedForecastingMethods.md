@@ -103,3 +103,6 @@ from the optimal linear model fitted to the seasonally adjusted data. If k is no
 
 When it comes to forecasting, the network is applied iteratively. For forecasting one step ahead, we simply use the available historical inputs. For forecasting
 two steaps ahead, we use the one-step forecast as an input, along with the historical data.
+#### Prediction intervals
+Unlike most of the methods, neural networks are not based on a well-defined stochastic model and so it is not straightforward to derive prediction intervals
+for the resultant forecasts.
