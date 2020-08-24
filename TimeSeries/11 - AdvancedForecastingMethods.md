@@ -136,3 +136,5 @@ aggregating."
 We could simply average the simulated future sample paths computed earlier. However, if our interest is only in improving point forecast accuracy and not in also
 obtaining improved prediction intervals, then it is quicker to average the point forecast from each series. The speed improvement comes about because we do not
 need to produce so many simulated series.
+
+On average, bagging gives better forecasts than just applying ```ets( )``` directly. However, it is slower because a lot more computation is required.
