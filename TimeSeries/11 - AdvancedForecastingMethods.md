@@ -84,3 +84,7 @@ weights are selected in the neural network frame using a learning algorithm that
 Once we add an intermediate layer with hidden neurons, the neural network becomes non-linear.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Neural%20network%20with%20four%20inputs%20and%20one%20hidden%20layer%20with%20three%20hidden%20neurons.png)
+
+This is known as a *multilayer feed-forward network*, where each layer of nodes receives inputs from the previous layers. The outputs of the nodes in one layer
+are inputs to the next layer. The inputs to each node are combined using a weighted linear combination. The result is then modified by a nonlinear function
+before being output.
