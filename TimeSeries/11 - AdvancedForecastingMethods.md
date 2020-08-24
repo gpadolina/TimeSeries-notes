@@ -122,3 +122,9 @@ our point forecasts using bagging.
 Almost all prediction intervals from time series models are too narrow. This is a well-known phenomenon and arises because they do not account for all sources of
 uncertainty. Hyndman et al measured the size of the problem by computing the actual coverage percentage of the prediction intervals on test data and found that
 for ETS models, nominal 95% intervals may only provide coverage between 71% and 87%. The difference is due to missing sources of uncertainty.
+
+There are at least four sources of uncertainty in forecasting using time series models:
+1. The random error term.
+2. The parameter estimates.
+3. The choise of model for the historical data.
+4. The continuation of the historical data generating process into the future.
