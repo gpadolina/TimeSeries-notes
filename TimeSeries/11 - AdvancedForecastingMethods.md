@@ -106,3 +106,12 @@ two steaps ahead, we use the one-step forecast as an input, along with the histo
 #### Prediction intervals
 Unlike most of the methods, neural networks are not based on a well-defined stochastic model and so it is not straightforward to derive prediction intervals
 for the resultant forecasts.
+
+## Bootstrapping and bagging
+#### Bootstrapping time series
+We can generate new time series that are similar to our observed series, using another type of bootstrap.
+
+First, the time series is Box-Cox transformed and then decomposed into trend, seasonal, and remainder components using STL. Then we obtained shuffled versions of
+the remainder component to get boostrapped remainder series. Because there may be autocorrelation present in an STL remainder series, we cannot simply use the
+re-draw procedure. Instead, we use a blocked bootstrap, where contiguous sections of the time series are selected at random and joined together. These bootstrapped
+remainder series are added to the trend and seasonal components and the Box-Cox transformation is reverse to give variations on the original time series.
