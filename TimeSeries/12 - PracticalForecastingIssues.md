@@ -11,3 +11,19 @@ The simplest approach is to use an STL decomposition along with a non-seasonal m
 ```
 gasoline %>% stlf( ) %>% autoplot( )
 ```
+An alternative approach is to use a dynamic harmonic regression model. In the following example, the number of Fourier terms was selected by minimizing the AICc. The
+order of the ARIMA model is also selected by minimizing the AICc, although that is done within the ```auto.arima( )``` function.
+```
+bestfit <- list(aicc=Inf) 
+for(K in seq(25)) {
+  fit <- auto.arima(gasoline, xreg=fourier(gasoline, K=K), 
+    seasonal=FALSE)
+  if(fit[["aicc"]] < bestfit[["aicc"]]) { 
+    bestfit <- fit
+    bestK <- K
+  } 
+}
+fc <- forecast(bestfit, 
+  xreg=fourier(gasoline, K=bestK, h=104))
+autoplot(fc)
+```
