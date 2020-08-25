@@ -27,3 +27,13 @@ fc <- forecast(bestfit,
   xreg=fourier(gasoline, K=bestK, h=104))
 autoplot(fc)
 ```
+The STL approach or TBATS model is preferable when the seasonality changes over time. The dynamic harmonic regression approach is preferable if there are covariates
+that are useful predictors as these can be added as additional regressors.
+#### Daily and sub-daily data
+Daily and sub-daily data are challenging for a different reason - they often involve multiple seasonal patterns and so we need to use a method that handles such
+complex seasonality.
+
+When the time series is long enough so that some of the longer seasonal periods become apparent, it will be necessary to use STL, dynamic harmonic regression or TBATS.
+
+However, note that even these models only allow for regular seasonality. Capturing seasonality associated with moving events such as Easter, Id, or the Chinese New
+Year is more difficult.
