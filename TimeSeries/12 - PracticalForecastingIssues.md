@@ -101,4 +101,14 @@ NNAR <- forecast(nnetar(train), h=h)
 TBATS <- forecast(tbats(train, biasadj=TRUE), h=h) 
 Combination <- (ETS[["mean"]] + ARIMA[["mean"]] +
   STL[["mean"]] + NNAR[["mean"]] + TBATS[["mean"]])/5
+
+autoplot(auscafe) +
+  autolayer(ETS, series="ETS", PI=FALSE) + 
+  autolayer(ARIMA, series="ARIMA", PI=FALSE) + 
+  autolayer(STL, series="STL", PI=FALSE) + 
+  autolayer(NNAR, series="NNAR", PI=FALSE) + 
+  autolayer(TBATS, series="TBATS", PI=FALSE) + 
+  autolayer(Combination, series="Combination") + 
+  xlab("Year") + ylab("$ billion") +
+  ggtitle("Australian monthly expenditure on eating out")
 ```
