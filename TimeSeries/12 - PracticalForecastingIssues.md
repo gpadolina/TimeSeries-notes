@@ -37,3 +37,6 @@ When the time series is long enough so that some of the longer seasonal periods 
 
 However, note that even these models only allow for regular seasonality. Capturing seasonality associated with moving events such as Easter, Id, or the Chinese New
 Year is more difficult.
+
+The best way to deal with moving holiday effect is to use dummy variables. However, neither STL, ETS nor TBATS models allow for covariates. Amongst the models discussed,
+the only choise is a dynamic regression model, where the predictors include any dummy holiday effects and possibly also the seasonality using Fourier terms.
