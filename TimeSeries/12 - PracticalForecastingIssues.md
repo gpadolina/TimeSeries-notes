@@ -77,3 +77,7 @@ TO see how to handle data constrained to an interval, imagine that the prices we
 a scaled logit transform which maps(a, b) to the whole real line.
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Logit%20transform.png)
+
+where x is on the original scale and y is the transformed data. To reverse the transformation, we will use
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Reverse%20logit%20transform.png)
