@@ -54,3 +54,8 @@ deal with the count nature of the data either, but it is used so often that it i
 With Croston's method, we construct two new series from our original time series by noting which time periods contain zero values and which periods contain non-zero
 values. Croston's method involves separate simple exponential smoothing forecasts on the two new series a and q. Because the method is usually applied to time series
 of demand for items, q is often called the "demand" and a the "inter-arrival time."
+
+The ```croston( )``` function produces forecasts using Croston's method. It simply uses alpha = 0.1 by default and l0 is set to be equal to the first observation
+in each of the method series.
+
+An implementation of Croston's method with more facilities including parameter estimation is available in the *tsintermittent package* for R.
