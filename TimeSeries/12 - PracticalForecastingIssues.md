@@ -112,3 +112,5 @@ autoplot(auscafe) +
   xlab("Year") + ylab("$ billion") +
   ggtitle("Australian monthly expenditure on eating out")
 ```
+TBATS does particularly well with this series, but the combination approach is even better. For other data, TBATS may be quite poor, while the combination approach is
+almost always close to, or better than, the best component method.
