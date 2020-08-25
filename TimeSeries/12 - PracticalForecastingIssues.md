@@ -40,3 +40,10 @@ Year is more difficult.
 
 The best way to deal with moving holiday effect is to use dummy variables. However, neither STL, ETS nor TBATS models allow for covariates. Amongst the models discussed,
 the only choise is a dynamic regression model, where the predictors include any dummy holiday effects and possibly also the seasonality using Fourier terms.
+
+## Time series of counts
+All of the methods discussed assume that the data have a continuous sample space. But often, data comes in the form of counts.
+
+In practice, this rarely matters provided our counts are sufficiently large. If the minimum number of customers is at least 100, then the different between a continuous
+sample space ```[100, inf]``` and the discrete sample space {100, 101, 102,...} has no perceivable effect on our forecasts. However, if our data contains small counts
+(0, 1, 2,...), then wee need to use forecasting method that are more appropriate for a sample space of non-negative integers.
