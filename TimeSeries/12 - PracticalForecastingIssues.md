@@ -71,3 +71,9 @@ eggs %>%
   forecast(h=50, biasadj=TRUE) %>%
   autoplot()
 ```
+Because we set ```biasadj=TRUE```, the forecasts are the means of the forecast distributions.
+#### Forecasts constrained to an interval
+TO see how to handle data constrained to an interval, imagine that the prices were constrained to lie within a = 50 and b = 400. Then we can transform the data using
+a scaled logit transform which maps(a, b) to the whole real line.
+
+![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Logit%20transform.png)
