@@ -50,3 +50,7 @@ sample space ```[100, inf]``` and the discrete sample space {100, 101, 102,...} 
 
 There is one simple method which gets used in this context. It is "Croston's method," named afters its British inventor, John Croston. This method does not properly
 deal with the count nature of the data either, but it is used so often that it is worth knowing about it.
+
+With Croston's method, we construct two new series from our original time series by noting which time periods contain zero values and which periods contain non-zero
+values. Croston's method involves separate simple exponential smoothing forecasts on the two new series a and q. Because the method is usually applied to time series
+of demand for items, q is often called the "demand" and a the "inter-arrival time."
