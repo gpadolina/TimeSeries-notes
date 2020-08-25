@@ -45,7 +45,7 @@ the only choise is a dynamic regression model, where the predictors include any 
 All of the methods discussed assume that the data have a continuous sample space. But often, data comes in the form of counts.
 
 In practice, this rarely matters provided our counts are sufficiently large. If the minimum number of customers is at least 100, then the different between a continuous
-sample space ```[100, inf]``` and the discrete sample space {100, 101, 102,...} has no perceivable effect on our forecasts. However, if our data contains small counts
+sample space [100, inf] and the discrete sample space {100, 101, 102,...} has no perceivable effect on our forecasts. However, if our data contains small counts
 (0, 1, 2,...), then wee need to use forecasting method that are more appropriate for a sample space of non-negative integers.
 
 There is one simple method which gets used in this context. It is "Croston's method," named afters its British inventor, John Croston. This method does not properly
@@ -59,3 +59,15 @@ The ```croston( )``` function produces forecasts using Croston's method. It simp
 in each of the method series.
 
 An implementation of Croston's method with more facilities including parameter estimation is available in the *tsintermittent package* for R.
+
+## Ensuring forecasts stay within limits
+It is common to want forecasts to be positivve or to require them to be within some specified range [a, b]. Both of these situations are relatively easy to handle
+using transformations.
+#### Positive forecasts
+To impose a positive constraint, simple work on the log scale, by specifying the Box-Cox parameter lamdda=0.
+```
+eggs %>%
+  ets(model="AAN", damped=FALSE, lambda=0) %>% 
+  forecast(h=50, biasadj=TRUE) %>%
+  autoplot()
+```
