@@ -81,3 +81,24 @@ a scaled logit transform which maps(a, b) to the whole real line.
 where x is on the original scale and y is the transformed data. To reverse the transformation, we will use
 
 ![equation](https://github.com/gpadolina/TimeSeries-notes/blob/master/TimeSeries/Equations/Reverse%20logit%20transform.png)
+
+## Forecast combinations
+An easy way to improve forecast accuracy is to use several different methods on the same time series and to average the resulting forecasts. Bates and Granger wrote
+a famous paper showing that combining forecasts often leads to better forecast accuracy.
+
+While there has been considerable research on using weighted averages or some other more complicated combination approach, using a simple average has proven hard to
+beat.
+
+Here is an example using ETS, ARIMA, STL-ETS, NNAR, and TBATS.
+```
+train <- window(auscafe, end=c(2012,9))
+h <- length(auscafe) - length(train)
+ETS <- forecast(ets(train), h=h)
+ARIMA <- forecast(auto.arima(train, lambda=0, biasadj=TRUE),
+  h=h)
+STL <- stlf(train, lambda=0, h=h, biasadj=TRUE) 
+NNAR <- forecast(nnetar(train), h=h)
+TBATS <- forecast(tbats(train, biasadj=TRUE), h=h) 
+Combination <- (ETS[["mean"]] + ARIMA[["mean"]] +
+  STL[["mean"]] + NNAR[["mean"]] + TBATS[["mean"]])/5
+```
