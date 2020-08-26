@@ -144,3 +144,14 @@ reverse_forecast <- function(object)
   return(object)
 }
 ```
+Then we can apply these functions to backcast any time series. Here is an example applied to quarterly retail trade.
+```
+# Backcast example
+euretail %>% 
+  reverse_ts() %>%
+  auto.arima() %>% 
+  forecast() %>% 
+  reverse_forecast() -> bc
+autoplot(bc) +
+  ggtitle(paste("Backcasts from",bc[["method"]]))
+```
