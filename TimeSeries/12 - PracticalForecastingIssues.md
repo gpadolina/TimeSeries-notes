@@ -114,3 +114,11 @@ autoplot(auscafe) +
 ```
 TBATS does particularly well with this series, but the combination approach is even better. For other data, TBATS may be quite poor, while the combination approach is
 almost always close to, or better than, the best component method.
+## Prediction intervals for aggregates
+A common problem is to forecast the aggregate of several time periods of data, using a model fitted to the disaggregated data. For example, we may have monthly data
+but wish to forecast the total for the next year.
+
+If the point forecasts are means, then adding them up will give a good estimate of the total. But prediction intervals are more trickly due to the correlations
+between forecast errors.
+
+A general solution is to use simulations.
