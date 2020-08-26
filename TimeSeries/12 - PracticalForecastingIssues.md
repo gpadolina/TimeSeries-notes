@@ -164,3 +164,10 @@ estimated and the amount of noise in the data.
 Some textbooks provide rules-of-thumb giving minimum sample sizes for various time series models. These are misleading and unsubstantiated in theory or practice.
 Further, they ignore the underlying variability of the data and often overlook the number of parameters to be estimated as well. The only theoretical limit is that
 we need more observations than there are parameters in our forecasting model.
+
+Ideally, we would test if our chosen model performs well out-of-sample compared to some simpler approaches. The AICc is particularly useful here because it is a
+proxy for the one-step forecast out-of-sample MSE. Choosing the model with the minimum AICc value allows both the number of parameters and the amount of noise to
+be taken into account.
+
+What tends to happen with short series is that the AIC suggest simple models because anything with more than one or two parameters will produce poor forecasts due
+to the estimation error.
