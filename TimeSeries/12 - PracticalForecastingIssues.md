@@ -160,3 +160,7 @@ autoplot(bc) +
 We often get asked how few data points can be used to fit a time series model. As with almost all sample size questions, there is no easy answer. It depends on the
 number of model parameters to be estimated and the amount of randomness in the data. The sample size required increases with the number of parameters to be
 estimated and the amount of noise in the data.
+
+Some textbooks provide rules-of-thumb giving minimum sample sizes for various time series models. These are misleading and unsubstantiated in theory or practice.
+Further, they ignore the underlying variability of the data and often overlook the number of parameters to be estimated as well. The only theoretical limit is that
+we need more observations than there are parameters in our forecasting model.
