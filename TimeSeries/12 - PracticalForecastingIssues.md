@@ -171,3 +171,12 @@ be taken into account.
 
 What tends to happen with short series is that the AIC suggest simple models because anything with more than one or two parameters will produce poor forecasts due
 to the estimation error.
+#### Forecasting very long time series
+Most time series models do not work well for very long time series. The problem is that real data do not come from the models we use. When the number of observations
+is not large (say up to about 200) the models often work well as an approximation to whatever process generated the data.
+
+A better approach is usually to allow the model itself to change over time. ETS models are designed to handle this situation by allowing the trend and seasonal terms
+to evolve over time. ARIMA models with differencing have a similar property. But dynamic regression models do not allow any evolution of model components.
+
+If we are only interested in forecasting the next few observations, one simple approach is to throw away the earliest observations and only fit a model to the most
+recent observations.
