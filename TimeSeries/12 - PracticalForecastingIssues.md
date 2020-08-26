@@ -122,3 +122,25 @@ If the point forecasts are means, then adding them up will give a good estimate 
 between forecast errors.
 
 A general solution is to use simulations.
+## Backcasting
+Sometimes it is useful to "backcast" a time series - that is, forecast in reverse time. Although there no built-in R functions to do this, it is easy to implement.
+THe following functions reverse a ```ts``` object and a ```forecast``` object.
+```
+# Function to reverse time
+reverse_ts <- function(y) 
+{
+ts(rev(y), start=tsp(y)[1L], frequency=frequency(y)) 
+}
+# Function to reverse a forecast
+reverse_forecast <- function(object) 
+{
+  h <- length(object[["mean"]])
+  f <- frequency(object[["mean"]]) 
+  object[["x"]] <- reverse_ts(object[["x"]]) 
+  object[["mean"]] <- ts(rev(object[["mean"]]),
+    end=tsp(object[["x"]])[1L]-1/f, frequency=f) 
+  object[["lower"]] <- object[["lower"]][h:1L,] 
+  object[["upper"]] <- object[["upper"]][h:1L,] 
+  return(object)
+}
+```
