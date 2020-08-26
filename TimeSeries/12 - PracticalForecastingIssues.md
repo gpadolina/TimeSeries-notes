@@ -155,3 +155,8 @@ euretail %>%
 autoplot(bc) +
   ggtitle(paste("Backcasts from",bc[["method"]]))
 ```
+## Very long and very short time series
+#### Forecasting very short time series
+We often get asked how few data points can be used to fit a time series model. As with almost all sample size questions, there is no easy answer. It depends on the
+number of model parameters to be estimated and the amount of randomness in the data. The sample size required increases with the number of parameters to be
+estimated and the amount of noise in the data.
