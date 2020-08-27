@@ -200,3 +200,7 @@ automated method can handle such effects as they depend on the specific forecast
 
 In other situations, the missingness may be essentially random. For example, someone may have forgotten to record the sales figures or the data recording device
 may habe malfunctioned.
+
+Some methods allow for missing values without any problems. For example, naïve forecasting method continues to work, with the most recent non-missing value
+providing the forecast for the future time periods. The R functions for ARIMA models, dynamic regression models, and NNAR will also work correctly without causing
+errors. However, other modelling functions do not handle missing values including ```ets( )```, ```stlf( )```, and ```tbats( )```.
