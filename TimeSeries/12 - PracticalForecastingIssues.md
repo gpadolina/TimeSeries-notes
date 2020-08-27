@@ -208,3 +208,18 @@ errors. However, other modelling functions do not handle missing values includin
 When missing values cause errors, there are at least two ways to handle the problem. First, we could just take the section of data after the last missing value,
 assumming there is a long enough series of observations to produce meaningful forecasts. Alternatively, we could replace the missing values with estimates. The
 ```na.interp( )``` function is designed for this purpose.
+#### Outliers
+Outliers are observation that are very different from the majority of the observations in the time series. They may be errors or they may simply be unusual. All of
+the methods we have considered will not work well if there are extreme outliers in the data. In this case, we may wish to replace them with missing values or with
+an estimate that is more consistent with the majority of the data.
+
+Simply replacing outliers without thinking about why they have occurred is a dangerous practice. They may provide useful information abut the process that produced
+the data and which should be taken into account when forecasting.
+
+However, if we are willing to assume that the outliers are genuinely errors or that they won't occur in the forecasting period, then replacing them can make the
+forecasting task easier.
+
+The ```tsoutliers( )``` function is designed to identify outliers and to suggest potential replacement values.
+
+Another useful function is ```tsclean( )``` which identifies and replaces outliers and also replaces missing values. Obviously this should be used with some caution,
+but it does allow us to use forecasting models that are sensitive to outliers or which do not handle missing values.
