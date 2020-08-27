@@ -204,3 +204,7 @@ may habe malfunctioned.
 Some methods allow for missing values without any problems. For example, naïve forecasting method continues to work, with the most recent non-missing value
 providing the forecast for the future time periods. The R functions for ARIMA models, dynamic regression models, and NNAR will also work correctly without causing
 errors. However, other modelling functions do not handle missing values including ```ets( )```, ```stlf( )```, and ```tbats( )```.
+
+When missing values cause errors, there are at least two ways to handle the problem. First, we could just take the section of data after the last missing value,
+assumming there is a long enough series of observations to produce meaningful forecasts. Alternatively, we could replace the missing values with estimates. The
+```na.interp( )``` function is designed for this purpose.
