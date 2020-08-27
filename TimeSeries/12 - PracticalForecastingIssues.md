@@ -180,3 +180,8 @@ to evolve over time. ARIMA models with differencing have a similar property. But
 
 If we are only interested in forecasting the next few observations, one simple approach is to throw away the earliest observations and only fit a model to the most
 recent observations.
+## Forecasting on training and test sets
+Typically, we compute one-step forecasts on the training data (the "fitted values") and multi-step forecasts on the test data. However, occassionally we may wish to
+compute multi-step forecasts on the training data or one-step forecasts on the test data.
+#### Multi-step forecasts on training data
+We normally define fitted values to be one-step forecasts on the training set, but a similar idea can be used for multi-step forecasts.
