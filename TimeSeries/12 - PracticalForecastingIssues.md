@@ -185,3 +185,9 @@ Typically, we compute one-step forecasts on the training data (the "fitted value
 compute multi-step forecasts on the training data or one-step forecasts on the test data.
 #### Multi-step forecasts on training data
 We normally define fitted values to be one-step forecasts on the training set, but a similar idea can be used for multi-step forecasts.
+#### One-step forecasts on test data
+It is common practice to fit a model using training data and then to evaluate its performance on a test data set. The way this is usually done means the comparisons
+on the test data use different forecast horizons. The forecast variance usually increases with the forecast horizon, so if we are simply averaging the absolute or
+squared errors from the test set, we are combining results with different variances.
+
+For the ```ets( )```, ```Arima( )```, ```tbats( )```, and ```nnetar( )``` functions, these calculations are easily carried out using the ```model``` argument.
