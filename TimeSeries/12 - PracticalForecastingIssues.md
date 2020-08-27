@@ -191,3 +191,12 @@ on the test data use different forecast horizons. The forecast variance usually 
 squared errors from the test set, we are combining results with different variances.
 
 For the ```ets( )```, ```Arima( )```, ```tbats( )```, and ```nnetar( )``` functions, these calculations are easily carried out using the ```model``` argument.
+## Dealing with missing values and outliers
+Real data often contains missing values, outlying observations, and other messy features. Dealing with them can sometimes be troublesome.
+#### Missing values
+Missing data can arise for many reasons and it is worth considering whether the missingness will induce bias in the forecasting model. One way to deal with this
+kind of situation is to use a dynamic regression model, with dummy variables indicating if the day is a public holiday or the day after a public holiday. No
+automated method can handle such effects as they depend on the specific forecasting context.
+
+In other situations, the missingness may be essentially random. For example, someone may have forgotten to record the sales figures or the data recording device
+may habe malfunctioned.
